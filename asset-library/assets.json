@@ -1,0 +1,1975 @@
+[
+  {
+    "id": "gen-abstract-caspa",
+    "type": "image",
+    "status": "available",
+    "title": "",
+    "title_zh": "抽象深蓝光纤章节背景",
+    "url": "",
+    "platform": "generated",
+    "owner": "qwen-image-3.0-pro",
+    "official": false,
+    "license": "generated",
+    "published": "2026-10-27",
+    "duration": null,
+    "domain": [
+      "AI",
+      "半导体"
+    ],
+    "shot": [
+      "抽象背景"
+    ],
+    "tags": [],
+    "windows": [],
+    "used_in": [
+      {
+        "project": "caspa-ai-profit",
+        "file": "public/caspa-ai-profit/img/gen-abstract.png",
+        "date": "2026-10-27"
+      }
+    ],
+    "notes": "1920*1080，可用同一提示词重新生成",
+    "prompt": "抽象深蓝色背景，细密的青色光纤线条和电路纹理从画面两侧流动汇聚，少量橙色光点，大面积留白在中央，极简，高级感，适合作为视频章节背景，无文字",
+    "negative_prompt": "文字, 字母, logo, 商标, 水印, 人脸特写, 低清晰度, 畸变",
+    "local_path": "public/caspa-ai-profit/img/gen-abstract.png",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "thumb": "thumbs/gen-abstract-caspa.jpg"
+  },
+  {
+    "id": "gen-construction-caspa",
+    "type": "image",
+    "status": "available",
+    "title": "",
+    "title_zh": "黄昏数据中心园区建设航拍",
+    "url": "",
+    "platform": "generated",
+    "owner": "qwen-image-3.0-pro",
+    "official": false,
+    "license": "generated",
+    "published": "2026-10-27",
+    "duration": null,
+    "domain": [
+      "数据中心",
+      "能源电力"
+    ],
+    "shot": [
+      "建设施工",
+      "外景航拍"
+    ],
+    "tags": [
+      "数据中心"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "1920*1080，可用同一提示词重新生成",
+    "prompt": "黄昏时分正在建设中的大型数据中心园区航拍，钢结构厂房、塔吊、成排的冷却设备，天空深蓝到橙色渐变，电影感，广角，无文字无标志",
+    "negative_prompt": "文字, 字母, logo, 商标, 水印, 人脸特写, 低清晰度, 畸变",
+    "local_path": "public/caspa-ai-profit/img/gen-construction.png",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "thumb": "thumbs/gen-construction-caspa.jpg"
+  },
+  {
+    "id": "gen-datacenter-caspa",
+    "type": "image",
+    "status": "available",
+    "title": "",
+    "title_zh": "AI数据中心机房走廊（夜景，冷蓝）",
+    "url": "",
+    "platform": "generated",
+    "owner": "qwen-image-3.0-pro",
+    "official": false,
+    "license": "generated",
+    "published": "2026-10-27",
+    "duration": null,
+    "domain": [
+      "数据中心",
+      "AI"
+    ],
+    "shot": [
+      "机房内景"
+    ],
+    "tags": [
+      "数据中心"
+    ],
+    "windows": [],
+    "used_in": [
+      {
+        "project": "caspa-ai-profit",
+        "file": "public/caspa-ai-profit/img/gen-datacenter.png",
+        "date": "2026-10-27"
+      }
+    ],
+    "notes": "1920*1080，可用同一提示词重新生成",
+    "prompt": "电影感广角镜头：深夜的大型AI数据中心机房走廊，两侧是整齐的黑色服务器机柜，机柜上有细小的青色指示灯，地面反光，冷蓝色调，体积光，景深，空间纵深强，画面干净高级，无文字无标志",
+    "negative_prompt": "文字, 字母, logo, 商标, 水印, 人脸特写, 低清晰度, 畸变",
+    "local_path": "public/caspa-ai-profit/img/gen-datacenter.png",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "thumb": "thumbs/gen-datacenter-caspa.jpg"
+  },
+  {
+    "id": "gen-fab-caspa",
+    "type": "image",
+    "status": "available",
+    "title": "",
+    "title_zh": "半导体封装洁净室产线",
+    "url": "",
+    "platform": "generated",
+    "owner": "qwen-image-3.0-pro",
+    "official": false,
+    "license": "generated",
+    "published": "2026-10-27",
+    "duration": null,
+    "domain": [
+      "半导体"
+    ],
+    "shot": [
+      "生产制造"
+    ],
+    "tags": [
+      "晶圆厂",
+      "CoWoS"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "1920*1080，可用同一提示词重新生成",
+    "prompt": "电影感镜头：半导体封装工厂洁净室，自动化机械臂和生产线，工作人员穿白色无尘服在远处虚化，冷蓝与青色灯光，局部暖橙色指示灯，高级工业摄影，无文字无标志",
+    "negative_prompt": "文字, 字母, logo, 商标, 水印, 人脸特写, 低清晰度, 畸变",
+    "local_path": "public/caspa-ai-profit/img/gen-fab.png",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "thumb": "thumbs/gen-fab-caspa.jpg"
+  },
+  {
+    "id": "gen-host-avatar-host-demo",
+    "type": "video",
+    "status": "available",
+    "title": "",
+    "title_zh": "avatar-host-demo 数字人主持人口播",
+    "url": "",
+    "platform": "generated",
+    "owner": "topview avatar4",
+    "official": false,
+    "license": "generated",
+    "published": "2026-10-28",
+    "duration": 38,
+    "domain": [],
+    "shot": [
+      "人物采访"
+    ],
+    "tags": [
+      "数字人",
+      "主持人"
+    ],
+    "windows": [],
+    "used_in": [
+      {
+        "project": "avatar-host-demo",
+        "file": "public/avatar-host-demo/host/host.mp4",
+        "date": "2026-10-28"
+      }
+    ],
+    "notes": "人像来自照片；配音来自用户录音；消耗 1 积分；Topview 任务 2e860ab7dcc44734a1967e6b5f64750c",
+    "local_path": "public/avatar-host-demo/host/host.mp4",
+    "found_for": [
+      "avatar-host-demo"
+    ],
+    "added": "2026-10-28"
+  },
+  {
+    "id": "gen-market-caspa",
+    "type": "image",
+    "status": "available",
+    "title": "",
+    "title_zh": "交易大厅抽象K线屏幕",
+    "url": "",
+    "platform": "generated",
+    "owner": "qwen-image-3.0-pro",
+    "official": false,
+    "license": "generated",
+    "published": "2026-10-27",
+    "duration": null,
+    "domain": [
+      "金融市场"
+    ],
+    "shot": [
+      "抽象背景"
+    ],
+    "tags": [
+      "K线"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "1920*1080，可用同一提示词重新生成",
+    "prompt": "深蓝色调的交易大厅抽象画面，多块模糊的屏幕上是虚化的K线与曲线光影，无可辨识数字，浅景深，电影感，冷色调带少量橙色，无文字无标志",
+    "negative_prompt": "文字, 字母, logo, 商标, 水印, 人脸特写, 低清晰度, 畸变",
+    "local_path": "public/caspa-ai-profit/img/gen-market.png",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "thumb": "thumbs/gen-market-caspa.jpg"
+  },
+  {
+    "id": "gen-optics-caspa",
+    "type": "image",
+    "status": "available",
+    "title": "",
+    "title_zh": "光纤线缆与光模块微距",
+    "url": "",
+    "platform": "generated",
+    "owner": "qwen-image-3.0-pro",
+    "official": false,
+    "license": "generated",
+    "published": "2026-10-27",
+    "duration": null,
+    "domain": [
+      "通信",
+      "数据中心"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "CPO"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "1920*1080，可用同一提示词重新生成",
+    "prompt": "微距摄影：数据中心机柜中密集的蓝色光纤线缆和光模块接口，浅景深，冷蓝青色调，点点光斑，高级科技感，无文字无标志",
+    "negative_prompt": "文字, 字母, logo, 商标, 水印, 人脸特写, 低清晰度, 畸变",
+    "local_path": "public/caspa-ai-profit/img/gen-optics.png",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "thumb": "thumbs/gen-optics-caspa.jpg"
+  },
+  {
+    "id": "gen-power-caspa",
+    "type": "image",
+    "status": "available",
+    "title": "",
+    "title_zh": "夜晚变电站与数据中心",
+    "url": "",
+    "platform": "generated",
+    "owner": "qwen-image-3.0-pro",
+    "official": false,
+    "license": "generated",
+    "published": "2026-10-27",
+    "duration": null,
+    "domain": [
+      "能源电力",
+      "数据中心"
+    ],
+    "shot": [
+      "外景航拍"
+    ],
+    "tags": [
+      "电力"
+    ],
+    "windows": [],
+    "used_in": [
+      {
+        "project": "caspa-ai-profit",
+        "file": "public/caspa-ai-profit/img/gen-power.png",
+        "date": "2026-10-27"
+      }
+    ],
+    "notes": "1920*1080，可用同一提示词重新生成",
+    "prompt": "夜晚的变电站与高压输电塔，远处是发着冷蓝光的数据中心建筑，空气中有薄雾，电影感，蓝色调带少量暖色灯光，无文字无标志",
+    "negative_prompt": "文字, 字母, logo, 商标, 水印, 人脸特写, 低清晰度, 畸变",
+    "local_path": "public/caspa-ai-profit/img/gen-power.png",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "thumb": "thumbs/gen-power-caspa.jpg"
+  },
+  {
+    "id": "gen-stage-caspa",
+    "type": "image",
+    "status": "available",
+    "title": "",
+    "title_zh": "科技论坛会场（空座椅）",
+    "url": "",
+    "platform": "generated",
+    "owner": "qwen-image-3.0-pro",
+    "official": false,
+    "license": "generated",
+    "published": "2026-10-27",
+    "duration": null,
+    "domain": [
+      "半导体",
+      "AI"
+    ],
+    "shot": [
+      "会议演讲"
+    ],
+    "tags": [
+      "CASPA"
+    ],
+    "windows": [],
+    "used_in": [
+      {
+        "project": "caspa-ai-profit",
+        "file": "public/caspa-ai-profit/img/gen-stage.png",
+        "date": "2026-10-27"
+      }
+    ],
+    "notes": "1920*1080，可用同一提示词重新生成",
+    "prompt": "科技行业论坛会场全景，深蓝色灯光的舞台上有两张空的讨论座椅和小圆桌，大屏幕是抽象蓝色光效，前排观众为模糊的背影剪影，电影感，景深，无文字无标志",
+    "negative_prompt": "文字, 字母, logo, 商标, 水印, 人脸特写, 低清晰度, 畸变",
+    "local_path": "public/caspa-ai-profit/img/gen-stage.png",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "thumb": "thumbs/gen-stage-caspa.jpg"
+  },
+  {
+    "id": "img-aws-trainium2",
+    "type": "image",
+    "status": "available",
+    "title": "",
+    "title_zh": "AWS Trainium2 官方图",
+    "url": "https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/product-categories/ai-ml/machine-learning/approved/images/aws-trainium2-for-breakthrough-ai-performance.abefe0677d4c243bd0fbf75145d530b6edce39ef.jpg",
+    "platform": "web",
+    "owner": "AWS",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "半导体"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "AWS",
+      "Trainium"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27",
+    "thumb": "thumbs/img-aws-trainium2.jpg"
+  },
+  {
+    "id": "img-google-ironwood-1",
+    "type": "image",
+    "status": "available",
+    "title": "",
+    "title_zh": "Google Ironwood TPU 博客配图 1",
+    "url": "https://storage.googleapis.com/gweb-cloudblog-publish/images/1_E4cJ2SM.max-1800x1800.png",
+    "platform": "web",
+    "owner": "Google",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "半导体"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "Google",
+      "TPU"
+    ],
+    "windows": [],
+    "used_in": [
+      {
+        "project": "caspa-ai-profit",
+        "file": "public/caspa-ai-profit/img/ironwood-1.png",
+        "date": "2026-10-27"
+      }
+    ],
+    "notes": "",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27",
+    "thumb": "thumbs/img-google-ironwood-1.jpg"
+  },
+  {
+    "id": "img-google-ironwood-2",
+    "type": "image",
+    "status": "available",
+    "title": "",
+    "title_zh": "Google Ironwood TPU 博客配图 2",
+    "url": "https://storage.googleapis.com/gweb-cloudblog-publish/images/2_BWW5xwl.max-2000x2000.jpg",
+    "platform": "web",
+    "owner": "Google",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "半导体"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "Google",
+      "TPU"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27",
+    "thumb": "thumbs/img-google-ironwood-2.jpg"
+  },
+  {
+    "id": "img-google-tpu",
+    "type": "image",
+    "status": "available",
+    "title": "",
+    "title_zh": "Google TPU 官方图",
+    "url": "https://www.gstatic.com/bricks/image/4208995c-af87-4354-8553-b6eef0d3186c.jpg",
+    "platform": "web",
+    "owner": "Google",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "半导体"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "Google",
+      "TPU"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27",
+    "thumb": "thumbs/img-google-tpu.jpg"
+  },
+  {
+    "id": "img-ibiden-substrate",
+    "type": "image",
+    "status": "available",
+    "title": "",
+    "title_zh": "Ibiden IC 封装载板",
+    "url": "https://www.ibiden.com/product/items/20221025PKG.png",
+    "platform": "web",
+    "owner": "Ibiden",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "半导体"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "Ibiden",
+      "IC载板"
+    ],
+    "windows": [],
+    "used_in": [
+      {
+        "project": "caspa-ai-profit",
+        "file": "public/caspa-ai-profit/img/ibiden.png",
+        "date": "2026-10-27"
+      }
+    ],
+    "notes": "",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27",
+    "thumb": "thumbs/img-ibiden-substrate.jpg"
+  },
+  {
+    "id": "img-micron-hbm4",
+    "type": "image",
+    "status": "available",
+    "title": "",
+    "title_zh": "美光 HBM4 产品图（黑底）",
+    "url": "https://assets.micron.com/adobe/assets/urn:aaid:aem:41b03aac-62d2-4a2e-b43d-d6f0f2985d5f/renditions/original/as/product-hbm4-front-black.jpg",
+    "platform": "web",
+    "owner": "Micron",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "半导体"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "Micron",
+      "HBM"
+    ],
+    "windows": [],
+    "used_in": [
+      {
+        "project": "caspa-ai-profit",
+        "file": "public/caspa-ai-profit/img/micron-hbm4.jpg",
+        "date": "2026-10-27"
+      }
+    ],
+    "notes": "原链接现在直接请求拿不到普通图片格式（可能按浏览器返回 AVIF/WebP），需要时用浏览器打开另存",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27",
+    "thumb": "thumbs/img-micron-hbm4.jpg"
+  },
+  {
+    "id": "img-nvidia-blackwell",
+    "type": "image",
+    "status": "available",
+    "title": "",
+    "title_zh": "NVIDIA Blackwell 架构主视觉",
+    "url": "https://www.nvidia.com/content/nvidiaGDC/us/en_US/data-center/technologies/blackwell-architecture/_jcr_content/root/responsivegrid/nv_container_1393594/nv_container_669298976/nv_image_copy.coreimg.jpeg/1766023106997/blackwell-architecture-ari-1920x1080.jpeg",
+    "platform": "web",
+    "owner": "NVIDIA",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "半导体"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "NVIDIA",
+      "Blackwell"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27",
+    "thumb": "thumbs/img-nvidia-blackwell.jpg"
+  },
+  {
+    "id": "img-nvidia-nvl72",
+    "type": "image",
+    "status": "available",
+    "title": "",
+    "title_zh": "NVIDIA GB200 NVL72 机柜官方图",
+    "url": "https://www.nvidia.com/content/nvidiaGDC/us/en_US/data-center/technologies/blackwell-architecture/_jcr_content/root/responsivegrid/nv_container_1760748008/nv_container/nv_teaser_copy_copy__673972376.coreimg.jpeg/1766023108566/nvidia-gb200-nvl72-ari-2.jpeg",
+    "platform": "web",
+    "owner": "NVIDIA",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "半导体",
+      "数据中心"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "NVIDIA",
+      "NVL72",
+      "Blackwell"
+    ],
+    "windows": [],
+    "used_in": [
+      {
+        "project": "caspa-ai-profit",
+        "file": "public/caspa-ai-profit/img/nvl72.jpg",
+        "date": "2026-10-27"
+      }
+    ],
+    "notes": "",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27",
+    "thumb": "thumbs/img-nvidia-nvl72.jpg"
+  },
+  {
+    "id": "img-skhynix-hbm4",
+    "type": "image",
+    "status": "available",
+    "title": "",
+    "title_zh": "SK 海力士 HBM4 官方图",
+    "url": "https://d18r0a86za96sg.cloudfront.net/wp-content/uploads/2026/06/16105007/SK-hynix_SK-hynix-Completes-Worlds-First-HBM4-Development-and-Readies-Mass-Production_01-scaled-1.jpg",
+    "platform": "web",
+    "owner": "SK hynix",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "半导体"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "SK hynix",
+      "HBM"
+    ],
+    "windows": [],
+    "used_in": [
+      {
+        "project": "caspa-ai-profit",
+        "file": "public/caspa-ai-profit/img/skhynix-hbm4.jpg",
+        "date": "2026-10-27"
+      }
+    ],
+    "notes": "",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27",
+    "thumb": "thumbs/img-skhynix-hbm4.jpg"
+  },
+  {
+    "id": "yt-3Qw_CZkiQQg",
+    "type": "video",
+    "status": "available",
+    "title": "Google TPU 8t and TPU 8i: Purpose-built for the Agentic Era",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=3Qw_CZkiQQg",
+    "platform": "youtube",
+    "owner": "Google Cloud",
+    "official": true,
+    "license": "official-press",
+    "published": "2026-04-22",
+    "duration": 164,
+    "domain": [
+      "半导体",
+      "AI",
+      "云计算"
+    ],
+    "shot": [
+      "产品特写",
+      "机房内景"
+    ],
+    "tags": [
+      "Google",
+      "TPU"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Official Google Cloud, 2:44, published 2026-04-22. Newer than Ironwood: 8th-gen TPU 8t/8i, 9,600-chip superpod. Mostly presenter plus system graphics. No chapters, so chip/pod shot windows are unknown.",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27",
+    "thumb": "thumbs/yt-3Qw_CZkiQQg.jpg"
+  },
+  {
+    "id": "yt-4jKOBhlXRv8",
+    "type": "video",
+    "status": "available",
+    "title": "AWS Trainium2-powered Amazon EC2 Trn2 Instances and Trn2 UltraServers",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=4jKOBhlXRv8",
+    "platform": "youtube",
+    "owner": "Amazon Web Services",
+    "official": true,
+    "license": "official-press",
+    "published": "2024-12-03",
+    "duration": 43,
+    "domain": [
+      "半导体",
+      "AI",
+      "云计算"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "AWS",
+      "Trainium"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 43,
+        "desc": "chips, servers, cluster",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Official AWS channel, 43s, 2024-12-03. Transcript covers Trainium2 chips in servers, NeuronLink, and hyperscale clusters. Whole clip is the B-roll. A longer AWS Events session is https://www.youtube.com/watch?v=omi9HMQGPdA (mostly slides; demo chapter 11:15).",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27",
+    "thumb": "thumbs/yt-4jKOBhlXRv8.jpg"
+  },
+  {
+    "id": "yt-4Lr7njbHChk",
+    "type": "video",
+    "status": "available",
+    "title": "CoreWeave AI Data Centers: Closed-Loop Cooling at Scale",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=4Lr7njbHChk",
+    "platform": "youtube",
+    "owner": "CoreWeave",
+    "official": true,
+    "license": "official-press",
+    "published": "2026-05-12",
+    "duration": 89,
+    "domain": [
+      "数据中心",
+      "云计算",
+      "AI"
+    ],
+    "shot": [
+      "机房内景"
+    ],
+    "tags": [
+      "CoreWeave",
+      "NVL72"
+    ],
+    "windows": [
+      {
+        "start": 24,
+        "end": 44,
+        "desc": "closed-loop and direct-to-chip cooling",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Official CoreWeave, 1:29, 2026-05-12. A top comment calls it an AI video, so treat the imagery as marketing and confirm it is live footage before using it as documentary B-roll. Same film reuploaded 2026-09-28: https://www.youtube.com/watch?v=16stFW1DAR8. Cooling lines are from the published transcript, not chapters.",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27",
+    "thumb": "thumbs/yt-4Lr7njbHChk.jpg"
+  },
+  {
+    "id": "yt-4y3pMGIS6DU",
+    "type": "video",
+    "status": "available",
+    "title": "AWS Trainium3-Powered Amazon EC2 Trn3 UltraServers",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=4y3pMGIS6DU",
+    "platform": "youtube",
+    "owner": "Amazon Web Services",
+    "official": true,
+    "license": "official-press",
+    "published": "2025-12-02",
+    "duration": 46,
+    "domain": [
+      "半导体",
+      "AI",
+      "云计算"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "AWS",
+      "Trainium"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 46,
+        "desc": "chip and UltraServer",
+        "source": "grok"
+      },
+      {
+        "start": 11,
+        "end": 22,
+        "desc": "Trainium3 芯片与服务器",
+        "source": "used"
+      }
+    ],
+    "used_in": [
+      {
+        "project": "caspa-ai-profit",
+        "start": 11,
+        "end": 22,
+        "file": "public/caspa-ai-profit/video/aws-trn3.mp4",
+        "date": "2026-10-27"
+      }
+    ],
+    "notes": "Official AWS channel, 46s, 2025-12-02. Transcript walks Trainium3 (first 3nm AWS AI chip) and NeuronSwitch. Whole clip is the B-roll.",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27",
+    "thumb": "thumbs/yt-4y3pMGIS6DU.jpg"
+  },
+  {
+    "id": "yt-8JiyJejo-e0",
+    "type": "video",
+    "status": "available",
+    "title": "Inside SK Hynix: We Went To Korea To See The World's Biggest AI Memory Buildout",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=8JiyJejo-e0",
+    "platform": "youtube",
+    "owner": "CNBC",
+    "official": true,
+    "license": "official-press",
+    "published": "2026-08-13",
+    "duration": 1362,
+    "domain": [
+      "半导体"
+    ],
+    "shot": [
+      "生产制造",
+      "建设施工"
+    ],
+    "tags": [
+      "晶圆厂",
+      "SK hynix",
+      "HBM"
+    ],
+    "windows": [
+      {
+        "start": 129,
+        "end": 503,
+        "desc": "Yongin fab buildout",
+        "source": "grok"
+      },
+      {
+        "start": 503,
+        "end": 763,
+        "desc": "HBM cleanroom",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "CNBC, 22:42, 2026-08-13. Chapters: 00:00 intro, 02:09 chip bet / construction, 08:23 Making HBM, 12:43 boom and bust, 17:42 Indiana. Description says cleanroom where HBM is made and the Yongin fab under construction. A 2:04 CNBC Short is https://www.youtube.com/shorts/CppXRuZEO1w. SK hynix's own Yongin investment film is https://www.youtube.com/watch?v=oMGAC_7vm1Q (1:20; live-site vs graphic unknown).",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-9i1ZM0dPyRo",
+    "type": "video",
+    "status": "available",
+    "title": "Introducing 7th Generation TPUs: Ironwood",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=9i1ZM0dPyRo",
+    "platform": "youtube",
+    "owner": "Google Cloud",
+    "official": true,
+    "license": "official-press",
+    "published": "2025-04-09",
+    "duration": 86,
+    "domain": [
+      "半导体",
+      "AI",
+      "云计算"
+    ],
+    "shot": [
+      "产品特写",
+      "机房内景"
+    ],
+    "tags": [
+      "Google",
+      "TPU"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Official Google Cloud, 1:26, published 2025-04-09. Product film: TPU history then Ironwood, 9,000-plus chips per pod, HBM, liquid-cooled scale. A 30s cut is https://www.youtube.com/watch?v=ujfLbyS4MXM. No chapters.",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27",
+    "thumb": "thumbs/yt-9i1ZM0dPyRo.jpg"
+  },
+  {
+    "id": "yt-AJH8B1DIkKI",
+    "type": "video",
+    "status": "available",
+    "title": "How Dell Technologies Is Building the Engines of AI Factories With NVIDIA Blackwell",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=AJH8B1DIkKI",
+    "platform": "youtube",
+    "owner": "NVIDIA",
+    "official": true,
+    "license": "official-press",
+    "published": "2025-05-27",
+    "duration": 55,
+    "domain": [
+      "半导体",
+      "AI",
+      "数据中心"
+    ],
+    "shot": [
+      "生产制造",
+      "产品特写"
+    ],
+    "tags": [
+      "NVIDIA",
+      "Blackwell",
+      "NVL72"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 55,
+        "desc": "server assembly",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Official NVIDIA upload, 55s. Tags include NVIDIA GB200 NVL72. Description is an inside look at Dell assembling Blackwell AI-factory servers. Whole clip is the B-roll.",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27",
+    "thumb": "thumbs/yt-AJH8B1DIkKI.jpg"
+  },
+  {
+    "id": "yt-aqPKWdS3mMI",
+    "type": "video",
+    "status": "available",
+    "title": "Inside Samsung's Pyeongtaek Campus: Korea's Largest Semiconductor Manufacturing Hub",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=aqPKWdS3mMI",
+    "platform": "youtube",
+    "owner": "Samsung Semiconductor Newsroom",
+    "official": true,
+    "license": "official-press",
+    "published": "2026-06-19",
+    "duration": 179,
+    "domain": [
+      "半导体"
+    ],
+    "shot": [
+      "生产制造",
+      "建设施工"
+    ],
+    "tags": [
+      "晶圆厂",
+      "Samsung"
+    ],
+    "windows": [
+      {
+        "start": 20,
+        "end": 123,
+        "desc": "fabs P1-P4",
+        "source": "grok"
+      },
+      {
+        "start": 123,
+        "end": 144,
+        "desc": "P5 construction",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Official Samsung Semiconductor, 2:59, 2026-06-19. Campus and fab exteriors plus the P5 construction site. Packaging-campus companion: https://www.youtube.com/watch?v=jRmfFA8R7Z4 (Cheonan and Onyang, 3:07). Older inside-factory clip: https://www.youtube.com/watch?v=xsQZlHcT91w.",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-coPKHrE2ATI",
+    "type": "video",
+    "status": "available",
+    "title": "Google Cloud unboxes seventh generation Ironwood TPU",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=coPKHrE2ATI",
+    "platform": "youtube",
+    "owner": "Google Cloud",
+    "official": true,
+    "license": "official-press",
+    "published": "2025-11-06",
+    "duration": 116,
+    "domain": [
+      "半导体",
+      "AI",
+      "云计算"
+    ],
+    "shot": [
+      "产品特写",
+      "机房内景"
+    ],
+    "tags": [
+      "Google",
+      "TPU"
+    ],
+    "windows": [
+      {
+        "start": 25,
+        "end": 68,
+        "desc": "Ironwood TPU overview",
+        "source": "grok"
+      },
+      {
+        "start": 68,
+        "end": 104,
+        "desc": "AI hypercomputer",
+        "source": "grok"
+      },
+      {
+        "start": 0,
+        "end": 18,
+        "desc": "TPU 机柜（底部有英文字幕，需放大 1.22 倍裁掉）",
+        "source": "used"
+      },
+      {
+        "start": 33,
+        "end": 62,
+        "desc": "Ironwood TPU 介绍（底部有英文字幕，需放大 1.22 倍裁掉）",
+        "source": "used"
+      }
+    ],
+    "used_in": [
+      {
+        "project": "caspa-ai-profit",
+        "start": 0,
+        "end": 18,
+        "file": "public/caspa-ai-profit/video/goog-racks.mp4",
+        "date": "2026-10-27"
+      },
+      {
+        "project": "caspa-ai-profit",
+        "start": 33,
+        "end": 62,
+        "file": "public/caspa-ai-profit/video/goog-ironwood.mp4",
+        "date": "2026-10-27"
+      }
+    ],
+    "notes": "Official Google Cloud, 1:56. Amin Vahdat unboxes the 7th-gen Ironwood TPU. Chapters: 00:00 intro, 00:25 Ironwood overview, 01:08 AI hypercomputer, 01:44 cloud availability.",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27",
+    "thumb": "thumbs/yt-coPKHrE2ATI.jpg"
+  },
+  {
+    "id": "yt-f6D_aiy8qyU",
+    "type": "video",
+    "status": "available",
+    "title": "Why Hardware-Software Co-Design Is AI's Real 100x: Dylan Patel of SemiAnalysis",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=f6D_aiy8qyU",
+    "platform": "youtube",
+    "owner": "Sequoia Capital",
+    "official": false,
+    "license": "youtube-standard",
+    "published": "2026-06-30",
+    "duration": 4215,
+    "domain": [
+      "半导体",
+      "金融市场"
+    ],
+    "shot": [
+      "人物采访"
+    ],
+    "tags": [
+      "Dylan Patel",
+      "SemiAnalysis"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 118,
+        "desc": "introduction, face on camera",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Reputable Sequoia interview, 1:10:15. Chapter 00:00 Introduction then 01:58 Motel Kid Origins. Use the open for a Dylan name card. Not a SemiAnalysis or CNBC channel.",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27",
+    "thumb": "thumbs/yt-f6D_aiy8qyU.jpg"
+  },
+  {
+    "id": "yt-g7vskHVx0Xo",
+    "type": "video",
+    "status": "available",
+    "title": "Unboxing and testing AWS Trainium3 for the first time",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=g7vskHVx0Xo",
+    "platform": "youtube",
+    "owner": "Amazon News",
+    "official": true,
+    "license": "official-press",
+    "published": "2025-12-02",
+    "duration": 222,
+    "domain": [
+      "半导体",
+      "AI",
+      "云计算"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "AWS",
+      "Trainium"
+    ],
+    "windows": [
+      {
+        "start": 63,
+        "end": 101,
+        "desc": "hardware validation",
+        "source": "grok"
+      },
+      {
+        "start": 101,
+        "end": 135,
+        "desc": "assembly",
+        "source": "grok"
+      },
+      {
+        "start": 135,
+        "end": 169,
+        "desc": "power-on",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Official Amazon News, 3:42. Annapurna Labs Austin bring-up of the first physical Trainium3 chip. Chapters: 00:00 bring-up, 00:33 design, 01:03 validation, 01:41 assembly, 02:15 power-on, 02:49 reflection.",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-Hs2yXBlEIWs",
+    "type": "video",
+    "status": "available",
+    "title": "NVIDIA GB200 NVL72 | ASUS AI POD",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=Hs2yXBlEIWs",
+    "platform": "youtube",
+    "owner": "ASUS",
+    "official": true,
+    "license": "official-press",
+    "published": "2024-11-15",
+    "duration": 77,
+    "domain": [
+      "半导体",
+      "AI",
+      "数据中心"
+    ],
+    "shot": [
+      "生产制造",
+      "产品特写"
+    ],
+    "tags": [
+      "NVIDIA",
+      "Blackwell",
+      "NVL72"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 77,
+        "desc": "rack product film",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Official ASUS channel, 1:17. Product film of the ASUS AI POD with NVIDIA GB200 NVL72. No chapter breakdown of a specific close-up.",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-kOWN8ybCsRY",
+    "type": "video",
+    "status": "available",
+    "title": "CoreWeave Unleashes the Power of the NVIDIA GB200 NVL72",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=kOWN8ybCsRY",
+    "platform": "youtube",
+    "owner": "CoreWeave",
+    "official": true,
+    "license": "official-press",
+    "published": "2024-11-27",
+    "duration": 199,
+    "domain": [
+      "数据中心",
+      "云计算",
+      "AI"
+    ],
+    "shot": [
+      "机房内景"
+    ],
+    "tags": [
+      "CoreWeave",
+      "NVL72"
+    ],
+    "windows": [
+      {
+        "start": 9.5,
+        "end": 13.6,
+        "desc": "GB200 NVL72 机柜（与 19.8-24 拼接）",
+        "source": "used"
+      },
+      {
+        "start": 19.8,
+        "end": 24,
+        "desc": "GB200 NVL72 机柜（与 9.5-13.6 拼接）",
+        "source": "used"
+      }
+    ],
+    "used_in": [
+      {
+        "project": "caspa-ai-profit",
+        "start": 9.5,
+        "end": 13.6,
+        "file": "public/caspa-ai-profit/video/cw-nvl72.mp4",
+        "date": "2026-10-27"
+      },
+      {
+        "project": "caspa-ai-profit",
+        "start": 19.8,
+        "end": 24,
+        "file": "public/caspa-ai-profit/video/cw-nvl72.mp4",
+        "date": "2026-10-27"
+      }
+    ],
+    "notes": "Official CoreWeave, 3:19, 2024-11-27. Real people inside a Switch data center with a live GB200 NVL72, then the in-rack CDU and power dashboard. Transcript confirms rack, liquid cooling, and power monitoring, but shot changes are not timed. No CoreWeave construction-site video was found.",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-kS8r7UcexJU",
+    "type": "video",
+    "status": "available",
+    "title": "Dive Into NVIDIA Co-Packaged Optics-Based Switches",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=kS8r7UcexJU",
+    "platform": "youtube",
+    "owner": "NVIDIA",
+    "official": true,
+    "license": "official-press",
+    "published": "2025-03-18",
+    "duration": 93,
+    "domain": [
+      "半导体",
+      "通信"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "NVIDIA",
+      "CPO"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 93,
+        "desc": "CPO switches",
+        "source": "grok"
+      },
+      {
+        "start": 77,
+        "end": 89,
+        "desc": "CPO 交换机",
+        "source": "used"
+      }
+    ],
+    "used_in": [
+      {
+        "project": "caspa-ai-profit",
+        "start": 77,
+        "end": 89,
+        "file": "public/caspa-ai-profit/video/nv-cpo.mp4",
+        "date": "2026-10-27"
+      }
+    ],
+    "notes": "Official NVIDIA, 1:33, GTC 2025. CPO / silicon-photonics switch B-roll. Broadcom official alternatives: https://www.youtube.com/watch?v=IxGQpfg8U5U and demo https://www.youtube.com/watch?v=tFo00ZY5ZSI.",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-KTG-sYZTf0k",
+    "type": "video",
+    "status": "available",
+    "title": "2025 OCP APAC Summit Keynote - TSMC",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=KTG-sYZTf0k",
+    "platform": "youtube",
+    "owner": "Open Compute Project",
+    "official": false,
+    "license": "youtube-standard",
+    "published": "2025-08-12",
+    "duration": 766,
+    "domain": [
+      "半导体",
+      "通信"
+    ],
+    "shot": [
+      "会议演讲"
+    ],
+    "tags": [
+      "TSMC",
+      "CoWoS",
+      "CPO"
+    ],
+    "windows": [
+      {
+        "start": 154,
+        "end": 351,
+        "desc": "CoWoS roadmap",
+        "source": "grok"
+      },
+      {
+        "start": 351,
+        "end": 487,
+        "desc": "COUPE photonic engine",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "TSMC speaker Shang Y. Hou on CoWoS and co-packaged optics (COUPE). Chapters confirm those windows. This is a slide talk, not fab-floor footage. OCP channel, not TSMC's own channel. Extra found factory floor: Amkor official cleanroom https://www.youtube.com/watch?v=hR5orrmpoeE chapters 00:13 wafer prep, 01:17 reconstitution, 02:02 RDL.",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-l4Df09g-Xlc",
+    "type": "video",
+    "status": "available",
+    "title": "Google Data Centers: Building for Everyone",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=l4Df09g-Xlc",
+    "platform": "youtube",
+    "owner": "Google",
+    "official": true,
+    "license": "official-press",
+    "published": "2025-02-25",
+    "duration": 191,
+    "domain": [
+      "数据中心",
+      "能源电力"
+    ],
+    "shot": [
+      "建设施工",
+      "机房内景"
+    ],
+    "tags": [
+      "电力",
+      "数据中心",
+      "Google"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Official Google channel, 3:11, 2025-02-25. Data-center operations and build story (fiber, racks, vertical Singapore site, local construction vendors). More people and campus than a substation close-up. No chapters.",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-l6o7VH8lJk4",
+    "type": "video",
+    "status": "available",
+    "title": "ID1 behind the scenes: What it takes to build a semiconductor cleanroom | Micron Technology",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=l6o7VH8lJk4",
+    "platform": "youtube",
+    "owner": "Micron Technology",
+    "official": true,
+    "license": "official-press",
+    "published": "2026-07-22",
+    "duration": 169,
+    "domain": [
+      "半导体"
+    ],
+    "shot": [
+      "生产制造"
+    ],
+    "tags": [
+      "Micron",
+      "晶圆厂"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 41,
+        "desc": "存储晶圆厂内景",
+        "source": "used"
+      }
+    ],
+    "used_in": [
+      {
+        "project": "caspa-ai-profit",
+        "start": 0,
+        "end": 41,
+        "file": "public/caspa-ai-profit/video/micron-fab.mp4",
+        "date": "2026-10-27"
+      }
+    ],
+    "notes": "caspa-ai-profit 实际使用",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-lOGipTP0Kqc",
+    "type": "video",
+    "status": "available",
+    "title": "3.3TB in one Second? Samsung HBM4 Explained by the Numbers",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=lOGipTP0Kqc",
+    "platform": "youtube",
+    "owner": "Samsung Semiconductor Newsroom",
+    "official": true,
+    "license": "official-press",
+    "published": "2026-03-12",
+    "duration": 93,
+    "domain": [
+      "半导体"
+    ],
+    "shot": [
+      "产品特写",
+      "动画演示"
+    ],
+    "tags": [
+      "HBM",
+      "Samsung"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 14,
+        "desc": "HBM4 by the numbers",
+        "source": "grok"
+      },
+      {
+        "start": 14,
+        "end": 48,
+        "desc": "die stack and TSV",
+        "source": "grok"
+      },
+      {
+        "start": 48,
+        "end": 83,
+        "desc": "pins, speed, thermals",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Official Samsung Semiconductor, 1:33, 2026-03-12. Spec motion-graphic of HBM4 (2048 I/O, 12-high, 4nm base die), not a cleanroom or loose-die macro. Chapters listed in the description.",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-MkMQj-Q0bBo",
+    "type": "video",
+    "status": "available",
+    "title": "The AI Data Center Behind CoreWeave: The Essential Cloud for AI",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=MkMQj-Q0bBo",
+    "platform": "youtube",
+    "owner": "CoreWeave",
+    "official": true,
+    "license": "official-press",
+    "published": "2026-02-20",
+    "duration": 108,
+    "domain": [
+      "数据中心",
+      "云计算",
+      "AI"
+    ],
+    "shot": [
+      "机房内景"
+    ],
+    "tags": [
+      "CoreWeave",
+      "数据中心"
+    ],
+    "windows": [
+      {
+        "start": 44,
+        "end": 62,
+        "desc": "数据中心机柜通道",
+        "source": "used"
+      },
+      {
+        "start": 26,
+        "end": 62,
+        "desc": "数据中心内景",
+        "source": "used"
+      }
+    ],
+    "used_in": [
+      {
+        "project": "caspa-ai-profit",
+        "start": 44,
+        "end": 62,
+        "file": "public/caspa-ai-profit/video/cw-aisle.mp4",
+        "date": "2026-10-27"
+      },
+      {
+        "project": "caspa-ai-profit",
+        "start": 26,
+        "end": 62,
+        "file": "public/caspa-ai-profit/video/cw-dc.mp4",
+        "date": "2026-10-27"
+      }
+    ],
+    "notes": "caspa-ai-profit 实际使用",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-nJKz9eRrbUw",
+    "type": "video",
+    "status": "available",
+    "title": "Inside memory manufacturing: a 360° tour of a semiconductor fab",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=nJKz9eRrbUw",
+    "platform": "youtube",
+    "owner": "Micron Technology",
+    "official": true,
+    "license": "official-press",
+    "published": "2026-07-22",
+    "duration": 279,
+    "domain": [
+      "半导体"
+    ],
+    "shot": [
+      "生产制造",
+      "建设施工"
+    ],
+    "tags": [
+      "晶圆厂",
+      "Micron"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Official Micron, 4:39, 2026-07-22. 360 cleanroom tour: AMHS, photolithography, diffusion, dry etch. No chapters. Related official construction clips: NY concrete pour https://www.youtube.com/watch?v=46YA2fIS3tY and Idaho cleanroom build https://www.youtube.com/watch?v=l6o7VH8lJk4.",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-NLLji_Sf3Xs",
+    "type": "video",
+    "status": "available",
+    "title": "Inside the Power System Behind AI | Behind the Build Ep. 5: Power Demand",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=NLLji_Sf3Xs",
+    "platform": "youtube",
+    "owner": "Applied Digital",
+    "official": true,
+    "license": "official-press",
+    "published": "2026-09-09",
+    "duration": 713,
+    "domain": [
+      "数据中心",
+      "能源电力"
+    ],
+    "shot": [
+      "建设施工",
+      "机房内景"
+    ],
+    "tags": [
+      "电力",
+      "数据中心",
+      "Applied Digital"
+    ],
+    "windows": [
+      {
+        "start": 76,
+        "end": 144,
+        "desc": "commissioning",
+        "source": "grok"
+      },
+      {
+        "start": 315,
+        "end": 565,
+        "desc": "infrastructure tour (switchgear, UPS, distribution)",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Official Applied Digital, 11:53, 2026-09-09. Polaris Forge 2, Harwood, North Dakota. Chapters: 00:00 power demand, 01:16 commissioning, 02:24 modular design, 04:09 ABB partnership, 05:15 infrastructure tour, 09:25 future-proofing. Medium-voltage gear, UPS, batteries, and hall distribution.",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-pgVHZoZlJjw",
+    "type": "video",
+    "status": "available",
+    "title": "Meet CoreWeave's first NVIDIA Vera Rubin NVL72 rack",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=pgVHZoZlJjw",
+    "platform": "youtube",
+    "owner": "CoreWeave",
+    "official": true,
+    "license": "official-press",
+    "published": "2026-09-21",
+    "duration": 32,
+    "domain": [
+      "数据中心",
+      "云计算",
+      "AI"
+    ],
+    "shot": [
+      "机房内景"
+    ],
+    "tags": [
+      "CoreWeave",
+      "NVL72"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 32,
+        "desc": "rack inside the data center",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Official CoreWeave, 32s, 2026-09-21. Jacob Yundt walks a data-center rack. This is Vera Rubin NVL72, not GB200. Whole clip is the B-roll. Facility overview film: https://www.youtube.com/watch?v=MkMQj-Q0bBo (1:48).",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-TfW5pWpsHAo",
+    "type": "video",
+    "status": "available",
+    "title": "Inside Google's AI data centers",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=TfW5pWpsHAo",
+    "platform": "youtube",
+    "owner": "ABC News",
+    "official": true,
+    "license": "official-press",
+    "published": "2026-06-19",
+    "duration": 337,
+    "domain": [
+      "数据中心",
+      "能源电力"
+    ],
+    "shot": [
+      "建设施工",
+      "机房内景"
+    ],
+    "tags": [
+      "电力",
+      "数据中心",
+      "Google"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "ABC News, 5:37, 2026-06-19. On-site report from a Google AI campus: active construction expansion and the site's own power substation. No chapters, so those shots are untimed. Reputable news, not Google's channel.",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-xz-uLRfkrj8",
+    "type": "video",
+    "status": "available",
+    "title": "SK hynix’s HBM4 Shines at TSMC 2025 Technology Symposium",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=xz-uLRfkrj8",
+    "platform": "youtube",
+    "owner": "SK하이닉스 [SK hynix]",
+    "official": true,
+    "license": "official-press",
+    "published": "2025-05-02",
+    "duration": 70,
+    "domain": [
+      "半导体"
+    ],
+    "shot": [
+      "产品特写",
+      "动画演示"
+    ],
+    "tags": [
+      "HBM",
+      "SK hynix",
+      "TSMC"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Official SK hynix, 1:10. Booth film of 12-layer HBM4 at TSMC's 2025 North America Technology Symposium, plus a Blackwell GPU with HBM3E. No chapters, so the module close-up is unknown. A later booth film is https://www.youtube.com/watch?v=Zu9JfquSpLo (SC25, 2:04).",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-YE6IVKcpb9c",
+    "type": "video",
+    "status": "unavailable",
+    "title": "Semiconductor Industry Outlook Panel | CASPA 2026 CEO Summit",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=YE6IVKcpb9c",
+    "platform": "youtube",
+    "owner": "CASPA",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "半导体",
+      "金融市场"
+    ],
+    "shot": [
+      "会议演讲"
+    ],
+    "tags": [
+      "CASPA",
+      "Dylan Patel",
+      "Stacy Rasgon"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Official CASPA channel, 42:55, published 2026-10-24. Full Oct 23-24 2026 Santa Clara panel: Stacy Rasgon (Bernstein), Dylan Patel (SemiAnalysis), moderated by Austin Lyons. Opening welcome is in the transcript, but no chapters or timed transcript for a name-card window.",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "status_reason": "Private video",
+    "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-yQtLzFt4tQQ",
+    "type": "video",
+    "status": "available",
+    "title": "Micron CEO Sanjay Mehrotra showcases next-gen chip to support larger AI models",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=yQtLzFt4tQQ",
+    "platform": "youtube",
+    "owner": "CNBC Television",
+    "official": true,
+    "license": "official-press",
+    "published": "2025-06-26",
+    "duration": 101,
+    "domain": [
+      "半导体"
+    ],
+    "shot": [
+      "人物采访",
+      "产品特写"
+    ],
+    "tags": [
+      "HBM",
+      "Micron"
+    ],
+    "windows": [
+      {
+        "start": 6,
+        "end": 37,
+        "desc": "HBM4 held between fingers",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "CNBC Television, 1:41, 2025-06-26. Chapters: 00:00 intro, 00:06 showcasing HBM4, 00:37 production and qualification, 01:11 revenue. No Micron-channel HBM4 video was found. Micron's own older HBM3E spot is https://www.youtube.com/watch?v=bzwPZD1w7UY.",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-YsiccpVKUIs",
+    "type": "video",
+    "status": "available",
+    "title": "Building the Blackwell NVL72: Millions of Parts, One AI Superchip",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=YsiccpVKUIs",
+    "platform": "youtube",
+    "owner": "NVIDIA",
+    "official": true,
+    "license": "official-press",
+    "published": "2025-06-11",
+    "duration": 227,
+    "domain": [
+      "半导体",
+      "AI",
+      "数据中心"
+    ],
+    "shot": [
+      "生产制造",
+      "产品特写"
+    ],
+    "tags": [
+      "NVIDIA",
+      "Blackwell",
+      "NVL72",
+      "CoWoS"
+    ],
+    "windows": [
+      {
+        "start": 205,
+        "end": 226,
+        "desc": "NVL72 整机柜装配完成、机柜全景",
+        "source": "used"
+      },
+      {
+        "start": 28,
+        "end": 56,
+        "desc": "Blackwell 芯片与 HBM 封装（CoWoS）",
+        "source": "used"
+      },
+      {
+        "start": 113,
+        "end": 131,
+        "desc": "GB200 计算托盘装配",
+        "source": "used"
+      }
+    ],
+    "used_in": [
+      {
+        "project": "caspa-ai-profit",
+        "start": 205,
+        "end": 226,
+        "file": "public/caspa-ai-profit/video/nv-rack.mp4",
+        "date": "2026-10-27"
+      },
+      {
+        "project": "caspa-ai-profit",
+        "start": 28,
+        "end": 56,
+        "file": "public/caspa-ai-profit/video/nv-cowos.mp4",
+        "date": "2026-10-27"
+      },
+      {
+        "project": "caspa-ai-profit",
+        "start": 113,
+        "end": 131,
+        "file": "public/caspa-ai-profit/video/nv-tray.mp4",
+        "date": "2026-10-27"
+      }
+    ],
+    "notes": "Official NVIDIA film, 3:47. Transcript describes wafer scribe, chip-on-wafer-on-substrate attach of Blackwell dies and HBM, GB200 compute trays, NVLink switch trays, copper backplane, and final rack assembly. No chapters or timed transcript, so the rack close-up window is unknown.",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-zWNa3HX45aQ",
+    "type": "video",
+    "status": "available",
+    "title": "AI demand is off the charts, says Bernstein's Stacy Rasgon",
+    "title_zh": "",
+    "url": "https://www.youtube.com/watch?v=zWNa3HX45aQ",
+    "platform": "youtube",
+    "owner": "CNBC Television",
+    "official": true,
+    "license": "official-press",
+    "published": "2025-12-18",
+    "duration": 213,
+    "domain": [
+      "半导体",
+      "金融市场"
+    ],
+    "shot": [
+      "人物采访"
+    ],
+    "tags": [
+      "Stacy Rasgon",
+      "Bernstein",
+      "HBM"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 213,
+        "desc": "on-camera interview",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "CNBC Television, 3:33, 2025-12-18. Stacy Rasgon on Power Lunch on AI demand and HBM. A second CNBC hit is https://www.youtube.com/watch?v=gpMUS29z_AI (2025-03-28, 3:35). July 9 2026 CNBC page, not a youtube.com URL: https://www.cnbc.com/video/2026/07/09/watch-cnbcs-full-interview-with-bernsteins-stacy-rasgon.html",
+    "found_for": [
+      "caspa-ai-profit"
+    ],
+    "added": "2026-10-27",
+    "verified": "2026-10-27"
+  }
+]
