@@ -3,19 +3,36 @@ dist
 .DS_Store
 .env
 
-# Ignore the output video from Git but not videos you import into src/.
+# 渲染输出、临时文件
 out
 
-# 素材文件只留在本地，仓库只放代码、工具和文档
-# public/：视频片段、图片、字体、配音、配乐、数字人结果等（只保留常用素材库的说明）
-public/*
-!public/library/
-public/library/*
-!public/library/README.md
-# 音色试听样本、从腾讯文档拉下来的视频脚本和图片
-voice-library/**/*.mp3
-scripts/
+# 素材和每期的内容只留在本地，仓库只放代码、工具、规范和模板
+# 第 1 步：每期的视频稿、封面（保留说明、平台规范、模板）
+1-视频稿/*
+!1-视频稿/AGENTS.md
+!1-视频稿/CLAUDE.md
+!1-视频稿/package.json
+!1-视频稿/platforms/
+!1-视频稿/templates/
+!1-视频稿/consult/
+!1-视频稿/standards/
+# 第 2 步：每期的脚本和参考图（保留说明、模板）
+2-脚本/*
+!2-脚本/AGENTS.md
+!2-脚本/CLAUDE.md
+!2-脚本/package.json
+!2-脚本/templates/
+# 第 3 步：public/ 里的视频片段、图片、字体、配音、配乐、数字人结果等（只保留常用素材库的说明）
+3-视频生成/public/*
+!3-视频生成/public/library/
+3-视频生成/public/library/*
+!3-视频生成/public/library/README.md
+# 共享：音色试听样本
+shared/voice-library/**/*.mp3
 
 # 本机个人设置；.claude/skills 是指向 .agents/skills 的链接，不重复提交
 .claude/settings.local.json
 .claude/skills
+
+# 每期给 agy 的提问和回答记录会引用用户的稿件，只留本地
+1-视频稿/consult/记录/

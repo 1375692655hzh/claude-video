@@ -1,0 +1,10 @@
+{
+  "name": "step1-video-draft",
+  "private": true,
+  "description": "第 1 步：视频稿。没有依赖，只是给共享工具起短命令。",
+  "scripts": {
+    "fetch-doc": "node ../shared/tools/fetch-tencent-doc.mjs",
+    "image": "node ../shared/tools/gen-image-qwen.mjs",
+    "consult": "node ../shared/tools/consult-agy.mjs"
+  }
+}

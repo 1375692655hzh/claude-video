@@ -1,0 +1,48 @@
+{
+  "name": "claude-video",
+  "version": "1.0.0",
+  "description": "My Remotion video",
+  "repository": {},
+  "license": "UNLICENSED",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  },
+  "private": true,
+  "dependencies": {
+    "@remotion/cli": "4.0.538",
+    "@remotion/zod-types": "4.0.538",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.538",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.538",
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "eslint": "10.12.0",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion bundle",
+    "upgrade": "remotion upgrade",
+    "lint": "eslint src effects && tsc",
+    "typecheck": "tsc",
+    "browser:ensure": "remotion browser ensure",
+    "render": "remotion render",
+    "versions": "remotion versions",
+    "fetch-doc": "node ../shared/tools/fetch-tencent-doc.mjs",
+    "tts": "node ../shared/tools/tts-mimo.mjs",
+    "image": "node ../shared/tools/gen-image-qwen.mjs",
+    "assets": "node ../shared/tools/assets.mjs",
+    "host": "node tools/avatar-host.mjs",
+    "music": "node tools/music-minimax.mjs",
+    "test:sfx": "esbuild effects/_shared/sfx-rules.test.ts --bundle --platform=node --format=cjs --outfile=out/sfx-rules-test.cjs --log-level=warning && node out/sfx-rules-test.cjs",
+    "consult": "node ../shared/tools/consult-agy.mjs"
+  },
+  "allowScripts": {
+    "esbuild": false
+  }
+}
