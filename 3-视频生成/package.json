@@ -36,6 +36,7 @@
     "fetch-doc": "node ../shared/tools/fetch-tencent-doc.mjs",
     "tts": "node ../shared/tools/tts-mimo.mjs",
     "image": "node ../shared/tools/gen-image-qwen.mjs",
+    "image-codex": "node ../shared/tools/gen-image-codex.mjs",
     "assets": "node ../shared/tools/assets.mjs",
     "host": "node tools/avatar-host.mjs",
     "music": "node tools/music-minimax.mjs",

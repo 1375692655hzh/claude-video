@@ -5,6 +5,7 @@
   "scripts": {
     "fetch-doc": "node ../shared/tools/fetch-tencent-doc.mjs",
     "image": "node ../shared/tools/gen-image-qwen.mjs",
+    "image-codex": "node ../shared/tools/gen-image-codex.mjs",
     "consult": "node ../shared/tools/consult-agy.mjs"
   }
 }

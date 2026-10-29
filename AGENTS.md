@@ -1,11 +1,13 @@
 # AGENTS.md（工作流总说明）
 
-中文财经科技 YouTube 频道「Andy港美观察」（主持人 Andy，港美股投资 10 年以上）的视频生产工作流，分三步，
+英文财经 YouTube 频道「Andy's Market Lens」（英文频道；主持人 Andy，港美股投资 10 年以上）的视频生产工作流。
+**2026-10-29 起只发英文视频**：中文稿只作内部底稿（用户用中文审逻辑和事实），发布、配音、画面一律用英文稿。账号英文基础信息（频道名、Handle、频道简介）见 `1-视频稿/_人设/Andy人设.md`；那份文档其余内容是用户随手问 chatbot 得到的模拟方案，**不采用**。视频怎么写以 `1-视频稿/platforms/youtube-long-en.md` 为准。
+（原名「Andy港美观察」，中文频道；旧稿和 caspa-ai-profit 成片里的旧名不改。）工作流分三步，
 **每一步是一个独立文件夹**，用户会单独打开某个文件夹做那一步的任务。打开子文件夹时，这份总说明和该文件夹的 AGENTS.md 都会生效。
 
 | 步骤 | 文件夹 | 负责 | 交付 |
 |---|---|---|---|
-| 1 视频稿 | `1-视频稿/` | 选题/素材 → 初稿 → 爆款优化（Claude + agy）→ 去 AI 味 → **用户审核** → 发布包装（标题、封面、简介、置顶评论） | `<期名>/03-终稿.md`、`<期名>/04-发布包装-youtube.md` |
+| 1 视频稿 | `1-视频稿/` | 选题/素材 → 初稿 → 爆款优化（Claude + agy）→ 去 AI 味 → **用户审核** → 发布包装（标题、封面、简介、置顶评论） | `<期名>/03-终稿-en.md`（发布用；中文 `03-终稿.md` 是底稿）、`<期名>/04-发布包装-youtube-en.md` |
 | 2 脚本 | `2-脚本/` | 读懂视频稿和材料 → 定风格 → 分镜 → 找素材（素材库 + Grok）→ 页面与动画设计 | `<期名>/script.md`（或腾讯文档） |
 | 3 视频生成 | `3-视频生成/` | Remotion 项目：配音、下载素材片段、生图、数字人、配乐音效、动画、渲染 | `out/<期名>.mp4` |
 
@@ -25,22 +27,24 @@ shared/                  两步以上共用
     fetch-tencent-doc.mjs  腾讯文档 → Markdown（含图片）
     tts-mimo.mjs           MiMo 配音
     gen-image-qwen.mjs     qwen-image 生图
+    gen-image-codex.mjs    Codex CLI 生图（ChatGPT 账号，和 qwen 并列）
     assets.mjs             素材库工具（查 / 导入 / 核实 / 缩略图 / 按片段下载 / 回填）
     consult-agy.mjs        请 agy（Gemini 等）给第二意见，只读
 .agents/skills           项目级 skill（.claude/skills 指向它）：Remotion 系列、humanizer、humanizer-zh；清单在 skills-lock.json
 ```
 
-每个步骤文件夹都有 `package.json`，把共享工具映射成 `npm run fetch-doc / image / assets / tts / consult`；
+每个步骤文件夹都有 `package.json`，把共享工具映射成 `npm run fetch-doc / image / image-codex / assets / tts / consult`；
 第 1、2 步的 `package.json` 没有依赖，不需要 `npm install`。
 
 ## 交接约定
 
 - **期名**：同一期视频在三个文件夹里用同一个名字，格式 `YYYY-MM-<英文短名>`（如 `2026-11-ai-profit`）。
   第 1 步 `1-视频稿/<期名>/`，第 2 步 `2-脚本/<期名>/`，第 3 步 `3-视频生成/effects/<期名>/` 和 `public/<期名>/`。
-- **1 → 2**：用户审核通过的 `1-视频稿/<期名>/03-终稿.md`。口播文字只在第 1 步改；后面发现要改稿，回第 1 步改。
+- **1 → 2**：用户审核通过的 `1-视频稿/<期名>/03-终稿-en.md`（口播原文）；中文 `03-终稿.md` 供理解内容。口播文字只在第 1 步改（先改中文底稿，再同步英文稿）；后面发现要改稿，回第 1 步改。
 - **2 → 3**：用户确认过的 `2-脚本/<期名>/script.md`，写明风格、分镜、素材库 ID + 片段、动画设计、音效。
   第 2 步只找素材、不下载；第 3 步按片段下载。
 - 每一步做完、需要用户确认的地方要停下来等，不要一口气跑到底。
+- **信源**：口播和画面里只点名知名投行、知名研究机构、金融和企业界名人，或公司一手资料（财报、电话会）；海豚研究、长桥、华尔街见闻等不点名。细则见 `1-视频稿/AGENTS.md`「信源规则」。
 
 ## 提交规则
 
@@ -53,7 +57,7 @@ shared/                  两步以上共用
 - Windows 11，Node.js v24.15.0，npm 11.12.1，FFmpeg / FFprobe 8.1.2（winget，系统级）
 - 密钥（用户环境变量，用 `setx` 保存）：`TENCENT_DOCS_TOKEN`（腾讯文档）、`MIMO_API_KEY`（配音）、
   `DASHSCOPE_API_KEY`（生图）、`MINIMAX_API_KEY`（MiniMax，音乐 API 无权限）。
-- 外部工具：yt-dlp（winget）、Grok CLI（`C:\Users\hzh\.grok\bin\grok.exe`）、agy（Antigravity CLI，`C:\Users\hzh\AppData\Local\agy\bin\agy.exe`）、
+- 外部工具：Codex CLI 0.162.1（npm 全局，ChatGPT 账号登录，生图用）、yt-dlp（winget）、Grok CLI（`C:\Users\hzh\.grok\bin\grok.exe`）、agy（Antigravity CLI，`C:\Users\hzh\AppData\Local\agy\bin\agy.exe`）、
   TopviewAI 插件（Claude Code MCP，OAuth 已登录：数字人、音效、视频生成）。
 
 ## 通用的已验证问题与解决方法
@@ -67,13 +71,21 @@ shared/                  两步以上共用
   正文用 `get_content`；图片用 `doc.get_images` 取 URL 和位置，再用 `doc.resolve_document_structure` 对回段落，下载到
   `<输出名>/01.png…` 并以 `![图N](...)` 插回原位（对不上的放文末）。图片服务器 docimg*.docs.qq.com 必须带
   `Referer: https://docs.qq.com/`，否则 403。图片定位只支持 Word 类文档。拉不到时先在浏览器打开一次该文档（进"最近浏览"）。
-- **配音（小米 MiMo TTS）**：统一用 MiMo，默认音色"冰糖"。接口 `https://api.xiaomimimo.com/v1/chat/completions`，模型 `mimo-v2.5-tts`，
+- **配音（小米 MiMo TTS）**：统一用 MiMo。英文视频的音色从 Mia、Chloe、Milo、Dean 里选（英文效果待试听，选定后写在这里）；"冰糖"是中文音色，只用于中文。接口 `https://api.xiaomimimo.com/v1/chat/completions`，模型 `mimo-v2.5-tts`，
   要读的文字放在 `assistant` 消息里，`audio: { format, voice }`，返回 `choices[0].message.audio.data`（base64），24kHz 单声道。
-  语速约 290 字/分钟（37 字 7.7 秒），动画时长以 `ffprobe` 实测为准。音色：mimo_default、冰糖、茉莉、苏打、白桦、Mia、Chloe、Milo、Dean。
+  中文语速约 290 字/分钟（37 字 7.7 秒），英文按约 150 词/分钟估算（未实测），动画时长以 `ffprobe` 实测为准。音色：mimo_default、冰糖、茉莉、苏打、白桦、Mia、Chloe、Milo、Dean。
 - **生图（阿里百炼 Token Plan，qwen-image-3.0-pro）**：必须走原生接口
   `https://token-plan.cn-beijing.maas.aliyuncs.com/api/v1/services/aigc/multimodal-generation/generation`（compatible-mode 返回 400），
   body `{ model, input: { messages: [{ role: "user", content: [{ text }] }] }, parameters: { size: "1920*1080", n } }`；
-  总像素 512×512–2048×2048，n 为 1–6，传 1–3 张参考图即为改图（参考图改图和 `--no-rewrite` 尚未实测）。
+  总像素 512×512–2048×2048，n 为 1–6，传 1–3 张参考图即为改图（参考图改图尚未实测）。
+  **从 Bash 调用，提示词放文件里用 `"$(cat 文件)"` 传**：PowerShell 5.1 把中文引号 “ ” 当字符串定界符，提示词被拆开、输出文件名变成 `-1`（2026-10-29 实测）。
+  Bash 里取 Key：`export DASHSCOPE_API_KEY=$(powershell -NoProfile -Command "[Environment]::GetEnvironmentVariable('DASHSCOPE_API_KEY','User')" | tr -d '\r')`。
+  能直接画出中英文大字（YouTube 封面就这样整张生成）；英文偶有拼错或重复词，文字逐行写死、标拼写、加 `--no-rewrite` 后 3 张全对。
+- **生图（Codex CLI，`npm run image-codex -- <提示词或 .txt> <输出.png> [--n 2]`）**：`shared/tools/gen-image-codex.mjs` 在输出目录里起
+  `codex exec --skip-git-repo-check -s workspace-write -` 会话，让它用内置生图工具把图存成指定文件名；没存成就从 `~/.codex/generated_images/` 取本次新图。
+  一张约 1–2 分钟，输出 1672×941（16:9）。2026-10-29 实测：同样的"只给内容"封面提示词，Codex 6 张数字和英文全对、没有编造内容；
+  qwen 6 张里有 4 张自己加了提示词没有的说法和数字（"BURN RATE"、AI 90% 饼图、"SEARCH 5-YEAR HIGH"）。**英文封面优先用 Codex**，qwen 作补充。
+  启动时 Codex 报一堆 `rmcp ... HTTP 403`（插件 MCP 被 Cloudflare 拦）和 `config.toml` 未知字段警告，不影响生图。
 - **yt-dlp 和 YouTube cookies**：本机 `--cookies-from-browser chrome` 不可用（Chrome 开着时数据库被锁；关掉后报 DPAPI 解密失败）。
   改用导出的 cookies.txt（`--cookies <文件>`，文件放项目外不提交）：在 Chrome **无痕窗口**登录 YouTube，只打开
   `https://www.youtube.com/robots.txt`，用扩展 Get cookies.txt LOCALLY 导出后立刻关掉无痕窗口（扩展要允许无痕模式）。
