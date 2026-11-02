@@ -8,7 +8,7 @@
 //                                   生成 public/<项目>/host/face.png 和 voice.mp3，并写 job.json
 //   put <本地文件> <上传URL>         把文件 PUT 到 Topview 的临时上传地址（不打印地址）
 //   save <项目> (<视频URL> | --file 本地mp4) [--task id] [--mode avatar4] [--credits 1]
-//                                   下载生成结果，转成 1920×1080 / 30fps 的 host.mp4，并记入素材库
+//                                   下载生成结果，转成 1920×1080（竖版人像 1080×1920）/ 30fps 的 host.mp4，并记入素材库
 
 import { existsSync } from "node:fs";
 import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
@@ -195,11 +195,14 @@ async function cmdSave(positional, opts) {
   }
   const src = probe(raw);
 
-  // Topview 的结果尺寸不一定规整（例如 1934×1080 / 25fps），统一裁成 1920×1080 / 30fps，保留原声
+  // Topview 的结果尺寸不一定规整（例如 1934×1080 / 25fps），统一裁成 1920×1080 / 30fps，保留原声；
+  // 竖版人像（公共数字人是 1080×1920）居中裁成横版会切掉头，改成 1080×1920（圆形头像 AvatarBubble 不挑比例）
+  const portrait = src.height > src.width;
+  const [w, h] = portrait ? [1080, 1920] : [1920, 1080];
   const out = path.posix.join(dir, "host.mp4");
   ffmpeg([
     "-i", raw,
-    "-vf", "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,fps=30",
+    "-vf", `scale=${w}:${h}:force_original_aspect_ratio=increase,crop=${w}:${h},fps=30`,
     "-c:v", "libx264", "-crf", "18", "-preset", "medium", "-g", "15", "-pix_fmt", "yuv420p",
     "-c:a", "aac", "-b:a", "192k", out,
   ]);

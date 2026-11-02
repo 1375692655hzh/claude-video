@@ -108,7 +108,8 @@ function parseWindows(text) {
 
 function bin(name) {
   const which = spawnSync("where", [name], { encoding: "utf8" });
-  if (which.status === 0) return name;
+  // 返回完整路径：yt-dlp 的 --ffmpeg-location 只认路径，不认裸命令名
+  if (which.status === 0) return which.stdout.split(/\r?\n/)[0].trim();
   const winget = path.join(process.env.LOCALAPPDATA || "", "Microsoft", "WinGet", "Links", `${name}.exe`);
   if (existsSync(winget)) return winget;
   fail(`找不到 ${name}，请先安装（见 AGENTS.md）`);

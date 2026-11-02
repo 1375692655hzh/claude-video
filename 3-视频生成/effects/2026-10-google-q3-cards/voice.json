@@ -1,0 +1,518 @@
+[
+ {
+  "name": "0.1",
+  "shot": "0.1",
+  "text": "",
+  "duration": 0
+ },
+ {
+  "name": "0.2a",
+  "shot": "0.2a",
+  "text": "Google just handed investors three pieces of good news. One: Google Cloud revenue doubled, up 103% year over year.",
+  "duration": 7.46
+ },
+ {
+  "name": "0.2b",
+  "shot": "0.2b",
+  "text": "Two: search query growth hit its fastest pace in five years.",
+  "duration": 4.06
+ },
+ {
+  "name": "0.2c",
+  "shot": "0.2c",
+  "text": "Three: on the same day, Google launched Gemini 4 Carbon, which took the top spot on a major model leaderboard.",
+  "duration": 6.67
+ },
+ {
+  "name": "0.3",
+  "shot": "0.3",
+  "text": "And the stock? Down more than 10% after hours, from about $325 to under $300. Roughly $350 billion in market value, gone overnight.",
+  "duration": 11.64
+ },
+ {
+  "name": "0.4",
+  "shot": "0.4",
+  "text": "Three good headlines, one ugly chart. The easy explanation is \"AI spending is out of control.\" But after going through the earnings release and the call, I think the real story is different, and a bit counterintuitive.",
+  "duration": 11.09
+ },
+ {
+  "name": "0.5",
+  "shot": "0.5",
+  "text": "I'm Andy. I've spent over 10 years following U.S. and Hong Kong equities, and this is Andy's Market Lens.",
+  "duration": 5.64
+ },
+ {
+  "name": "0.6",
+  "shot": "0.6",
+  "text": "Today we'll break this down in three layers: why the stock really fell, whether AI is actually eating Google Search, and how I'd think about Alphabet from here. Beyond the headlines, into the numbers.",
+  "duration": 10.42
+ },
+ {
+  "name": "1.1",
+  "shot": "1.1",
+  "text": "Let's start with the scorecard.",
+  "duration": 1.85
+ },
+ {
+  "name": "1.2",
+  "shot": "1.2",
+  "text": "",
+  "duration": 0
+ },
+ {
+  "name": "1.3a",
+  "shot": "1.3a",
+  "text": "Revenue: $127.6 billion, up 25%. Consensus was about $128.2 billion, so a miss of just half a percent.",
+  "duration": 10.25
+ },
+ {
+  "name": "1.3b",
+  "shot": "1.3b",
+  "text": "Earnings per share: $2.12, against roughly $3.00 expected, a miss of almost 30%.",
+  "duration": 7.25
+ },
+ {
+  "name": "1.3c",
+  "shot": "1.3c",
+  "text": "Free cash flow: negative $9.1 billion. That's the second negative quarter in a row, when the Street expected only a small negative number.",
+  "duration": 8.66
+ },
+ {
+  "name": "1.4",
+  "shot": "1.4",
+  "text": "But the total isn't what matters. The mix is. Google Cloud came in about $1.6 billion above expectations. Google Services, which includes Search, YouTube, subscriptions and devices, came in about $2.1 billion below. Net it out, and the top line looks almost fine.",
+  "duration": 17.47
+ },
+ {
+  "name": "1.5",
+  "shot": "1.5",
+  "text": "Here's the problem. The segment that beat is the one that needs massive spending on chips and data centers. The segment that missed is the most profitable, most cash-generative business Google has run for two decades.",
+  "duration": 11.06
+ },
+ {
+  "name": "1.6",
+  "shot": "1.6",
+  "text": "That's the thread for this whole video.",
+  "duration": 2.45
+ },
+ {
+  "name": "1.7",
+  "shot": "1.7",
+  "text": "So if revenue missed by only half a percent, why a 10% drop? Let's peel it back.",
+  "duration": 5.06
+ },
+ {
+  "name": "2.1",
+  "shot": "2.1",
+  "text": "",
+  "duration": 0
+ },
+ {
+  "name": "2.2",
+  "shot": "2.2",
+  "text": "Google's explanation for the EPS miss: its equity investments, mainly its SpaceX stake, fell in value, producing an $8.7 billion loss this quarter. Last quarter, those same holdings were a big gain.",
+  "duration": 11.86
+ },
+ {
+  "name": "2.3",
+  "shot": "2.3",
+  "text": "That's fair. It's a mark-to-market loss, not the core business. But let's do the math. Google says the hit was about 55 cents per share. Add it back, and $2.12 becomes $2.67. The estimate was $3.02. Even if you blame SpaceX for everything you can, EPS still misses by about 12%.",
+  "duration": 19.25
+ },
+ {
+  "name": "2.5",
+  "shot": "2.5",
+  "text": "So where's the rest? Operating income. Alphabet earned $40.6 billion in operating profit, about 6% below expectations. Operating margin was 31.8%, down from 34% last quarter.",
+  "duration": 12.84
+ },
+ {
+  "name": "2.6a",
+  "shot": "2.6a",
+  "text": "Where did the money go? R&D up 36%. Depreciation up 49%. Stock-based compensation up 35%.",
+  "duration": 7.85
+ },
+ {
+  "name": "2.6b",
+  "shot": "2.6b",
+  "text": "And one line most people skip: Alphabet-level costs, largely the shared AI research that trains Gemini. That loss grew 71%, to about $7.7 billion.",
+  "duration": 10.82
+ },
+ {
+  "name": "2.7",
+  "shot": "2.7",
+  "text": "The takeaway: AI costs aren't just a capex number anymore. They're flowing into the income statement through depreciation, R&D and talent.",
+  "duration": 8.45
+ },
+ {
+  "name": "2.8",
+  "shot": "2.8",
+  "text": "Still, a profit miss alone rarely does this much damage. Why so violent this time? Because the real problem is layer two.",
+  "duration": 7.25
+ },
+ {
+  "name": "3.1",
+  "shot": "3.1",
+  "text": "",
+  "duration": 0
+ },
+ {
+  "name": "3.2",
+  "shot": "3.2",
+  "text": "Free cash flow was negative $9.1 billion. The natural assumption: Google spent too much on capex.",
+  "duration": 6.65
+ },
+ {
+  "name": "3.3",
+  "shot": "3.3",
+  "text": "Wrong. And this is the most counterintuitive part of the quarter.",
+  "duration": 3.62
+ },
+ {
+  "name": "3.4",
+  "shot": "3.4",
+  "text": "Capex was $51.4 billion, more than double last year. But analysts expected $55.8 billion. Google actually spent about $4.4 billion less than expected, and free cash flow still came in billions of dollars worse than expected.",
+  "duration": 15.22
+ },
+ {
+  "name": "3.5",
+  "shot": "3.5",
+  "text": "So the problem isn't the money going out. It's the money coming in.",
+  "duration": 3.84
+ },
+ {
+  "name": "3.6",
+  "shot": "3.6",
+  "text": "Operating cash flow was $42.3 billion, against expectations of about $53.9 billion. That's an $11.6 billion shortfall.",
+  "duration": 9.07
+ },
+ {
+  "name": "3.7",
+  "shot": "3.7",
+  "text": "Even stranger: operating income grew 30% year over year, while operating cash flow fell 13%. Profits up, cash down. That divergence is what spooks markets.",
+  "duration": 10.27
+ },
+ {
+  "name": "3.8",
+  "shot": "3.8",
+  "text": "Where did the cash go? Two places.",
+  "duration": 2.66
+ },
+ {
+  "name": "3.9",
+  "shot": "3.9",
+  "text": "First, TPU inventory. Google isn't just renting compute in its cloud anymore. It's now selling complete TPU systems to customers.",
+  "duration": 7.85
+ },
+ {
+  "name": "3.10",
+  "shot": "3.10",
+  "text": "That business works like this: sign the contract, build the hardware up front, and get paid only when it's delivered and invoiced. So inventory jumped from $2.4 billion at the end of last year to $13.3 billion.",
+  "duration": 13.66
+ },
+ {
+  "name": "3.11",
+  "shot": "3.11",
+  "text": "Think of a restaurant that's suddenly booked solid. It pays for ingredients before the checks come in, so cash drops even as business booms.",
+  "duration": 7.06
+ },
+ {
+  "name": "3.12",
+  "shot": "3.12",
+  "text": "Second, a one-off: Google paid roughly $5.2 billion for the EU's 2018 antitrust fine.",
+  "duration": 7.25
+ },
+ {
+  "name": "3.13",
+  "shot": "3.13",
+  "text": "Even if you add that $5.2 billion right back, quarterly free cash flow is still negative $3.9 billion. So the one-time fine explains part of the pressure, not all of it.",
+  "duration": 10.66
+ },
+ {
+  "name": "3.14",
+  "shot": "3.14",
+  "text": "So in fairness, part of this is timing, not pure cash burn. But some numbers are hard to explain away. Capex was 121% of operating cash flow: Google spent everything it generated, and then some.",
+  "duration": 12.24
+ },
+ {
+  "name": "3.15",
+  "shot": "3.15",
+  "text": "Year to date, free cash flow is negative $4.8 billion. At this point last year, it was positive $48.7 billion. This isn't a one-quarter blip. It's a trend.",
+  "duration": 10.82
+ },
+ {
+  "name": "3.16",
+  "shot": "3.16",
+  "text": "And it's not over. Full-year capex guidance is $195 to $205 billion. Google has spent about $132 billion through Q3, which implies $63 to $73 billion in Q4, more than this quarter. Management also said 2027 capex will \"increase significantly,\" and the Street is penciling in north of $300 billion.",
+  "duration": 23.59
+ },
+ {
+  "name": "3.17",
+  "shot": "3.17",
+  "text": "Which raises the question: if the cash it generates doesn't cover the spending, where does the rest come from? That's layer three.",
+  "duration": 6.84
+ },
+ {
+  "name": "4.1",
+  "shot": "4.1",
+  "text": "",
+  "duration": 0
+ },
+ {
+  "name": "4.2",
+  "shot": "4.2",
+  "text": "Let me be clear: Google is not running out of money. It holds about $265 billion in cash and marketable securities. That's still about $140 billion more than its long-term debt. There's no liquidity crisis here.",
+  "duration": 13.06
+ },
+ {
+  "name": "4.3a",
+  "shot": "4.3a",
+  "text": "But the way it funds itself has completely changed. In the first nine months of last year, Google bought back $39.8 billion of its own stock. This year: zero.",
+  "duration": 9.84
+ },
+ {
+  "name": "4.3b",
+  "shot": "4.3b",
+  "text": "This quarter, Google issued $28.7 billion in notes and raised about $12.4 billion by selling new shares directly into the market.",
+  "duration": 7.85
+ },
+ {
+  "name": "4.3c",
+  "shot": "4.3c",
+  "text": "Long-term debt went from $21.6 billion a year ago to $125 billion. The diluted share count is up about 1.35%.",
+  "duration": 10.66
+ },
+ {
+  "name": "4.4",
+  "shot": "4.4",
+  "text": "For a decade, the Alphabet story was simple: high margins, huge free cash flow, relentless buybacks. Every share you owned got more valuable over time. Now it's reversed: borrowing and issuing equity to fund AI. Even if the long-term returns are great, shareholders carry the interest costs and the dilution in the near term.",
+  "duration": 17.86
+ },
+ {
+  "name": "4.5",
+  "shot": "4.5",
+  "text": "So this drop isn't about one bad number. The market is switching the ruler it uses to value Google, from a high-free-cash-flow platform to a capital-intensive AI infrastructure company. And the second kind of company trades at a lower multiple.",
+  "duration": 12.84
+ },
+ {
+  "name": "4.6",
+  "shot": "4.6",
+  "text": "Whether that switch sticks depends on one thing: can the cash machine, Search, keep printing?",
+  "duration": 6.02
+ },
+ {
+  "name": "5.1",
+  "shot": "5.1",
+  "text": "",
+  "duration": 0
+ },
+ {
+  "name": "5.2",
+  "shot": "5.2",
+  "text": "Search revenue: $63.4 billion, up 12%. The buy side wanted around 14%. YouTube ads grew 9.2%, below the 10% line many investors watch. Network revenue barely moved, up 1.4%.",
+  "duration": 14.83
+ },
+ {
+  "name": "5.3",
+  "shot": "5.3",
+  "text": "Here's the strange part. Management says search query growth is the fastest in five years, including commercial queries. More usage, slower revenue. How does that happen?",
+  "duration": 10.44
+ },
+ {
+  "name": "5.4",
+  "shot": "5.4",
+  "text": "There are two very different explanations.",
+  "duration": 2.45
+ },
+ {
+  "name": "5.5",
+  "shot": "5.5",
+  "text": "Management's view first. They pointed mostly to external factors: foreign exchange, a tough comparison against last year's search acceleration worth about 3 points, and some industry-specific softness, from Asia-Pacific e-commerce advertisers to the post-World Cup hangover. They also admitted AI Mode monetizes at a lower rate, but their bottom line is clear: users aren't leaving.",
+  "duration": 20.45
+ },
+ {
+  "name": "5.6",
+  "shot": "5.6",
+  "text": "Meanwhile, the bears argue that the \"AI erodes Search\" story is starting to show up in the numbers. Their points: Gemini lagged rivals for part of this year, which hurt the product experience. Compute was prioritized for external cloud customers over Google's own model work. Cost-per-click growth slowed sharply in 2026. And ad budgets are shifting toward social platforms like Meta. Third-party data also showed Google's search volume and share slipping before the report.",
+  "duration": 25.44
+ },
+ {
+  "name": "5.7",
+  "shot": "5.7",
+  "text": "And scale is what makes this debate so important. Search and YouTube ads together brought in $74.6 billion this quarter, more than twice Cloud's $30.7 billion. Even a small slowdown in that base is very hard for Cloud to offset.",
+  "duration": 14.81
+ },
+ {
+  "name": "5.8",
+  "shot": "5.8",
+  "text": "Notice that on \"are users leaving?\", the two sides flatly contradict each other. Part of that may be definitions: management's count includes AI Mode, image and voice searches.",
+  "duration": 10.25
+ },
+ {
+  "name": "5.9",
+  "shot": "5.9",
+  "text": "But on a second question, they actually agree: AI searches are earning less than classic ones, at least for now.",
+  "duration": 6.29
+ },
+ {
+  "name": "5.10",
+  "shot": "5.10",
+  "text": "Management admits AI Mode queries are three times longer than traditional searches and growing fast, but they monetize at a lower rate.",
+  "duration": 7.63
+ },
+ {
+  "name": "5.11",
+  "shot": "5.11",
+  "text": "My read: it's too early to say AI is stealing Google's users. What's clear is that Google hasn't yet found a way to make AI search as profitable as classic search. It's working on it, expanding AI Mode ads internationally and launching multi-turn conversational ads in the U.S. Whether that works will show up in paid clicks and cost-per-click over the next two or three quarters.",
+  "duration": 19.44
+ },
+ {
+  "name": "5.12",
+  "shot": "5.12",
+  "text": "One more caution: management already said tough comparisons and FX will weigh on Q4 too. So next quarter's search number probably won't look great either.",
+  "duration": 8.64
+ },
+ {
+  "name": "5.13",
+  "shot": "5.13",
+  "text": "So if Search is slowing, can the other engine, Cloud, take over?",
+  "duration": 3.86
+ },
+ {
+  "name": "6.1",
+  "shot": "6.1",
+  "text": "",
+  "duration": 0
+ },
+ {
+  "name": "6.2",
+  "shot": "6.2",
+  "text": "The good news first. Google Cloud revenue was $30.7 billion, up 103%. Operating income was $11.1 billion, and the margin rose from 23.7% to 36.2%.",
+  "duration": 12.67
+ },
+ {
+  "name": "6.3",
+  "shot": "6.3",
+  "text": "In one year, Cloud went from about 15% of Alphabet's revenue to 24%, and it drove roughly 60% of this quarter's revenue growth. Backlog stands at $561 billion, and more than half of it is expected to convert within 24 months.",
+  "duration": 15.24
+ },
+ {
+  "name": "6.4",
+  "shot": "6.4",
+  "text": "Cloud is no longer just a growth option. It's Alphabet's second profit engine. But if you want to use it to offset Search, I'd apply three discounts.",
+  "duration": 7.66
+ },
+ {
+  "name": "6.5",
+  "shot": "6.5",
+  "text": "Discount one: expectations. Some say Cloud beat; others say it missed. Both are right. Bloomberg consensus was 91% growth, so 103% beat. But sell-side analysts were at 105%, and the buy side, the funds actually putting money to work, was around 110%. If you bought at 110%, this was a miss. New contract bookings were also about $77.7 billion, roughly flat with Q2. No further acceleration.",
+  "duration": 28.44
+ },
+ {
+  "name": "6.6",
+  "shot": "6.6",
+  "text": "Discount two: TPUs. How much of that 103% came from selling TPU systems? Google won't say. Analysts asked twice on the call and got no number. TPU system sales look more like a hardware business: lower margins, and inventory built up front, the same thing that's dragging cash flow. The more Cloud growth leans on TPUs, the more its quality deserves a question mark.",
+  "duration": 22.85
+ },
+ {
+  "name": "6.7",
+  "shot": "6.7",
+  "text": "Discount three: margins. 36.2% looks great, but it excludes the shared AI research costs that train Gemini. Those sit at the Alphabet level, and as we saw, they rose 71%. Management also said that because capacity is tight, it will lean more on third-party compute in Q4, which will pressure Cloud margins in the near term.",
+  "duration": 19.46
+ },
+ {
+  "name": "6.8",
+  "shot": "6.8",
+  "text": "One longer-term risk: Google has about $924 billion in future purchase commitments, and some of its biggest customers are AI labs that are still burning cash. If AI investment cools, whether all of those contracts convert in full is an open question.",
+  "duration": 13.63
+ },
+ {
+  "name": "6.9",
+  "shot": "6.9",
+  "text": "So Cloud's growth is real. But so far, that growth hasn't shown up as cash for shareholders. It can't carry the free cash flow story on its own.",
+  "duration": 7.85
+ },
+ {
+  "name": "6.10",
+  "shot": "6.10",
+  "text": "Which brings up the obvious question: everyone is spending on AI, so why is Google the one getting hit? The same evening, Microsoft gave us the perfect control group.",
+  "duration": 9.07
+ },
+ {
+  "name": "7.1a",
+  "shot": "7.1a",
+  "text": "Same night. Azure grew 48%, less than half Google Cloud's pace. But Microsoft's free cash flow was a positive $18.6 billion, far above the $8.5 billion expected.",
+  "duration": 11.45
+ },
+ {
+  "name": "7.1b",
+  "shot": "7.1b",
+  "text": "Google's was negative $9.1 billion. That's a $27.7 billion gap. Microsoft rose about 3% after hours. Google fell 10%.",
+  "duration": 10.82
+ },
+ {
+  "name": "7.2",
+  "shot": "7.2",
+  "text": "That tells you the market's standard has changed. A year ago, the question was who's growing AI revenue fastest and who's grabbing the most compute. Borrowing to buy chips? The market would cheer. Now the question is: can your AI fund itself? Can today's cash pay for tomorrow's buildout?",
+  "duration": 15.65
+ },
+ {
+  "name": "7.3",
+  "shot": "7.3",
+  "text": "On that new scorecard, Google scored worst this quarter.",
+  "duration": 3.24
+ },
+ {
+  "name": "8.1",
+  "shot": "8.1",
+  "text": "",
+  "duration": 0
+ },
+ {
+  "name": "8.2",
+  "shot": "8.2",
+  "text": "Let's put both sides on the table. The bull case: Cloud doubling with a 36% margin. Search queries still growing. The Gemini app past 1 billion users, the fastest-growing product in Google's history. A new model back at the top of the leaderboards. And a cash pile about $140 billion bigger than its long-term debt.",
+  "duration": 18.26
+ },
+ {
+  "name": "8.3",
+  "shot": "8.3",
+  "text": "The bear case: core advertising missed. Operating profit missed. Two straight quarters of negative free cash flow. Debt and new shares instead of buybacks. And 2027 capex set to jump again, with buy-side estimates between $330 and $375 billion. Some analysts don't expect free cash flow to turn positive until around the third quarter of 2027.",
+  "duration": 21.46
+ },
+ {
+  "name": "8.4",
+  "shot": "8.4",
+  "text": "My take: in the near term, expect analysts to cut earnings estimates, and the stock may need time to build a base. A sharp drop can trigger a short-covering bounce, but a bounce isn't a trend reversal. Historically, Alphabet trading below about 20 times forward earnings has been an attractive entry zone, provided we see signs that inventory is converting into cash.",
+  "duration": 19.08
+ },
+ {
+  "name": "8.5",
+  "shot": "8.5",
+  "text": "If you only track three things, track these: 1. Search paid clicks and cost-per-click: whether AI search can actually make money. 2. Operating cash flow and inventory: whether the TPU build turns into cash, which decides when free cash flow turns positive. 3. 2027 capex guidance: management will give details on the Q4 call. That's the next big test.",
+  "duration": 24.67
+ },
+ {
+  "name": "9.1",
+  "shot": "9.1",
+  "text": "One sentence to sum it up: this report proves that customers are buying Google's AI and Cloud, but it doesn't yet prove that the spending turns into cash for shareholders. The market isn't rejecting Google's AI. It's repricing Google, from a cash cow to an AI infrastructure company.",
+  "duration": 16.06
+ },
+ {
+  "name": "9.2",
+  "shot": "9.2",
+  "text": "What do you think? Is this just the growing pain of an investment cycle, or is the Search cash machine finally getting old? Let me know in the comments.",
+  "duration": 7.63
+ },
+ {
+  "name": "9.3",
+  "shot": "9.3",
+  "text": "If this helped, like and subscribe, and I'll see you in the next one. Beyond the headlines, into the numbers.",
+  "duration": 5.86
+ },
+ {
+  "name": "9.4",
+  "shot": "9.4",
+  "text": "",
+  "duration": 0
+ }
+]
