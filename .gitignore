@@ -16,6 +16,10 @@ out
 !1-视频稿/templates/
 !1-视频稿/consult/
 !1-视频稿/standards/
+# 预存人设内容默认本地保留，只把人设模板作为规范入库
+!1-视频稿/_人设/
+1-视频稿/_人设/*
+!1-视频稿/_人设/人设模板.md
 # 第 2 步：每期的脚本和参考图（保留说明、模板）
 2-脚本/*
 !2-脚本/AGENTS.md
@@ -36,3 +40,7 @@ shared/voice-library/**/*.mp3
 
 # 每期给 agy 的提问和回答记录会引用用户的稿件，只留本地
 1-视频稿/consult/记录/
+
+# 新项目：每期一个独立目录 projects/YYYY/MM/<ID>/，内容只留本地（只提交说明）
+projects/*
+!projects/README.md
