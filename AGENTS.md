@@ -32,10 +32,28 @@ Andy 的已确认账号信息见 `1-视频稿/_人设/Andy人设.md`（Handle �
 | 段 | 做什么 | 不做 |
 |---|---|---|
 | F① 成稿 | 用户交付成稿，`project final <ID> <文件>` 存为 `03-终稿-en.md`，直接进脚本 | **零审核**：不做外审、事实 / 时效核查、去 AI 化、平台自检，不改一个字；成稿内容由用户负责 |
-| F② 脚本 | 成稿直接拆成 `script.md` 分镜表（口播不改）；素材只搜一轮，默认用官方图片 + 动效图表，不下载实拍；找不到的画面换成动效 / 图表；音色、风格沿用该账号上次的（`voice.mjs history` / `style.mjs history`），用 `use` 登记 | 素材补缺循环、人工补件（H05）、风格参考图、脚本确认 |
+| F② 脚本 | 成稿直接拆成 `script.md` 分镜表（口播不改），按下面「内容 → 画面」表定每镜画面；素材只来自：动效库按成稿数字画、AI 生图（`npm run image`）、用户随稿附上的文件（放 `03-素材/原始/`）、素材库已有的；音色、风格沿用该账号上次的（`voice.mjs` / `style.mjs history`），用 `use` 登记 | **不做任何网络检索**（不找官方图、实拍、新闻素材）；素材补缺、人工补件（H05）、风格参考图、脚本确认 |
 | F③ 视频 | 和标准⑩同一条流水线：逐镜配音 → 时间线 → 动画 → 配乐音效 → 分段渲染 → 字幕 | 数字人 |
 
-FAST 照样要做的（技术和交付底线，不算审核）：素材登记来源、第三方画面不带水印台标；音效规范（`sfx-rules` 自动拦）、配乐响度；英文字幕 srt；渲染后 ffprobe 查时长分辨率并抽帧看有没有文字重叠出框；发布包装（标题、描述、标签、信源列表、平台规定的免责声明，写在描述里不改口播）；出片后 `voice.mjs` / `style.mjs use … --status 成片` 登记。
+**FAST「内容 → 画面」表**（拆分镜时照表选，动效 ID 见动效库 registry）：
+
+| 成稿内容 | 画面 |
+|---|---|
+| 一个关键数字 | 大数字 `word-slam` / `count-up` / `score-slam` |
+| 两个时期 / 两家对比 | 对比卡 `before-after` / `rebound-pair` / `hbar-compare` |
+| 趋势、走势 | `line-draw`；拐点 `line-crash`、`axis-rescale` |
+| 拆分、构成 | `waterfall` / `donut-fill` / `bar-grow` |
+| 预期 vs 实际 | `expect-vs-actual` / `gauge-needle` |
+| 公司之间的关系、资金流 | `flyline` / `cash-path` / `flywheel` |
+| 时间顺序、事件经过 | `timeline-travel` / `check-steps` |
+| 几条要点 | `card-stagger` / `list-brake` / `card-fan` |
+| 原话、文件引用 | `callout` / `doc-zoom` / `marker-underline` |
+| 章节开场 | 风格的 ChapterBadge + `title-rise`，背景用 AI 生图 |
+| 概念、氛围、比喻（没有数字） | AI 生图 + `parallax-pan` / `crash-zoom` |
+
+**AI 生图底线**：只做概念图、氛围图、章节背景、比喻示意；不做真人（含高管）照片、真实产品图、真实公司 logo，不做看起来像真实数据的图表（数据一律用动效库按成稿数字画）。生成的图登记在 `assets.md`，来源写“AI 生成（qwen-image）+ 提示词”。用户附了真实图片的优先用用户的。
+
+FAST 照样要做的（技术和交付底线，不算审核）：素材登记来源（AI 生图写明）、用户附的第三方画面不带水印台标；音效规范（`sfx-rules` 自动拦）、配乐响度；英文字幕 srt；渲染后 ffprobe 查时长分辨率并抽帧看有没有文字重叠出框；发布包装（标题、描述、标签、信源列表、平台规定的免责声明，写在描述里不改口播）；出片后 `voice.mjs` / `style.mjs use … --status 成片` 登记。
 `project check` 按 FAST 规则检查：不要求初稿、外审、素材台账、参考图和确认状态。用户中途要求审核或改稿，就转回标准模式（`set <ID> mode=standard` 后按对应步骤补齐）。
 
 平台规范都在 `1-视频稿/platforms/`：`youtube-long-en.md`（长视频发布规则，通用机制见 `youtube-long.md`）、

@@ -358,7 +358,7 @@ function cmdFinal(p, file) {
   if (fast && (!p.meta.persona || !p.meta.platform)) fail("FAST 也要先有 persona 和 platform：set <ID> persona=… platform=…");
   if (!fast && p.meta.step < 3) fail("先完成①②（人设、平台确认后 step 至少为 3）");
   fs.copyFileSync(file, p.finalEn);
-  if (fast) Object.assign(p.meta, { deliveredFinal: true, finalConfirmed: true, step: 9, next: "FAST②脚本：成稿直接拆成 script.md（不改口播），音色/风格沿用上次，然后直接进⑩出片" });
+  if (fast) Object.assign(p.meta, { deliveredFinal: true, finalConfirmed: true, step: 9, next: "FAST②脚本：成稿直接拆成 script.md（不改口播，按「内容→画面」表），不做网络检索，素材＝动效＋AI 生图＋用户附件；音色/风格沿用上次，然后直接进⑩出片" });
   else Object.assign(p.meta, { deliveredFinal: true, finalConfirmed: true, step: 6, next: "⑥脚本初稿：读成稿，定风格、分镜、动效和逐镜素材需求" });
   saveMeta(p);
   console.log(fast ? `✓ 成稿已存为 ${rel(p.finalEn)}（FAST：零审核），进入脚本` : `✓ 成稿已存为 ${rel(p.finalEn)}，跳过④⑤，进入⑥`);
