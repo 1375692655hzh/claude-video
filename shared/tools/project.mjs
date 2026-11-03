@@ -120,7 +120,7 @@ function cmdNew({ pos, flags }) {
   };
   if (flags.fast) {
     Object.assign(meta, { mode: "fast", step: meta.persona && platform ? 3 : 1,
-      next: meta.persona && platform ? `FAST①：用户交付成稿 → project final ${id} <成稿文件>` : "FAST：补 --persona 和 --platform（set），再收用户成稿" });
+      next: meta.persona && platform ? `FAST：开工时一次让用户选风格和音色（style/voice.mjs use），收用户成稿 → project final ${id} <成稿文件>` : "FAST：补 --persona 和 --platform（set），再收用户成稿" });
   }
   fs.writeFileSync(path.join(dir, "project.json"), JSON.stringify(meta, null, 2) + "\n");
 
@@ -256,8 +256,10 @@ function check(p, stepOverride) {
   if (fast) ok("FAST 模式：成稿由用户交付，零审核；跳过⑥–⑧和参考图");
   if (!fast && step >= 7 && !fs.existsSync(p.scriptDraft)) err("缺 02-脚本/script-draft.md（⑥）");
   if (!fast && step >= 7 && !fs.existsSync(p.assets)) err("缺 02-脚本/assets.md（⑥⑦）");
-  if (fast && step >= 9 && !p.meta.style) warn("project.json 没有 style：FAST 默认沿用该账号上次的风格，style.mjs use 登记");
-  if (fast && step >= 9 && !p.meta.voice) warn("project.json 没有 voice：FAST 默认沿用该账号上次的音色，voice.mjs use 登记");
+  if (fast && step >= 9) {
+    if (!p.meta.style) err("FAST 也要用户选风格：给 style.mjs history + 预览.html，用户选定后 style.mjs use 登记"); else ok(`风格：${p.meta.style}`);
+    if (!p.meta.voice) err("FAST 也要用户选音色：给 voice.mjs history + 试听.html，用户选定后 voice.mjs use 登记"); else ok("音色已登记");
+  }
   if (!fast && step >= 9) {
     const a = read(p.assets);
     const open = openAssetRows(a);
@@ -358,7 +360,7 @@ function cmdFinal(p, file) {
   if (fast && (!p.meta.persona || !p.meta.platform)) fail("FAST 也要先有 persona 和 platform：set <ID> persona=… platform=…");
   if (!fast && p.meta.step < 3) fail("先完成①②（人设、平台确认后 step 至少为 3）");
   fs.copyFileSync(file, p.finalEn);
-  if (fast) Object.assign(p.meta, { deliveredFinal: true, finalConfirmed: true, step: 9, next: "FAST②脚本：成稿直接拆成 script.md（不改口播，按「内容→画面」表），不做网络检索，素材＝动效＋AI 生图＋用户附件；音色/风格沿用上次，然后直接进⑩出片" });
+  if (fast) Object.assign(p.meta, { deliveredFinal: true, finalConfirmed: true, step: 9, next: "FAST②脚本：成稿直接拆成 script.md（不改口播，按「内容→画面」表），不做网络检索，素材＝动效＋AI 生图＋用户附件；风格和音色用开工时用户选的，然后直接进⑩出片" });
   else Object.assign(p.meta, { deliveredFinal: true, finalConfirmed: true, step: 6, next: "⑥脚本初稿：读成稿，定风格、分镜、动效和逐镜素材需求" });
   saveMeta(p);
   console.log(fast ? `✓ 成稿已存为 ${rel(p.finalEn)}（FAST：零审核），进入脚本` : `✓ 成稿已存为 ${rel(p.finalEn)}，跳过④⑤，进入⑥`);
