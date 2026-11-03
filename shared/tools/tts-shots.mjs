@@ -4,6 +4,7 @@
 //   node shared/tools/tts-shots.mjs <项目ID> [--voice ark-Joanne-女-美式英语] [--only 12,13] [--force] [--conc 6]
 // 输出：04-音频/voice/shot-001.mp3 …、04-音频/voice/shots.json（n / ch / text / dur 秒）
 // 断点续跑：已有的文件跳过（--force 重做）；失败的镜头最后列出，再跑一次即可补上。
+import { hasKey, keyHint } from "./vendor-keys.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
@@ -33,6 +34,7 @@ const only = typeof flags.only === "string" ? new Set(flags.only.split(",").map(
 const file = (n) => path.join(out, `shot-${String(n).padStart(3, "0")}.mp3`);
 const todo = shots.filter((s) => (!only || only.has(s.n)) && (flags.force || !fs.existsSync(file(s.n))));
 const E = process.env;
+if (!hasKey(v.vendor)) fail(`这个音色还不能生成配音。${keyHint(v.vendor)}`);
 const LB = { 中文: "Chinese", 粤语: "Chinese,Yue", 英语: "English", 美式英语: "English", 英式英语: "English", 日语: "Japanese", 韩语: "Korean" };
 const dl = async (u) => Buffer.from(await (await fetch(u)).arrayBuffer());
 const S = {

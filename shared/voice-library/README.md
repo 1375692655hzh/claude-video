@@ -27,3 +27,7 @@
 - **qwen**：`qwen-audio-3.0-tts-plus` 的 2 个系统音色 + 官方 Excel 列出的 597 个基础音色（ID 前缀 `qwen-audio-3.0-tts-plus-`）。走百炼 Token Plan 北京区：`token-plan.cn-beijing.maas.aliyuncs.com`，key 存 `QWEN_TTS_API_KEY`。
 - **mimo**：官方只有 9 个音色，全收。旧试听移到 `mimo/_old/`。
 - Key 全部在 `.secrets/keys.env`，不进仓库。
+
+## key
+
+试听不需要 key。用哪家的音色配音，需要自行配置那家的 key。

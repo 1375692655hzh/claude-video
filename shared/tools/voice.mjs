@@ -6,6 +6,7 @@
 //   node shared/tools/voice.mjs use <项目ID> <试听文件名或调用ID> [--account Andy] [--status 选定|试做|成片] [--note "…"]
 //   node shared/tools/voice.mjs page                              重新生成 shared/voice-library/试听.html（双击用浏览器打开）
 // 账号默认取项目 project.json 的 persona；人设文件里有频道名时一并显示。
+import { hasKey, keyHint } from "./vendor-keys.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -87,7 +88,7 @@ function cmdUse(pos, f) {
     meta.voice = { vendor: v.vendor, id: v.id, file: v.file, model: v.model ?? null };
     fs.writeFileSync(path.join(dir, "project.json"), JSON.stringify(meta, null, 2) + "\n");
   }
-  console.log(`✓ ${project}（${account}）配音：${v.vendor} · ${v.name} · ${v.gender} · ${v.lang}\n  调用 ID：${v.id}${v.model ? `（模型 ${v.model}）` : ""}\n  试听：shared/voice-library/${v.vendor}/${v.file}`);
+  console.log(`✓ ${project}（${account}）配音：${v.vendor} · ${v.name} · ${v.gender} · ${v.lang}\n  调用 ID：${v.id}${v.model ? `（模型 ${v.model}）` : ""}\n  试听：shared/voice-library/${v.vendor}/${v.file}${hasKey(v.vendor) ? "" : `\n  ⚠ ${keyHint(v.vendor)}`}`);
   if (meta) console.log("  已写入 project.json 的 voice；⑩ 用 node shared/tools/tts-shots.mjs <项目ID> 逐镜生成");
   buildPage(true);
 }

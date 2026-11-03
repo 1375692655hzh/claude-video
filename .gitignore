@@ -29,10 +29,9 @@ out
 # 第 3 步：public/ 里的视频片段、图片、字体、配音、配乐、数字人结果等（只保留常用素材库的说明）
 3-视频生成/public/*
 !3-视频生成/public/library/
-3-视频生成/public/library/*
+3-视频生成/public/library/style-samples/
 !3-视频生成/public/library/README.md
 # 共享：音色试听样本
-shared/voice-library/**/*.mp3
 
 # 本机个人设置；.claude/skills 是指向 .agents/skills 的链接，不重复提交
 .claude/settings.local.json
