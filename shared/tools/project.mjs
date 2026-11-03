@@ -253,6 +253,7 @@ function check(p, stepOverride) {
     const open = openAssetRows(a);
     if (open.length) err(`素材缺口未关闭，不能进⑨：${open.join("、")}`); else if (a) ok("素材总表没有未关闭缺口");
     if (a && !confirmed(statusLine(a), /已确认（可进⑨）/)) err(`assets.md 状态不是“已确认（可进⑨）”：${statusLine(a) || "空"}`);
+    if (p.meta && !p.meta.style) warn("project.json 没有 style：⑨用 node shared/tools/style.mjs use <项目ID> <风格ID> 登记本期风格"); else if (p.meta) ok(`风格：${p.meta.style}`);
   }
   // ⑨→⑩
   if (step >= 10) {

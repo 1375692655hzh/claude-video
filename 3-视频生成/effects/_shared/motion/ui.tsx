@@ -11,6 +11,7 @@ export const useMotionFont = () => {
     const faces = [
       new FontFace("Inter", `url(${staticFile("library/fonts/inter-var.woff2")})`, { weight: "100 900" }),
       ...[600, 700, 800, 900].map((w) => new FontFace("Montserrat", `url(${staticFile(`library/fonts/montserrat-latin-${w}-normal.woff2`)})`, { weight: String(w) })),
+      ...([["Lora", "lora", [400, 600]], ["Space Grotesk", "space-grotesk", [500, 700]], ["JetBrains Mono", "jetbrains-mono", [400, 700]], ["Playfair Display", "playfair-display", [700, 900]]] as [string, string, number[]][]).flatMap(([fam, file, ws]) => ws.map((w) => new FontFace(fam, `url(${staticFile(`library/fonts/${file}-latin-${w}-normal.woff2`)})`, { weight: String(w) }))),
     ];
     Promise.all(faces.map((f) => f.load().then((x) => document.fonts.add(x)).catch(() => null))).then(() => continueRender(handle));
   }, [handle]);

@@ -1,0 +1,49 @@
+{
+  "id": "deco",
+  "name": "deco · 金色装饰艺术（Gilded Deco）",
+  "status": "ready",
+  "theme": "deco",
+  "look": "近黑底叠虚化实拍、宝石色卡片、香槟金双线框 + 角花 + 扇形纹、金色渐变大数字",
+  "fit": "并购、大交易、高估值公司、重大事件",
+  "avoid": "日常快讯（太隆重）",
+  "fonts": "Montserrat + Cinzel",
+  "works": [
+    "2026-11-02-marvell-lumentum"
+  ],
+  "palette": [
+    {
+      "hex": "#0B0C11",
+      "role": "底"
+    },
+    {
+      "hex": "#262A5E",
+      "role": "蓝宝石"
+    },
+    {
+      "hex": "#4A1E27",
+      "role": "红宝石"
+    },
+    {
+      "hex": "#1D3D30",
+      "role": "祖母绿"
+    },
+    {
+      "hex": "#C9A961",
+      "role": "金线"
+    },
+    {
+      "hex": "#F3EAD0",
+      "role": "文字"
+    },
+    {
+      "hex": "#8FD3A8",
+      "role": "涨"
+    },
+    {
+      "hex": "#F08C7A",
+      "role": "跌"
+    }
+  ],
+  "kit": "3-视频生成/effects/_shared/styles（STYLES.deco）",
+  "needsPhoto": true
+}

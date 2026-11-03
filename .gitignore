@@ -52,3 +52,7 @@ projects/*
 shared/*.zip
 _to_delete/
 shared/_to_delete/
+
+# 风格库：原始渲染帧不进仓库（成品在各风格 samples/）
+shared/style-library/_samples/
+shared/style-library/_preview/candidates/*.png

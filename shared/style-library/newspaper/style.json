@@ -1,0 +1,35 @@
+{
+  "id": "newspaper",
+  "name": "newspaper · 报纸 / 财经杂志",
+  "status": "ready",
+  "theme": "newspaper",
+  "look": "米白纸纹底、报头 + 双线、衬线大标题、分栏细线、红黑双色、网点印刷感配图",
+  "fit": "深度分析、历史复盘、长文解读",
+  "avoid": "节奏很快的短视频",
+  "fonts": "Playfair Display + Lora",
+  "works": [],
+  "palette": [
+    {
+      "hex": "#F1ECE1",
+      "role": "纸"
+    },
+    {
+      "hex": "#1B1A17",
+      "role": "墨"
+    },
+    {
+      "hex": "#4A463E",
+      "role": "次文字"
+    },
+    {
+      "hex": "#B3261E",
+      "role": "红"
+    },
+    {
+      "hex": "#2F6B3A",
+      "role": "绿"
+    }
+  ],
+  "kit": "3-视频生成/effects/_shared/styles（STYLES.newspaper）",
+  "needsPhoto": false
+}

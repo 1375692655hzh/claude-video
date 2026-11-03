@@ -1,0 +1,79 @@
+[
+  {
+    "id": "cards",
+    "name": "cards · 浅色卡片",
+    "status": "ready",
+    "fit": "财报逐项拆解、数据密集、需要长时间阅读",
+    "preview": "cards/preview.jpg"
+  },
+  {
+    "id": "navy",
+    "name": "navy · 深海军蓝",
+    "status": "ready",
+    "fit": "科技公司财报、宏观、市场大盘",
+    "preview": "navy/preview.jpg"
+  },
+  {
+    "id": "deco",
+    "name": "deco · 金色装饰艺术（Gilded Deco）",
+    "status": "ready",
+    "fit": "并购、大交易、高估值公司、重大事件",
+    "preview": "deco/preview.jpg"
+  },
+  {
+    "id": "documentary",
+    "name": "documentary · 暖色纪录片",
+    "status": "ready",
+    "fit": "人物和公司故事、长篇叙事、行业史",
+    "preview": "documentary/preview.jpg"
+  },
+  {
+    "id": "glass",
+    "name": "glass · 玻璃拟态",
+    "status": "ready",
+    "fit": "AI、新产品、偏年轻的科技题材",
+    "preview": "glass/preview.jpg"
+  },
+  {
+    "id": "terminal",
+    "name": "terminal · 交易终端",
+    "status": "ready",
+    "fit": "市场快讯、股价异动、盘前盘后、技术面",
+    "preview": "terminal/preview.jpg"
+  },
+  {
+    "id": "newspaper",
+    "name": "newspaper · 报纸 / 财经杂志",
+    "status": "ready",
+    "fit": "深度分析、历史复盘、长文解读",
+    "preview": "newspaper/preview.jpg"
+  },
+  {
+    "id": "swiss",
+    "name": "swiss · 极简黑白（瑞士风）",
+    "status": "ready",
+    "fit": "观点类、“一个数字讲清一件事”、开场钩子",
+    "preview": "swiss/preview.jpg"
+  },
+  {
+    "id": "blueprint",
+    "name": "blueprint · 蓝图 / 工程图",
+    "status": "candidate",
+    "fit": "半导体、产业链、产品拆解",
+    "preview": "blueprint/preview.jpg"
+  },
+  {
+    "id": "neon",
+    "name": "neon · 赛博霓虹",
+    "status": "candidate",
+    "fit": "加密货币、游戏（要节制）",
+    "preview": "neon/preview.jpg"
+  },
+  {
+    "id": "journal",
+    "name": "journal · 手账 / 便签",
+    "status": "candidate",
+    "fit": "轻松科普、投资入门",
+    "preview": "journal/preview.jpg"
+  }
+]
