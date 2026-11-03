@@ -79,10 +79,28 @@ export const StyleSample: React.FC<{ id: string }> = ({ id }) => {
   );
 };
 
+// 封面（不用生图时的兜底）：本期风格 + 封面大字 + 一个关键数字。
+// 取入场动画放完的最后一帧：npx remotion still style-cover-<风格ID> <输出.png> --frame=89 --props='{"title":"…","big":"$115B","kicker":"…","bg":"projects/…/xx.jpg 相对 public 的路径，可省"}'
+type CoverProps = { id: string; title: string; big?: string; kicker?: string; bg?: string };
+export const StyleCover: React.FC<CoverProps> = ({ id, title, big, kicker, bg }) => {
+  useStyleFonts();
+  const K = getStyle(id);
+  return (
+    <AbsoluteFill>
+      <K.Backdrop src={bg ? staticFile(bg) : undefined} />
+      <div style={{ position: "absolute", left: 110, top: 230, width: big ? 980 : 1700 }}><K.Title kicker={kicker} title={title} size={big ? 110 : 140} /></div>
+      {big && <div style={{ position: "absolute", right: 100, top: 380, width: 760, display: "flex", justifyContent: "center" }}><K.BigNumber value={big} size={230} tone="accent" /></div>}
+    </AbsoluteFill>
+  );
+};
+
 export const StyleLibraryComposition: React.FC = () => (
   <>
     {Object.keys(STYLES).map((id) => (
-      <Composition key={id} id={`style-sample-${id}`} component={StyleSample} durationInFrames={360} fps={30} width={1920} height={1080} defaultProps={{ id }} />
+      <React.Fragment key={id}>
+        <Composition id={`style-sample-${id}`} component={StyleSample} durationInFrames={360} fps={30} width={1920} height={1080} defaultProps={{ id }} />
+        <Composition id={`style-cover-${id}`} component={StyleCover} durationInFrames={90} fps={30} width={1920} height={1080} defaultProps={{ id, title: "Why Marvell Paid $115B for Lasers", big: "$115B", kicker: "MARVELL × LUMENTUM" }} />
+      </React.Fragment>
     ))}
   </>
 );

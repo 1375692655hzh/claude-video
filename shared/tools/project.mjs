@@ -289,6 +289,18 @@ function check(p, stepOverride) {
     }
     if (!fs.existsSync(path.join(p.remotion, "Composition.tsx"))) err("缺 05-制作/remotion/Composition.tsx");
   }
+  // 交付齐全（出片后）：成片、字幕、封面、发布包装。FAST 和标准一样要；FAST 缺了算不通过
+  if (step >= 10 && fs.existsSync(p.deliver)) {
+    for (const d of fs.readdirSync(p.deliver, { withFileTypes: true }).filter((x) => x.isDirectory())) {
+      const fs2 = fs.readdirSync(path.join(p.deliver, d.name));
+      if (!fs2.includes("video.mp4")) continue;
+      const miss = [];
+      if (!fs2.some((f) => f.endsWith(".srt"))) miss.push("字幕 .srt");
+      if (!fs2.some((f) => /^cover.*\.(png|jpg)$/i.test(f))) miss.push("封面 cover*.png");
+      if (!fs2.includes("发布包装.md")) miss.push("发布包装.md（标题 3 选、简介含章节时间码和信源、标签、置顶评论、免责声明）");
+      if (miss.length) (fast ? err : warn)(`06-交付/${d.name} 缺：${miss.join("、")}`); else ok(`06-交付/${d.name} 成片、字幕、封面、发布包装齐全`);
+    }
+  }
   // 外部交付
   const hd = path.join(p.dir, HANDOFF_DIR);
   if (fs.existsSync(hd)) {
