@@ -25,6 +25,41 @@ Andy 的已确认账号信息见 `1-视频稿/_人设/Andy人设.md`（Handle �
 | ⑨ 重新规划视频脚本 | `2-脚本/` | 根据真实素材重排画面、片段、动效和声音，交用户确认；准备至少一张风格参考图 | `<期名>/script.md` + `<期名>/refs/` |
 | ⑩ 视频生成 | `3-视频生成/`（引擎） | 默认由 Claude 在本工作区直接完成配音、素材下载、动画、配乐音效和渲染；Claude Chat 交接包改为可选 | 新项目 `06-交付/<平台>/video.mp4`；旧期 `out/<期名>.mp4` |
 
+## FAST 模式（上面 10 步是“标准模式”）
+
+FAST 去掉的是审核和反复修改，**不是用户的选择**：标准模式里由用户选的，FAST 一样由用户选（人设、平台、视频风格、音色、AI 生图、数字人），只是在开工时一次选完，之后三段一口气做完、中途不停。
+
+**开工时一次问齐**（用 AskUserQuestion，一次最多 4 问，问不完分两次）：人设和平台；视频风格（先给 `style.mjs history` 和 `shared/style-library/预览.html`，用过的标出来，用户挑，可以每期换）；音色（先给 `voice.mjs history` 和 `shared/voice-library/试听.html`，用户挑）。要不要 AI 生图（要的话没配生图 key 就提醒用户自行配置，不配就改为不用，素材只剩动效图表和用户附件）；还有数字人要不要用（标准⑩里中途要确认的模式和积分，FAST 在这里一次确认：用的话按成稿字数估好时长和积分给用户定，出片时不再问）。用户想用参考图做新风格也可以，按风格库 README 做，展示卡给用户看过再用——这是用户的选择，不是审核。Claude 不替用户定，也不默认“沿用上次”；用户明确说“跟上次一样”才沿用。选完用 `style.mjs use` / `voice.mjs use` 登记。
+
+用户交付成稿 → 脚本 → 视频，新建：`node shared/tools/project.mjs new <短名> --persona <人设> --platform <平台> --fast`（project.json 记 `mode: "fast"`）。
+
+| 段 | 做什么 | 不做 |
+|---|---|---|
+| F① 成稿 | 用户交付成稿，`project final <ID> <文件>` 存为 `03-终稿-en.md`，直接进脚本 | **零审核**：不做外审、事实 / 时效核查、去 AI 化、平台自检，不改一个字；成稿内容由用户负责 |
+| F② 脚本 | 成稿直接拆成 `script.md` 分镜表（口播不改），按下面「内容 → 画面」表定每镜画面；素材只来自：动效库按成稿数字画、AI 生图（脚本里写提示词，⑩统一生成）、用户随稿附上的文件（放 `03-素材/原始/`）、素材库已有的 | **不做任何网络检索**（不找官方图、实拍、新闻素材）；素材补缺、人工补件（H05）、风格参考图、脚本确认 |
+| F③ 视频 | 就是标准⑩，不另做一套：脚本里的 AI 生图提示词在这一步统一生成，其余（配音、动画、配乐音效、渲染、字幕、数字人可选）照标准⑩ | — |
+
+**FAST「内容 → 画面」表**（拆分镜时照表选，动效 ID 见动效库 registry）：
+
+| 成稿内容 | 画面 |
+|---|---|
+| 一个关键数字 | 大数字 `word-slam` / `count-up` / `score-slam` |
+| 两个时期 / 两家对比 | 对比卡 `before-after` / `rebound-pair` / `hbar-compare` |
+| 趋势、走势 | `line-draw`；拐点 `line-crash`、`axis-rescale` |
+| 拆分、构成 | `waterfall` / `donut-fill` / `bar-grow` |
+| 预期 vs 实际 | `expect-vs-actual` / `gauge-needle` |
+| 公司之间的关系、资金流 | `flyline` / `cash-path` / `flywheel` |
+| 时间顺序、事件经过 | `timeline-travel` / `check-steps` |
+| 几条要点 | `card-stagger` / `list-brake` / `card-fan` |
+| 原话、文件引用 | `callout` / `doc-zoom` / `marker-underline` |
+| 章节开场 | 风格的 ChapterBadge + `title-rise`，背景用 AI 生图 |
+| 概念、氛围、比喻（没有数字） | AI 生图 + `parallax-pan` / `crash-zoom` |
+
+**AI 生图底线**：只做概念图、氛围图、章节背景、比喻示意；不做真人（含高管）照片、真实产品图、真实公司 logo，不做看起来像真实数据的图表（数据一律用动效库按成稿数字画）。生成的图登记在 `assets.md`，来源写“AI 生成（qwen-image）+ 提示词”。用户附了真实图片的优先用用户的。
+
+FAST 照样要做的（技术和交付底线，不算审核）：素材登记来源（AI 生图写明）、用户附的第三方画面不带水印台标；音效规范（`sfx-rules` 自动拦）、配乐响度；英文字幕 srt；渲染后 ffprobe 查时长分辨率并抽帧看有没有文字重叠出框；发布包装（标题、描述、标签、信源列表、平台规定的免责声明，写在描述里不改口播）；出片后 `voice.mjs` / `style.mjs use … --status 成片` 登记。
+`project check` 按 FAST 规则检查：不要求初稿、外审、素材台账、参考图和确认状态。用户中途要求审核或改稿，就转回标准模式（`set <ID> mode=standard` 后按对应步骤补齐）。
+
 平台规范都在 `1-视频稿/platforms/`：`youtube-long-en.md`（长视频发布规则，通用机制见 `youtube-long.md`）、
 `youtube-shorts-en.md`、`instagram-reels-en.md`、`tiktok-en.md`。Reels / Shorts / TikTok 可直接选题，也可从审核通过的长视频稿改编；
 由长视频拆多条时沿用各平台规范里的子目录约定。

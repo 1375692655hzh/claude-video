@@ -34,8 +34,7 @@ const [prompt, out] = positional;
 const key = process.env.DASHSCOPE_API_KEY;
 if (!key) {
   fail(
-    "没有找到环境变量 DASHSCOPE_API_KEY。\n" +
-      '请在 PowerShell 运行：setx DASHSCOPE_API_KEY "你的key"，然后关闭并重新打开终端。',
+    "需要 AI 生图（阿里百炼 qwen-image）的 key，请自行配置",
   );
 }
 if (!prompt || !out) fail('用法：npm run image -- "提示词" public/<动画名>/xxx.png [--size 1920*1080]');
