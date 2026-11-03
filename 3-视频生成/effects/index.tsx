@@ -5,6 +5,10 @@ import { CaspaAiProfitComposition } from "./caspa-ai-profit/Composition";
 import { AvatarHostDemoComposition } from "./avatar-host-demo/Composition";
 import { BgmPreviewComposition } from "./bgm-preview/Composition";
 import { SfxPreviewComposition } from "./sfx-preview/Composition";
+import { GoogleQ3Composition } from "./2026-10-google-q3/Composition";
+import { MotionGalleryComposition } from "./motion-gallery/Composition";
+import { GoogleQ3CardsComposition } from "./2026-10-google-q3-cards/Composition";
+import { StyleLibraryComposition } from "./style-library/Composition";
 
 export const EffectCompositions: React.FC = () => (
   <>
@@ -13,5 +17,9 @@ export const EffectCompositions: React.FC = () => (
     <AvatarHostDemoComposition />
     <BgmPreviewComposition />
     <SfxPreviewComposition />
+    <GoogleQ3Composition />
+    <MotionGalleryComposition />
+    <GoogleQ3CardsComposition />
+    <StyleLibraryComposition />
   </>
 );

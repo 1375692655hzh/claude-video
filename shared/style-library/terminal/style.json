@@ -1,0 +1,39 @@
+{
+  "id": "terminal",
+  "name": "terminal · 交易终端",
+  "status": "ready",
+  "theme": "terminal",
+  "look": "黑底绿网格、顶部滚动行情条、等宽字体数据表、琥珀色提示、闪烁光标",
+  "fit": "市场快讯、股价异动、盘前盘后、技术面",
+  "avoid": "人物故事（太冷）",
+  "fonts": "JetBrains Mono",
+  "works": [],
+  "palette": [
+    {
+      "hex": "#030605",
+      "role": "底"
+    },
+    {
+      "hex": "#3E6B52",
+      "role": "网格线"
+    },
+    {
+      "hex": "#E8FFF2",
+      "role": "文字"
+    },
+    {
+      "hex": "#FFB000",
+      "role": "琥珀强调"
+    },
+    {
+      "hex": "#32F08C",
+      "role": "涨"
+    },
+    {
+      "hex": "#FF4D5E",
+      "role": "跌"
+    }
+  ],
+  "kit": "3-视频生成/effects/_shared/styles（STYLES.terminal）",
+  "needsPhoto": false
+}

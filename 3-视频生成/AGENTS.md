@@ -1,14 +1,50 @@
-# 第 3 步：视频生成（Remotion）
+# 视频生成阶段：工作流⑩（Remotion 引擎）
 
-照着第 2 步确认过的脚本把视频做出来：配音、下载素材片段、生图、数字人、配乐音效、Remotion 动画、渲染。
-这是一个长期使用的 Remotion 项目，所有动画共享本文件夹的依赖，**不要**在子文件夹里新建项目或再装一套依赖。
-整个工作流的分工、交接、密钥和通用排错见上一层 `../AGENTS.md`。
+根据第⑨步确认的脚本成稿、完整素材和风格参考图生成视频。**默认由 Claude 在本工作区直接完成**配音、素材下载、动画、配乐音效和渲染
+（Claude 的 Linux 环境或用户本机均可，不交给 Claude Code）；Claude Chat 交接包只在用户要求时做。
+本文件夹是唯一的 Remotion 引擎：旧期的动画在 `effects/<期名>/`，新项目的动画在 `../projects/…/<ID>/05-制作/remotion/`，见下文「项目模式」。
+所有动画共享本文件夹的依赖，**不要**在子文件夹里新建项目或再装一套依赖。整个工作流、密钥和通用排错见上一层 `../AGENTS.md`。
 
-## 输入
+## 输入门禁
 
-- `../2-脚本/<期名>/script.md`（状态为"已确认"）：风格、分镜、素材库 ID + 片段、动画设计、音效。
-- 口播原文以 `../1-视频稿/<期名>/03-终稿-en.md`（英文，频道只发英文视频）为准；脚本和终稿不一致时停下问用户，不在这一步改口播文字。
-- 动画文件夹和 `public/` 子目录用同一个期名（`effects/<期名>/`、`public/<期名>/`）。
+新项目先跑 `npm run project -- check <ID> --step 10`，全部 ✓ 才开始；下面列的是旧期路径，新项目对应位置见 `../AGENTS.md`「路径对照」。
+必须同时具备：
+
+- `../1-视频稿/<期名>/00-项目设置.md` 和其中指定的人设、平台规范。
+- `../1-视频稿/<期名>/03-终稿-en.md`：用户确认的口播原文；有中文 `03-终稿.md` 时供理解内容。
+- `../2-脚本/<期名>/script.md`：状态为“已确认（可进⑩）”的脚本成稿，不是 `script-draft.md`。
+- `../2-脚本/<期名>/assets.md`：素材齐备已确认，无未批准的“待找 / 未核实 / 待定片段”。
+- `../2-脚本/<期名>/refs/`：至少一张用户确认的风格参考图，以及脚本里的继承 / 禁止继承说明。
+
+脚本和口播不一致、素材仍有阻塞缺口或参考图未确认时，停下退回对应阶段，不在这一步改口播或静默补设计。
+动画文件夹和 `public/` 子目录用同一个期名（`effects/<期名>/`、`public/<期名>/`）。长视频拆多条短视频时按脚本约定加平台和条目后缀，避免覆盖长视频。
+
+## Claude Chat 生成交接（可选，用户要求时才做）
+
+1. 按 `../2-脚本/templates/ClaudeChat生成交接模板.md` 生成 `../2-脚本/<期名>/ClaudeChat生成交接.md`。
+2. 在独立 Claude Chat 中**实际附上传**视频成稿、脚本成稿、素材台账、项目设置、人设和风格参考图；只发本地路径，对方读不到。
+3. 交接包写清平台、画幅、口播不可改、素材使用方式、参考图继承 / 禁止项，以及本仓库已有的 `cards / navy`、动效库、数字人、配乐音效和目录结构。
+4. 先做关键帧或代表性短段给用户确认，再铺全片。新参考图若能映射到现有主题和动效就直接复用；全新布局或动作作为本期组件开发，不声称参考图能自动变成完整主题。
+5. Claude Chat 产出的代码和说明回到本仓库，放入本期 `effects/<期名>/`、`public/<期名>/` 等约定位置；不得改动其他历史期。
+6. 外部智能体只在用户明确选择后调用；直接生成和外部 Chat 执行相同的输入门禁、样式参考和制作规范。
+   新项目的交接包放 `02-脚本/ClaudeChat生成交接.md`，产出代码回到该项目 `05-制作/remotion/`。
+
+## 项目模式（新项目，2026-11-02 起）
+
+新项目不进 `effects/` 注册表，也不在 `public/` 放素材；引擎按项目 ID 临时挂载它：
+
+- 入口 `src/project-entry.ts` → `src/ProjectRoot.tsx` → `@project/Composition`（项目的 `05-制作/remotion/Composition.tsx`，导出 `ProjectCompositions`，
+  Composition id 用项目 ID）。旧入口 `src/index.ts` 不变。
+- `npm run project -- studio|render <ID>` 设置 `CV_PROJECT_DIR`、`CV_PUBLIC_DIR` 后启动 Remotion；`remotion.config.ts` 只在这两个变量存在时
+  改 Rspack 配置（`@project`、`@shared` 别名，模块统一从运行目录的 `node_modules` 解析）和 public 目录。
+- 每个项目一个**合成 public 目录**，只有三个链接，不复制文件：`library` → `public/library`，`assets` → 项目 `03-素材/生产`，`audio` → 项目 `04-音频`。
+  Windows 下建在项目 `05-制作/cache/public/`（目录联接 junction），Linux 环境下建在 `$HOME/.cv-public/<ID>/`。
+- 代码写法：`import { Frame } from "@shared/motion"`、`staticFile("assets/img/x.jpg")`、`staticFile("audio/voice/voice.mp3")`；
+  不引用其他项目或旧期 `public/<期名>/`。项目代码的类型检查和 ESLint：`npm run project -- lint <ID>`（`npm run lint` 只管引擎）。
+- `render` 先自动跑第⑩步门禁，不通过拒绝渲染；正式输出固定为 `06-交付/<平台>/video.mp4`，拆条用 `--deliver youtube-shorts-01 --comp <另一个 Composition id>`。
+  关键帧、代表性短段等给用户看的预览用 `--preview [文件名]`（不过门禁，只写到 `05-制作/cache/preview/`），可配合 `-- --frames=0-299`。
+- 下文里写 `public/<期名>/…`、`effects/<期名>/`、`out/<期名>.mp4` 的步骤（素材下载、数字人、配音），新项目换成
+  `03-素材/生产/…`、`04-音频/…`、`05-制作/remotion/`、`06-交付/…`；`npm run assets -- fetch … --out` 直接写到项目路径。
 
 ## 环境
 
@@ -22,13 +58,15 @@ effects/                 所有动画
   index.tsx              注册表：每个动画在此 import 并加入列表
   <期名>/                一期一个文件夹（小写+连字符），Composition.tsx 导出 <XxxComposition />，id = 文件夹名
   _shared/               多个动画共用：AvatarHost 数字人、Bgm + music-library.ts、Sfx/SfxTrack + sfx-library.ts + sfx-rules.ts
+    motion/              动效库：28 个整屏动作 + 拼版小部件，cards / navy 两套主题（说明见其 README.md）
+  motion-gallery/        动效目录：Studio 里 motion-library 文件夹，连播或单独预览每个动作
   caspa-ai-profit/       第一期成片
   avatar-host-demo/      数字人全屏 → 画中画演示（也是 SfxTrack 的用法示例）
   bgm-preview/           试听配乐（Studio 里改 track / seconds，看循环接缝）
   sfx-preview/           依次试听常用音效
 src/                     入口（index.ts 不要改；Root.tsx 只挂载 effects 注册表）
 public/                  静态素材，staticFile("xxx") 引用；每期的素材放 public/<期名>/
-  library/               各期反复用的配乐 music/ 和音效 sfx/，说明见其 README.md
+  library/               各期反复用的配乐 music/、音效 sfx/、动效库字体 fonts/inter-var.woff2，说明见其 README.md
 out/                     渲染输出（不进 git）
 tools/
   avatar-host.mjs        数字人主持人：挑帧 / 准备人像和配音 / 上传 / 下载入库（生成走 Topview MCP）
@@ -38,10 +76,11 @@ tools/
 
 共享工具在 `../shared/tools/`，本文件夹的 npm 脚本已指向它们（`tts`、`image`、`assets`、`fetch-doc`、`consult`）。
 
-## 素材下载（第 2 步已找好，这里只下载要用的片段）
+## 素材下载（⑦⑧已找好，这里只下载最终脚本要用的片段）
 
 按脚本里的库 ID + 片段：`npm run assets -- fetch <id> --window 205-226 --out public/<期名>/video/x.mp4`
 （只下这一段并转成 1080p H.264，不要下载完整原片）；做完用 `npm run assets -- use <id> --project <期名> --window a-b` 回填。
+人工素材从 `../2-脚本/<期名>/材料/` 复制到 `public/<期名>/` 的对应子目录，保留 `assets.md` 里的来源、授权和原始路径记录；不要重新下载或覆盖用户原文件。
 视频片段进 Remotion 用 `OffthreadVideo`（`muted`，`trimBefore` / `playbackRate`）；原片自带英文字幕的可以放大把字幕裁到画外。
 
 ## 数字人主持人（固定流程）
@@ -64,13 +103,34 @@ tools/
    `audioFileId`，可选 `customMotion`（英文动作描述）。不传 `captionId`，字幕在 Remotion 里做；不传 `boardId` 即存到 My First Board。
    之后隔几分钟用 `topview_query_task`（taskType=avatar_video）查，成功后从 `topview_list_credit_logs` 看实际扣分。
 4. **收尾**：`npm run host -- save <期名> <finishedVideoUrl> --task <taskId> --mode avatar4 --credits <分>`，
-   转成 1920×1080 / 30fps 的 `host.mp4`，写回 `job.json`（含 `frames30`），并在素材库记一条 `gen-host-<期名>`。
-5. **用到动画里**：`effects/_shared/AvatarHost.tsx`，`pip` 0 = 全屏、1 = 右下角画中画，中间值做过渡（用 `spring`）。
+   转成 1920×1080 / 30fps 的 `host.mp4`（竖版人像如公共数字人保持 1080×1920，不裁头），写回 `job.json`（含 `frames30`），并在素材库记一条 `gen-host-<期名>`。
+5. **用到动画里**（两种版式）：
+   - **左下角圆形口播**（2026-10-30 起的默认版式，参考 B 站“小Lin说”）：`effects/_shared/AvatarBubble.tsx`，
+     白色描边圆形头像，说话时外圈有一道很淡的青蓝光圈。和动效库框架一起用时直接写 `<Frame host={{ src: "<期名>/host/host.mp4" }}>`；
+     `size`（默认直径 230）、`focusX / focusY / zoom` 对准脸，`enterAt / exitAt` 控制出现和收起。实拍卡的地点标签已挪到右下角，给头像让位。
+   - **矩形画中画**：`effects/_shared/AvatarHost.tsx`，`pip` 0 = 全屏、1 = 右下角画中画，中间值做过渡（用 `spring`）。
    声音默认取自主持人视频；整片另有旁白时传 `muted`。参考 `effects/avatar-host-demo/`（时长从 `job.json` 读）。
+6. **选数字人要用户拍板**：不管是 Topview 公共数字人还是用户照片生成的，先把候选（缩略图 / 试做的几秒口播）给用户看，
+   用户选定后才提交整段生成；提交前再确认一次时长和预计积分。整片口播长（10 分钟以上）时，先用 30 秒左右试一段，确认口型和画质再做全片。
 
 2026-10-28 实测（avatar4，1080p，图片 + 38 秒录音）：提交到完成约 19 分钟（接口预估写的是 10559 秒，不准），
 扣 1 积分；输出 1934×1080 / 25fps，时长与音频一致。画面稳定、口型变化丰富，张嘴露齿时牙齿偶尔发绿发糊，
 全屏特写会看得出来，画中画基本看不出。avatar2 / avatar4Fast 尚未测试。
+
+2026-10-30 实测（avatar4，公共数字人原图 1080×1920 + 27.6 秒豆包 TTS 配音，带 `customMotion`）：约 21 分钟完成，
+**扣 2.8 积分**（约 0.1 积分/秒，比 10-28 那次贵，按这个估整片）；输出 1080×1934，口型张合多样，牙齿干净，头部有自然摆动。
+左下角圆形头像用 `focusX 0.52 / focusY 0.2 / zoom 1.4`，头顶不切、脸居中。
+
+## 动效库（固定流程）
+
+脚本里的动画设计写的是动效库 ID（如 `waterfall`、`count-up`），这一步照 ID 调用 `effects/_shared/motion/`，不再每期从头写图表动画。
+用法、全部 ID 和参数见 `effects/_shared/motion/README.md`；Studio 里 `motion-library` 文件夹可以预览。
+
+- 整片最外层调用一次 `useMotionFont()`，用 `<MotionTheme theme="cards">` 包住（深蓝风格写 `"navy"`）；脚本第一节写了用哪套。
+- 每个动作放进 `Sequence`，`from` 对齐配音（`timeline.ts` 的 `at(n)`），`durationInFrames` 用 `motionFrames(id, fps, props)`。
+- 颜色只用 `tone`（teal 好 / red 坏 / amber 提醒），不要在场景里写死色值，换主题才不会出错。
+- 某个画面库里没有：先在本期文件夹里写，用了两期以上的再收进动效库（登记 `registry.ts`、补 README 表格、两套主题都看一遍）。
+- 动效库的改动会影响所有引用它的期数；改已有动作的默认值或版式前，先确认旧期是否还要重新渲染。
 
 ## 背景音乐和音效
 
@@ -91,6 +151,14 @@ tools/
 3. `npm run dev` 预览；`npx remotion render <期名> out/<期名>.mp4` 渲染。
 4. 提交前运行 `npm run lint`（ESLint + tsc）。
 
+## 竖屏短视频（YouTube Shorts / Instagram Reels / TikTok）
+
+- 输入是所选平台的视频成稿和第⑨步确认的脚本成稿；直接选题与长视频拆条都执行相同素材和参考图门禁。
+- **1080×1920、30fps**。直接选题可用 `effects/<期名>/`、`public/<期名>/`；长视频拆条时一条一个动画，例如 `effects/<期名>-ig-r1/`，素材放 `public/<期名>/ig/`，渲染到 `out/<期名>-ig-r1.mp4`，避免覆盖长视频。
+- 全程烧录字幕（`remotion-captions` skill）；第 0–1 秒字卡、字幕与封面安全区按所选平台规范，并在真实 App 预览中核对遮挡。
+- 尽量复用长视频图表组件、配乐和已下载片段，但必须按竖屏重排；不带其他平台水印、台标或订阅动画，第三方片段遵守平台规范。
+- 长视频拆 Reels 试跑时，配音、渲染用时和花费仍记到 `../1-视频稿/<期名>/ig/工作量记录.md`。
+
 ## 依赖管理规范
 
 - 额外依赖（3D、地图、音频等）按需安装到**本文件夹**（`3-视频生成/`）。
@@ -101,7 +169,10 @@ tools/
 
 | 用途 | 命令 |
 |---|---|
+| 新项目：Studio / 渲染 / 代码检查 | `npm run project -- studio <ID>` / `render <ID>` / `lint <ID>` |
+| Claude 的 Linux 环境：准备 / 渲染旧期 | `bash tools/linux-render.sh setup` / `bash tools/linux-render.sh render <期名> out/<期名>.mp4` |
 | 启动 Studio | `npm run dev` |
+| 预览动效库 | Studio 里 `motion-library` → `motion-gallery` / `motion-gallery-navy` / `motion-<id>` |
 | 渲染 | `npx remotion render <id> out/<id>.mp4`（Studio 开着时加 `--port=3123`，否则端口冲突） |
 | 类型检查 + Lint | `npm run lint` |
 | 安装 / 检查 Chrome Headless Shell | `npm run browser:ensure` |
@@ -122,6 +193,10 @@ tools/
 - **Chrome Headless Shell**：`npm run browser:ensure` 安装，当前 157.0.8080.0（与 Remotion 4.0.538 配套），位于
   `node_modules/.remotion/chrome-headless-shell/`。删除或重装 `node_modules` 后需要重新运行。下载地址是 storage.googleapis.com，
   失败先查网络或代理，不要改项目代码。
+- **Rspack 下改打包配置要用 `Config.overrideBundlerConfig`**：`overrideWebpackConfig` 会被忽略（启动时有一行提示），别名不生效，
+  报 `Can't resolve '@project/Composition'`（2026-11-02）。
+- **项目代码的 tsconfig**：`paths` 里 `@types/*` 要排在 `node_modules/*` 前面，否则 `react/jsx-runtime` 解析到 JS 文件、报 TS7016；
+  `typeRoots` 要指向引擎的 `node_modules/@types`（DOM 类型来自 `@types/web`）。`project new` 生成的模板已经这样写。
 - **Studio 开着时渲染**：报 "window.getStaticCompositions is undefined"，是 3000 端口被 Studio 占了，渲染加 `--port=3123`。
 - **Studio 开着时不能移动或删除 node_modules**（文件被占用）；先关 Studio。
 - **配乐（MiniMax 音乐 API，`tools/music-minimax.mjs`）**：Key 在用户环境变量 `MINIMAX_API_KEY`。2026-10-28 实测两个域名、
@@ -132,6 +207,9 @@ tools/
   `public/library/README.md`。
 
 ## 环境验证记录
+
+- 2026-11-02：Claude 的 Linux 环境：`linux-render.sh setup` 后，旧期 `2026-10-google-q3-cards` 片段渲染、测试项目 `2026-11-02-linux-test`
+  项目模式渲染、`eslint src effects` + `tsc` 均通过。Windows 本机的项目模式尚未实测（junction 链接、`npm run project -- studio`）。
 
 - 2026-10-26：`npm run browser:ensure`、`npm run lint` 通过；`npx remotion render env-test` 成功（1280×720，30fps，90 帧）。
 - 2026-10-28：搬到 `3-视频生成/` 后，`npm run lint`、`npm run test:sfx` 通过，`avatar-host-demo` 静帧和 `bgm-preview` 音频渲染正常。

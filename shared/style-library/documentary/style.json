@@ -1,0 +1,39 @@
+{
+  "id": "documentary",
+  "name": "documentary · 暖色纪录片",
+  "status": "ready",
+  "theme": "documentary",
+  "look": "满屏暖调实拍、上下黑边、胶片颗粒、暗角，衬线字直接压在画面上，克制的小卡片",
+  "fit": "人物和公司故事、长篇叙事、行业史",
+  "avoid": "没有实拍素材的期（会空）",
+  "fonts": "Lora",
+  "works": [],
+  "palette": [
+    {
+      "hex": "#120D08",
+      "role": "底"
+    },
+    {
+      "hex": "#E3B66B",
+      "role": "金棕强调"
+    },
+    {
+      "hex": "#FFF3DD",
+      "role": "文字"
+    },
+    {
+      "hex": "#D9C4A0",
+      "role": "次文字"
+    },
+    {
+      "hex": "#A8C98F",
+      "role": "涨"
+    },
+    {
+      "hex": "#E07A5F",
+      "role": "跌"
+    }
+  ],
+  "kit": "3-视频生成/effects/_shared/styles（STYLES.documentary）",
+  "needsPhoto": true
+}

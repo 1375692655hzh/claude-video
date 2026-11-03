@@ -35,13 +35,15 @@
     "versions": "remotion versions",
     "fetch-doc": "node ../shared/tools/fetch-tencent-doc.mjs",
     "tts": "node ../shared/tools/tts-mimo.mjs",
+    "tts-ark": "node ../shared/tools/tts-ark.mjs",
     "image": "node ../shared/tools/gen-image-qwen.mjs",
     "image-codex": "node ../shared/tools/gen-image-codex.mjs",
     "assets": "node ../shared/tools/assets.mjs",
     "host": "node tools/avatar-host.mjs",
     "music": "node tools/music-minimax.mjs",
     "test:sfx": "esbuild effects/_shared/sfx-rules.test.ts --bundle --platform=node --format=cjs --outfile=out/sfx-rules-test.cjs --log-level=warning && node out/sfx-rules-test.cjs",
-    "consult": "node ../shared/tools/consult-agy.mjs"
+    "consult": "node ../shared/tools/consult-agy.mjs",
+    "project": "node ../shared/tools/project.mjs"
   },
   "allowScripts": {
     "esbuild": false

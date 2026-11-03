@@ -1,0 +1,43 @@
+{
+  "id": "glass",
+  "name": "glass · 玻璃拟态",
+  "status": "ready",
+  "theme": "glass",
+  "look": "紫青粉渐变光斑底、半透明磨砂玻璃卡片、白色细描边、渐变色大数字",
+  "fit": "AI、新产品、偏年轻的科技题材",
+  "avoid": "严肃的财务风险、坏消息",
+  "fonts": "Space Grotesk",
+  "works": [],
+  "palette": [
+    {
+      "hex": "#120C2E",
+      "role": "底"
+    },
+    {
+      "hex": "#7B5CFF",
+      "role": "紫光"
+    },
+    {
+      "hex": "#22D3EE",
+      "role": "青光"
+    },
+    {
+      "hex": "#F472B6",
+      "role": "粉光"
+    },
+    {
+      "hex": "#FFFFFF",
+      "role": "文字"
+    },
+    {
+      "hex": "#67E8F9",
+      "role": "涨"
+    },
+    {
+      "hex": "#FB7185",
+      "role": "跌"
+    }
+  ],
+  "kit": "3-视频生成/effects/_shared/styles（STYLES.glass）",
+  "needsPhoto": false
+}

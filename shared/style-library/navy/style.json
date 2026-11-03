@@ -1,0 +1,46 @@
+{
+  "id": "navy",
+  "name": "navy · 深海军蓝",
+  "status": "ready",
+  "theme": "navy",
+  "look": "深蓝底加柔光、深蓝卡片、白色大数字、青色涨 / 红色跌，彭博终端式的专业感",
+  "fit": "科技公司财报、宏观、市场大盘",
+  "avoid": "轻松科普",
+  "fonts": "Inter",
+  "works": [
+    "2026-10-google-q3",
+    "caspa-ai-profit"
+  ],
+  "palette": [
+    {
+      "hex": "#06101F",
+      "role": "底"
+    },
+    {
+      "hex": "#0E2242",
+      "role": "卡片"
+    },
+    {
+      "hex": "#F4F8FF",
+      "role": "文字"
+    },
+    {
+      "hex": "#5B9BFF",
+      "role": "强调"
+    },
+    {
+      "hex": "#2EE6F0",
+      "role": "涨 / 好"
+    },
+    {
+      "hex": "#FF5A4E",
+      "role": "跌 / 坏"
+    },
+    {
+      "hex": "#FF9A3C",
+      "role": "提醒"
+    }
+  ],
+  "kit": "3-视频生成/effects/_shared/styles（STYLES.navy）",
+  "needsPhoto": true
+}

@@ -1,0 +1,45 @@
+{
+  "id": "cards",
+  "name": "cards · 浅色卡片",
+  "status": "ready",
+  "theme": "cards",
+  "look": "浅灰底、白色大圆角卡片、顶栏 + 进度条 + 字幕条框架、实拍装进卡片，干净中性的“报告感”",
+  "fit": "财报逐项拆解、数据密集、需要长时间阅读",
+  "avoid": "情绪很重的大事件（显得平淡）",
+  "fonts": "Inter",
+  "works": [
+    "2026-10-google-q3-cards"
+  ],
+  "palette": [
+    {
+      "hex": "#F3F5F9",
+      "role": "底"
+    },
+    {
+      "hex": "#FFFFFF",
+      "role": "卡片"
+    },
+    {
+      "hex": "#141B2D",
+      "role": "文字"
+    },
+    {
+      "hex": "#3366E0",
+      "role": "强调"
+    },
+    {
+      "hex": "#0F9F78",
+      "role": "涨 / 好"
+    },
+    {
+      "hex": "#E0484E",
+      "role": "跌 / 坏"
+    },
+    {
+      "hex": "#F2A516",
+      "role": "提醒"
+    }
+  ],
+  "kit": "3-视频生成/effects/_shared/styles（STYLES.cards）",
+  "needsPhoto": false
+}

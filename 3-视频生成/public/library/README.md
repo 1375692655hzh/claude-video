@@ -1,4 +1,4 @@
-# 常用素材库（配乐 / 音效）
+# 常用素材库（配乐 / 音效 / 字体）
 
 做一次、各个视频反复用的素材。和 `../shared/asset-library/`（只记外部链接）不同，这里**直接存文件**，
 放在 `public/` 下，动画里用 `staticFile("library/...")` 引用。
@@ -7,6 +7,7 @@
 public/library/
   music/   背景音乐（mp3，响度约 -17.5 LUFS，峰值 ≤ -2 dB）
   sfx/     音效（mp3，峰值 -3 dB，首尾静音已裁）
+  fonts/   动效库字体 inter-var.woff2（Inter 可变字体，SIL OFL；动效库的 useMotionFont() 加载它）
 ```
 
 ## 配乐

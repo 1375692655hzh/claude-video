@@ -1,0 +1,39 @@
+{
+  "accounts": {
+    "Andy": "Andy's Market Lens · @Andy_gmgx"
+  },
+  "records": [
+    {
+      "date": "2026-10-27",
+      "project": "caspa-ai-profit",
+      "account": "Andy",
+      "style": "navy",
+      "status": "成片",
+      "note": "中文旧期（原名 Andy港美观察）"
+    },
+    {
+      "date": "2026-10-29",
+      "project": "2026-10-google-q3",
+      "account": "Andy",
+      "style": "navy",
+      "status": "成片",
+      "note": ""
+    },
+    {
+      "date": "2026-10-30",
+      "project": "2026-10-google-q3-cards",
+      "account": "Andy",
+      "style": "cards",
+      "status": "成片",
+      "note": ""
+    },
+    {
+      "date": "2026-11-03",
+      "project": "2026-11-02-marvell-lumentum",
+      "account": "Andy",
+      "style": "deco",
+      "status": "成片",
+      "note": ""
+    }
+  ]
+}

@@ -151,6 +151,121 @@
     "thumb": "thumbs/gen-fab-caspa.jpg"
   },
   {
+    "id": "gen-g1-search-printer-google-q3",
+    "type": "image",
+    "status": "available",
+    "title": "",
+    "title_zh": "搜索框变成变慢的印钞机（概念图）",
+    "url": "",
+    "platform": "generated",
+    "owner": "Codex CLI (ChatGPT image)",
+    "official": false,
+    "license": "generated",
+    "published": "2026-10-29",
+    "duration": null,
+    "domain": [
+      "AI",
+      "互联网"
+    ],
+    "shot": [
+      "抽象背景"
+    ],
+    "tags": [
+      "搜索",
+      "印钞机",
+      "现金流"
+    ],
+    "windows": [],
+    "used_in": [
+      {
+        "project": "2026-10-google-q3",
+        "file": "public/2026-10-google-q3/img/G1-2.png",
+        "date": "2026-10-29"
+      }
+    ],
+    "notes": "1672×941；同一提示词出 2 张（G1-1、G1-2），片中用 G1-2",
+    "prompt": "A cinematic 16:9 illustration on a deep navy background (#06101f): a glowing, minimal search bar floats in the center, and its lower edge is a slow, old money-printing machine pushing out a thin stream of dollar bills that is visibly slowing down; cool cyan rim light, subtle grid lines, soft depth of field, premium finance style.\nNo text, no letters, no logos, no faces or people, no watermark.",
+    "negative_prompt": "",
+    "local_path": "3-视频生成/public/2026-10-google-q3/img/G1-2.png",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "thumb": ""
+  },
+  {
+    "id": "gen-host-2026-10-google-q3",
+    "type": "video",
+    "status": "available",
+    "title": "",
+    "title_zh": "2026-10-google-q3 数字人主持人口播",
+    "url": "",
+    "platform": "generated",
+    "owner": "topview avatar4",
+    "official": false,
+    "license": "generated",
+    "published": "2026-10-30",
+    "duration": 27.73,
+    "domain": [],
+    "shot": [
+      "人物采访"
+    ],
+    "tags": [
+      "数字人",
+      "主持人"
+    ],
+    "windows": [],
+    "used_in": [
+      {
+        "project": "2026-10-google-q3",
+        "file": "public/2026-10-google-q3/host/host.mp4",
+        "date": "2026-10-30"
+      }
+    ],
+    "notes": "人像来自照片；配音来自用户录音；消耗 2.8 积分；Topview 任务 116b9ed962504a738e82b2c39c3d0b60",
+    "local_path": "public/2026-10-google-q3/host/host.mp4",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-30"
+  },
+  {
+    "id": "gen-host-2026-10-google-q3-cards",
+    "type": "video",
+    "status": "available",
+    "title": "",
+    "title_zh": "2026-10-google-q3-cards 数字人主持人口播",
+    "url": "",
+    "platform": "generated",
+    "owner": "topview avatar4",
+    "official": false,
+    "license": "generated",
+    "published": "2026-10-30",
+    "duration": 211,
+    "domain": [],
+    "shot": [
+      "人物采访"
+    ],
+    "tags": [
+      "数字人",
+      "主持人"
+    ],
+    "windows": [],
+    "used_in": [
+      {
+        "project": "2026-10-google-q3-cards",
+        "file": "public/2026-10-google-q3-cards/host/host.mp4",
+        "date": "2026-10-30"
+      }
+    ],
+    "notes": "人像来自照片；配音来自用户录音；消耗 21.1 积分；Topview 任务 4282a135a4164be3a50328ef5a51168d",
+    "local_path": "public/2026-10-google-q3-cards/host/host.mp4",
+    "found_for": [
+      "2026-10-google-q3-cards"
+    ],
+    "added": "2026-10-30"
+  },
+  {
     "id": "gen-host-avatar-host-demo",
     "type": "video",
     "status": "available",
@@ -624,7 +739,7 @@
       "caspa-ai-profit"
     ],
     "added": "2026-10-27",
-    "verified": "2026-10-27",
+    "verified": "2026-11-02",
     "thumb": "thumbs/img-nvidia-nvl72.jpg"
   },
   {
@@ -665,6 +780,2054 @@
     "added": "2026-10-27",
     "verified": "2026-10-27",
     "thumb": "thumbs/img-skhynix-hbm4.jpg"
+  },
+  {
+    "id": "web-abc-default",
+    "type": "image",
+    "status": "unavailable",
+    "title": "Anat Ashkenazi to Join Google and Alphabet as Chief Financial Officer",
+    "title_zh": "Anat Ashkenazi 出任 Google 与 Alphabet CFO",
+    "url": "https://abc.xyz/investor/news/news-details/2024/Anat-Ashkenazi-to-Join-Google-and-Alphabet-as-Chief-Financial-Officer-06-05-2024/default.aspx",
+    "platform": "web",
+    "owner": "Alphabet Investor Relations",
+    "official": true,
+    "license": "official-press",
+    "published": "2024-06-05",
+    "duration": null,
+    "domain": [
+      "公司财报"
+    ],
+    "shot": [
+      "新闻截图"
+    ],
+    "tags": [
+      "Anat Ashkenazi",
+      "Alphabet",
+      "IR"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Official IR appointment release. Page is text-first; pair with Fortune/Barron’s courtesy-Alphabet still. Barron’s also labels photo 'Courtesy Alphabet': https://www.barrons.com/articles/anat-ashkenazi-ff9222f7",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "status_reason": "HTTP 403",
+    "verified": "2026-10-29"
+  },
+  {
+    "status": "available",
+    "title_zh": "亚马逊 Project Rainier 数据中心外景（黄昏航拍）",
+    "duration": null,
+    "windows": [],
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29",
+    "thumb": "",
+    "id": "web-amazon-project-rainier-exterior",
+    "type": "image",
+    "title": "Project Rainier exterior",
+    "url": "https://www.aboutamazon.com/news/aws/aws-project-rainier-ai-trainium-chips-compute-cluster",
+    "platform": "web",
+    "owner": "Amazon",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "domain": [
+      "AI",
+      "数据中心"
+    ],
+    "shot": [
+      "航拍"
+    ],
+    "tags": [
+      "Amazon",
+      "AWS",
+      "Project Rainier",
+      "数据中心"
+    ],
+    "used_in": [
+      {
+        "project": "2026-10-google-q3",
+        "file": "public/2026-10-google-q3/img/n11-amzn-rainier.jpg",
+        "date": "2026-10-29"
+      }
+    ],
+    "notes": "图片直链 https://assets.aboutamazon.com/50/19/309b104648e1b00c5c7dec3fdc54/projectrainier-exterior.png（2550×1433）；同页还有 interior-rainier.png。页面视频是 YouTube 嵌入（0TnHSRNqDqM），所以改用图片"
+  },
+  {
+    "id": "web-anthropic-expanding-our-use-of-google-cloud-tpus-and-ser",
+    "type": "image",
+    "status": "available",
+    "title": "Expanding our use of Google Cloud TPUs and Services",
+    "title_zh": "Anthropic 扩大使用 Google Cloud TPU",
+    "url": "https://www.anthropic.com/news/expanding-our-use-of-google-cloud-tpus-and-services",
+    "platform": "web",
+    "owner": "Anthropic",
+    "official": true,
+    "license": "official-press",
+    "published": "2025-10-23",
+    "duration": null,
+    "domain": [
+      "AI",
+      "云计算",
+      "半导体"
+    ],
+    "shot": [
+      "新闻截图",
+      "图表数据"
+    ],
+    "tags": [
+      "Anthropic",
+      "Google Cloud",
+      "TPU",
+      "Claude"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 0,
+        "desc": "公告头图（镜头93）",
+        "source": "used"
+      }
+    ],
+    "used_in": [
+      {
+        "project": "2026-10-google-q3",
+        "start": 0,
+        "end": 0,
+        "file": "public/2026-10-google-q3/img/n12-anthropic.jpg",
+        "date": "2026-10-29"
+      }
+    ],
+    "notes": "Official Anthropic announcement: up to 1 million TPUs, >1 GW in 2026. Use logo/hero stills. Google Cloud PR: https://www.prnewswire.com/news-releases/anthropic-to-expand-use-of-google-cloud-tpus-and-services-302593275.html",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29"
+  },
+  {
+    "id": "web-audiovisual-i-280007",
+    "type": "video",
+    "status": "available",
+    "title": "Exterior views of the European Commission (Berlaymont)",
+    "title_zh": "欧盟委员会伯莱蒙大楼外景",
+    "url": "https://audiovisual.ec.europa.eu/en/media/video/I-280007",
+    "platform": "web",
+    "owner": "European Commission Audiovisual Service",
+    "official": true,
+    "license": "official-press",
+    "published": "2025-11-12",
+    "duration": null,
+    "domain": [
+      "宏观经济"
+    ],
+    "shot": [
+      "外景航拍"
+    ],
+    "tags": [
+      "European Commission",
+      "Berlaymont",
+      "Brussels",
+      "EU"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 22,
+        "desc": "full 22s Berlaymont exteriors / recorded cutaways",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Official EC AV clip I-280007, 12 Nov 2025, 22s. Media-library terms on the EC audiovisual portal; no YouTube watermark. Best current official exterior.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29"
+  },
+  {
+    "id": "web-blog-explore-web-generative-ai-search",
+    "type": "image",
+    "status": "available",
+    "title": "How AI Mode and AI Overviews help you explore the web",
+    "title_zh": "AI Mode 与 AI Overviews 如何帮你探索网页",
+    "url": "https://blog.google/products-and-platforms/products/search/explore-web-generative-ai-search/",
+    "platform": "web",
+    "owner": "The Keyword / blog.google",
+    "official": true,
+    "license": "official-press",
+    "published": "2026-05-06",
+    "duration": null,
+    "domain": [
+      "AI",
+      "消费"
+    ],
+    "shot": [
+      "产品特写",
+      "新闻截图"
+    ],
+    "tags": [
+      "Google",
+      "AI Overviews",
+      "AI Mode"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Official May 2026 post with AI Overview UI stills (biking California coast example; hover-link preview). Good for a 2–3s results-page insert.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29"
+  },
+  {
+    "id": "web-blog-one-billion-monthly-users",
+    "type": "image",
+    "status": "available",
+    "title": "Google’s Gemini app hits 1 billion monthly active users",
+    "title_zh": "Gemini 应用月活突破 10 亿",
+    "url": "https://blog.google/innovation-and-ai/products/gemini-app/one-billion-monthly-users/",
+    "platform": "web",
+    "owner": "The Keyword / blog.google",
+    "official": true,
+    "license": "official-press",
+    "published": "2026-08-11",
+    "duration": null,
+    "domain": [
+      "AI",
+      "消费",
+      "公司财报"
+    ],
+    "shot": [
+      "产品特写",
+      "图表数据",
+      "新闻截图"
+    ],
+    "tags": [
+      "Google",
+      "Gemini",
+      "1 billion users"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 0,
+        "desc": "博客头图",
+        "source": "used"
+      }
+    ],
+    "used_in": [],
+    "notes": "Official 1B MAU announcement (Aug 2026). Use page images/stats cards; Q3 2026 earnings later restated 1B+ users. Not phone-motion footage.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29"
+  },
+  {
+    "id": "web-blog-updates-ai-mode-overviews-explore-web",
+    "type": "image",
+    "status": "available",
+    "title": "AI Mode and AI Overviews updates to explore the web",
+    "title_zh": "AI Mode 与 AI Overviews 网页探索更新",
+    "url": "https://blog.google/products-and-platforms/products/search/updates-ai-mode-overviews-explore-web/",
+    "platform": "web",
+    "owner": "The Keyword / blog.google",
+    "official": true,
+    "license": "official-press",
+    "published": "2026-10-15",
+    "duration": null,
+    "domain": [
+      "AI",
+      "消费"
+    ],
+    "shot": [
+      "产品特写",
+      "新闻截图"
+    ],
+    "tags": [
+      "Google",
+      "AI Overviews",
+      "AI Mode",
+      "Search"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 0,
+        "desc": "博客配图（镜头2、29）",
+        "source": "used"
+      }
+    ],
+    "used_in": [
+      {
+        "project": "2026-10-google-q3",
+        "start": 0,
+        "end": 0,
+        "file": "public/2026-10-google-q3/img/n2-ai-overviews.jpg",
+        "date": "2026-10-29"
+      }
+    ],
+    "notes": "Official Oct 2026 blog with current AI Overviews/AI Mode screenshots (inline links, top links, news carousels). Still-frame B-roll; check page images for watermark.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29"
+  },
+  {
+    "id": "web-cdn-marvell-chip2-v1-ara-16t-pam4-dsp-",
+    "type": "image",
+    "status": "available",
+    "title": "Marvell Ara 1.6T PAM4 DSP chip (press kit)",
+    "title_zh": "Marvell Ara 1.6T PAM4 DSP 芯片官方照片",
+    "url": "https://cdn.brandfolder.io/T6Z654FK/at/vh36bz3n38q7kfjxqng5w64/Marvell_chip2_v1_Ara_16T_PAM4_DSP_.jpg",
+    "platform": "web",
+    "owner": "Marvell",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "半导体"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "Marvell",
+      "DSP"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "来自 Marvell 官方 Ara press kit 页 https://www.marvell.com/company/media-kit/ara-3nm-1-6tbps-pam4-dsp-press-kit.html",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "thumb": "thumbs/web-cdn-marvell-chip2-v1-ara-16t-pam4-dsp-.jpg",
+    "verified": "2026-11-02"
+  },
+  {
+    "id": "web-coherent-6-inch-inp-scalable-wafers",
+    "type": "image",
+    "status": "available",
+    "title": "Coherent 6-inch InP scalable wafers",
+    "title_zh": "Coherent 6 英寸磷化铟晶圆（官方博客图）",
+    "url": "https://www.coherent.com/content/dam/coherent/site/en/images/photography/blog/6-inch-inp-scalable-wafer-fabs/6-inch-inp-scalable-wafers.jpg",
+    "platform": "web",
+    "owner": "Coherent",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "半导体",
+      "通信"
+    ],
+    "shot": [
+      "生产制造",
+      "产品特写"
+    ],
+    "tags": [
+      "Coherent",
+      "InP"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "来源 https://www.coherent.com/news/blog/indium-phosphide-wafer-fab ；可作 A18 激光器晶圆示意（标 Coherent，不冒充 Lumentum）或 A25。",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "thumb": "thumbs/web-coherent-6-inch-inp-scalable-wafers.jpg",
+    "verified": "2026-11-02"
+  },
+  {
+    "id": "web-coherent-coherent-ipoh-malaysia-300m-transceivers",
+    "type": "image",
+    "status": "available",
+    "title": "Coherent transceiver assembly in Ipoh, Malaysia",
+    "title_zh": "Coherent 马来西亚怡保光模块组装线（官方新闻图）",
+    "url": "https://www.coherent.com/content/dam/coherent/site/en/images/photography/press-releases/coherent-ipoh-malaysia-300m-transceivers.jpg",
+    "platform": "web",
+    "owner": "Coherent",
+    "official": true,
+    "license": "official-press",
+    "published": "2024-06-12",
+    "duration": null,
+    "domain": [
+      "通信",
+      "半导体"
+    ],
+    "shot": [
+      "生产制造"
+    ],
+    "tags": [
+      "Coherent",
+      "transceiver"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "来自 Coherent 3 亿只光模块里程碑新闻稿；A24 模块组装画面（标 Coherent，不冒充 Lumentum/Marvell）。",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02",
+    "thumb": "thumbs/web-coherent-coherent-ipoh-malaysia-300m-transceivers.jpg"
+  },
+  {
+    "id": "web-coherent-ftce4517e1pxm",
+    "type": "image",
+    "status": "available",
+    "title": "Coherent OSFP 1.6T transceiver product image",
+    "title_zh": "Coherent OSFP 光模块产品图",
+    "url": "https://www.coherent.com/content/dam/coherent/site/en/products/networking/optical-transceivers/osfp/ftce4517e1pxm.jpg",
+    "platform": "web",
+    "owner": "Coherent",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "通信",
+      "数据中心"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "Coherent",
+      "transceiver"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "来自 Coherent 1.6T-DR8 产品页 https://www.coherent.com/networking/transceivers/datacom/FTCF2519E1PCM（页面主图文件名为 ftce4517e1pxm，型号以页面为准）。",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "thumb": "thumbs/web-coherent-ftce4517e1pxm.jpg",
+    "verified": "2026-11-02"
+  },
+  {
+    "id": "web-coherent-manufacturing-milestone-300-million-transceiver",
+    "type": "image",
+    "status": "available",
+    "title": "Coherent Ipoh Malaysia transceiver assembly (300 million milestone PR)",
+    "title_zh": "Coherent 马来西亚怡保光模块组装产线（3亿只里程碑新闻稿配图）",
+    "url": "https://www.coherent.com/news/press-releases/manufacturing-milestone-300-million-transceiveres-shipped",
+    "platform": "web",
+    "owner": "Coherent Corp.",
+    "official": true,
+    "license": "official-press",
+    "published": "2024-06-12",
+    "duration": null,
+    "domain": [
+      "通信",
+      "半导体",
+      "数据中心"
+    ],
+    "shot": [
+      "生产制造"
+    ],
+    "tags": [
+      "Coherent",
+      "Ipoh",
+      "transceiver assembly",
+      "800G"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Official press page includes Image 1: Transceiver assembly in Ipoh, Malaysia (asset path coherent-ipoh-malaysia-300m-transceivers.jpg). Good still for assembly-line context; not motion B-roll.",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02"
+  },
+  {
+    "id": "web-commons-file-belgique---bruxelles---schuman---berlaymont",
+    "type": "image",
+    "status": "available",
+    "title": "File:Belgique - Bruxelles - Schuman - Berlaymont - 01.jpg",
+    "title_zh": "舒曼圆环望向伯莱蒙大楼",
+    "url": "https://commons.wikimedia.org/wiki/File:Belgique_-_Bruxelles_-_Schuman_-_Berlaymont_-_01.jpg",
+    "platform": "web",
+    "owner": "Wikimedia Commons",
+    "official": false,
+    "license": "cc",
+    "published": "2019-09-14",
+    "duration": null,
+    "domain": [
+      "宏观经济"
+    ],
+    "shot": [
+      "外景航拍"
+    ],
+    "tags": [
+      "Berlaymont",
+      "EU flags",
+      "Schuman"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Wide 5180×2894 from Schuman roundabout; often shows EU flags. Author EmDee. EC stills also at https://audiovisual.ec.europa.eu/en/media/photo/P-045618/00-04",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29"
+  },
+  {
+    "id": "web-commons-file-berlaymont-eu-building-brussels",
+    "type": "image",
+    "status": "available",
+    "title": "File:Berlaymont EU Building-Brussels.jpg",
+    "title_zh": "布鲁塞尔伯莱蒙大楼",
+    "url": "https://commons.wikimedia.org/wiki/File:Berlaymont_EU_Building-Brussels.jpg",
+    "platform": "web",
+    "owner": "Wikimedia Commons",
+    "official": false,
+    "license": "cc",
+    "published": "2018-03-16",
+    "duration": null,
+    "domain": [
+      "宏观经济"
+    ],
+    "shot": [
+      "外景航拍"
+    ],
+    "tags": [
+      "Berlaymont",
+      "EU",
+      "Brussels"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 0,
+        "desc": "署名 acediscovery CC BY 4.0（欧盟视听视频下不了的备选）",
+        "source": "used"
+      }
+    ],
+    "used_in": [
+      {
+        "project": "2026-10-google-q3",
+        "start": 0,
+        "end": 0,
+        "file": "public/2026-10-google-q3/img/n14-berlaymont.jpg",
+        "date": "2026-10-29"
+      }
+    ],
+    "notes": "CC BY 4.0, acediscovery. 3000×3887 exterior of Commission HQ. Belgium FoP noted on the category page.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29"
+  },
+  {
+    "id": "web-commons-file-google-campus-mountain-view-ca",
+    "type": "image",
+    "status": "available",
+    "title": "File:Google Campus, Mountain View, CA.jpg",
+    "title_zh": "山景城 Google 园区航拍",
+    "url": "https://commons.wikimedia.org/wiki/File:Google_Campus,_Mountain_View,_CA.jpg",
+    "platform": "web",
+    "owner": "Wikimedia Commons",
+    "official": false,
+    "license": "cc",
+    "published": "2013-05-25",
+    "duration": null,
+    "domain": [
+      "公司财报"
+    ],
+    "shot": [
+      "外景航拍"
+    ],
+    "tags": [
+      "Googleplex",
+      "aerial",
+      "Mountain View"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Aerial of main campus (5356×3013), Austin McKinley, own work. Older than Bay View canopies; use as generic HQ aerial. Category index: https://commons.wikimedia.org/wiki/Category:Googleplex",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29"
+  },
+  {
+    "id": "web-commons-file-googleplex-hq-cropped-",
+    "type": "image",
+    "status": "available",
+    "title": "File:Googleplex HQ (cropped).jpg",
+    "title_zh": "Googleplex 总部外景（裁切）",
+    "url": "https://commons.wikimedia.org/wiki/File:Googleplex_HQ_(cropped).jpg",
+    "platform": "web",
+    "owner": "Wikimedia Commons",
+    "official": false,
+    "license": "cc",
+    "published": "2019-03-10",
+    "duration": null,
+    "domain": [
+      "公司财报",
+      "消费"
+    ],
+    "shot": [
+      "外景航拍"
+    ],
+    "tags": [
+      "Googleplex",
+      "Mountain View",
+      "Alphabet HQ"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 0,
+        "desc": "署名 Asoundd CC BY-SA 4.0",
+        "source": "used"
+      }
+    ],
+    "used_in": [
+      {
+        "project": "2026-10-google-q3",
+        "start": 0,
+        "end": 0,
+        "file": "public/2026-10-google-q3/img/n9-googleplex.jpg",
+        "date": "2026-10-29"
+      }
+    ],
+    "notes": "CC still of Googleplex, Mountain View. File page notes US architectural-work caveats for post-1990 buildings; keep as exterior establishing shot. 3024×2212.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29"
+  },
+  {
+    "status": "available",
+    "title_zh": "皮查伊肖像（2023 访问欧盟委员会）",
+    "duration": null,
+    "windows": [],
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29",
+    "thumb": "",
+    "id": "web-commons-file-sundar-pichai-2023-cropped-2",
+    "type": "image",
+    "title": "Sundar Pichai (2023) cropped 2",
+    "url": "https://commons.wikimedia.org/wiki/File:Sundar_Pichai_(2023)_cropped_2.jpg",
+    "platform": "web",
+    "owner": "Lukasz Kobus (European Commission)",
+    "official": false,
+    "license": "CC BY 4.0",
+    "published": "2023",
+    "domain": [
+      "人物"
+    ],
+    "shot": [
+      "人物肖像"
+    ],
+    "tags": [
+      "Sundar Pichai",
+      "Google",
+      "Alphabet"
+    ],
+    "used_in": [
+      {
+        "project": "2026-10-google-q3",
+        "file": "public/2026-10-google-q3/img/n5-pichai.jpg",
+        "date": "2026-10-29"
+      }
+    ],
+    "notes": "1656×2184 竖图，背景有欧盟旗。画面署名：Photo: Lukasz Kobus / European Commission, CC BY 4.0"
+  },
+  {
+    "id": "web-commons-file-the-googleplex-mountain-view-ca---panoramio",
+    "type": "image",
+    "status": "available",
+    "title": "File:The Googleplex. Mountain View, CA - panoramio.jpg",
+    "title_zh": "Googleplex 外景（Panoramio）",
+    "url": "https://commons.wikimedia.org/wiki/File:The_Googleplex._Mountain_View,_CA_-_panoramio.jpg",
+    "platform": "web",
+    "owner": "Wikimedia Commons",
+    "official": false,
+    "license": "cc",
+    "published": "2010-03-30",
+    "duration": null,
+    "domain": [
+      "公司财报"
+    ],
+    "shot": [
+      "外景航拍"
+    ],
+    "tags": [
+      "Googleplex",
+      "Mountain View"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "CC BY 3.0, Robert Barlow. Ground-level campus; dated 2010. Prefer HQ cropped file for a cleaner still.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29"
+  },
+  {
+    "status": "available",
+    "title_zh": "库里安在 2022 Air, Space & Cyber 大会发言",
+    "duration": null,
+    "windows": [],
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29",
+    "thumb": "",
+    "id": "web-commons-file-thomas-kurian-google-cloud-ceo-2022",
+    "type": "image",
+    "title": "Thomas Kurian Google Cloud CEO 2022",
+    "url": "https://commons.wikimedia.org/wiki/File:Thomas_Kurian_Google_Cloud_CEO_2022.jpg",
+    "platform": "web",
+    "owner": "Eric Dietrich (DVIDS)",
+    "official": false,
+    "license": "public-domain",
+    "published": "2022-09-19",
+    "domain": [
+      "人物"
+    ],
+    "shot": [
+      "人物演讲"
+    ],
+    "tags": [
+      "Thomas Kurian",
+      "Google Cloud"
+    ],
+    "used_in": [
+      {
+        "project": "2026-10-google-q3",
+        "file": "public/2026-10-google-q3/img/n6-kurian.jpg",
+        "date": "2026-10-29"
+      }
+    ],
+    "notes": "5839×3885 横图，人在画面右侧。画面署名：Photo: Eric Dietrich / DVIDS"
+  },
+  {
+    "id": "web-fortune-anat-ashkenazi",
+    "type": "image",
+    "status": "available",
+    "title": "Anat Ashkenazi | Fortune Most Powerful Women 2026",
+    "title_zh": "Anat Ashkenazi｜《财富》2026 最具影响力女性",
+    "url": "https://fortune.com/ranking/most-powerful-women/2026/anat-ashkenazi/",
+    "platform": "web",
+    "owner": "Fortune",
+    "official": false,
+    "license": "unknown",
+    "published": "2026-05-22",
+    "duration": null,
+    "domain": [
+      "公司财报"
+    ],
+    "shot": [
+      "人物采访"
+    ],
+    "tags": [
+      "Anat Ashkenazi",
+      "Alphabet",
+      "CFO"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Reputable-media headshot credited 'Courtesy of Alphabet'. Editorial use; not a free press-kit download. Good still of current CFO.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29"
+  },
+  {
+    "status": "available",
+    "title_zh": "Google Cloud Next 26 主会场全景",
+    "duration": null,
+    "windows": [],
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29",
+    "thumb": "",
+    "id": "web-google-cloud-next-26-arena",
+    "type": "image",
+    "title": "Google Cloud Next 26 keynote arena",
+    "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/google-cloud-next-26-recap/",
+    "platform": "web",
+    "owner": "Google",
+    "official": true,
+    "license": "official-press",
+    "published": "2026-04-22",
+    "domain": [
+      "AI",
+      "云计算"
+    ],
+    "shot": [
+      "会场"
+    ],
+    "tags": [
+      "Google Cloud",
+      "Next 26",
+      "发布会"
+    ],
+    "used_in": [
+      {
+        "project": "2026-10-google-q3",
+        "file": "public/2026-10-google-q3/img/n13-cloud-next.jpg",
+        "date": "2026-10-29"
+      }
+    ],
+    "notes": "图片 GCNEXT2026_0422_085831-8501_ALIV（width-2200 webp 转 jpg）；cloud.google.com 的 day-1 recap 里还有 7 张主会场照片。画面署名：Photo: Google Cloud Next 26"
+  },
+  {
+    "id": "web-lumentum-16t-dr4-osfp-module-400g-differential-emls-ofc-",
+    "type": "video",
+    "status": "available",
+    "title": "1.6T DR4 OSFP Module with 400G Differential EMLs | OFC 2026 Demo | Lumentum",
+    "title_zh": "Lumentum 官方：OFC 2026 1.6T DR4 OSFP（400G 差分 EML）",
+    "url": "https://www.lumentum.com/en/videos/16t-dr4-osfp-module-400g-differential-emls-ofc-2026-demo",
+    "platform": "web",
+    "owner": "Lumentum",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": 118,
+    "domain": [
+      "通信",
+      "半导体",
+      "AI"
+    ],
+    "shot": [
+      "产品特写",
+      "动画演示"
+    ],
+    "tags": [
+      "Lumentum",
+      "1.6T",
+      "EML",
+      "OFC2026"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 10,
+        "desc": "OFC 2026 Lumentum 展台全景（人物小）",
+        "source": "checked"
+      },
+      {
+        "start": 18,
+        "end": 28,
+        "desc": "官方原理图：1.6T DR4 模块内 4×400G EML",
+        "source": "checked"
+      }
+    ],
+    "used_in": [],
+    "notes": "Grok r2. Official Lumentum video page for 1.6T + EML demo. Prefer product-only frames; confirm embedded player has no face close-ups.",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02",
+    "thumb": "thumbs/web-lumentum-16t-dr4-osfp-module-400g-differential-emls-ofc-.jpg"
+  },
+  {
+    "id": "web-lumentum-optical-circuit-switching-ocs-large-scale-gpu-c",
+    "type": "video",
+    "status": "unavailable",
+    "title": "Optical Circuit Switching (OCS) for Large-Scale GPU Clusters | Lumentum",
+    "title_zh": "Lumentum 官方：R300 OCS 用于大规模 GPU 集群",
+    "url": "https://www.lumentum.com/en/videos/optical-circuit-switching-ocs-large-scale-gpu-clusters",
+    "platform": "web",
+    "owner": "Lumentum",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "通信",
+      "数据中心",
+      "AI"
+    ],
+    "shot": [
+      "产品特写",
+      "动画演示"
+    ],
+    "tags": [
+      "Lumentum",
+      "R300",
+      "OCS",
+      "Marvell"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Official page explicitly names Lumentum R300 OCS for AI/ML clusters. Check for Marvell co-branding before use if you want Lumentum-only visuals.",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02",
+    "status_reason": "与 web-videos-iafvmfqz3xqyjqrwzy7kws 为同一支视频（Marvell×Lumentum OCS 展台），保留 Marvell 那条"
+  },
+  {
+    "id": "web-lumentum-revolutionizing-optical-switching-lumentums-new",
+    "type": "video",
+    "status": "available",
+    "title": "Revolutionizing Optical Switching: New Lumentum OCS",
+    "title_zh": "Lumentum 官方：新一代 OCS（R300 相关）讲解视频",
+    "url": "https://www.lumentum.com/en/videos/revolutionizing-optical-switching-lumentums-new-ocs",
+    "platform": "web",
+    "owner": "Lumentum",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": 148,
+    "domain": [
+      "通信",
+      "数据中心",
+      "AI"
+    ],
+    "shot": [
+      "产品特写",
+      "人物采访",
+      "动画演示"
+    ],
+    "tags": [
+      "Lumentum",
+      "OCS",
+      "R300"
+    ],
+    "windows": [
+      {
+        "start": 5,
+        "end": 12,
+        "desc": "OFC 展馆空镜",
+        "source": "checked"
+      },
+      {
+        "start": 42,
+        "end": 50,
+        "desc": "Lumentum 展台空镜",
+        "source": "checked"
+      },
+      {
+        "start": 60,
+        "end": 70,
+        "desc": "OCS 架构对比图：今天的数据中心 vs AI 数据中心",
+        "source": "checked"
+      }
+    ],
+    "used_in": [],
+    "notes": "Grok r2. Official OCS explainer featuring Michael DeMerchant. People on camera—use only as background or cut to product graphics; no portrait close-ups.",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02",
+    "thumb": "thumbs/web-lumentum-revolutionizing-optical-switching-lumentums-new.jpg"
+  },
+  {
+    "id": "web-media-1-3-elsfptransceiver-1",
+    "type": "image",
+    "status": "available",
+    "title": "ELSFP external laser source",
+    "title_zh": "",
+    "url": "https://media.lumentum.com/sites/default/files/2026-01/1.3.ELSFPtransceiver_1.png",
+    "platform": "web",
+    "owner": "Lumentum",
+    "official": true,
+    "license": "unknown",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "通信",
+      "数据中心"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "Lumentum",
+      "A23"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "主代理通过官方网站首页/产品页Jina读取提取的实际图链；非Grok输出。来源 https://www.lumentum.com/en 。官方版权，未找到本视频重用授权；只作候选。",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02",
+    "thumb": "thumbs/web-media-1-3-elsfptransceiver-1.jpg"
+  },
+  {
+    "id": "web-media-1-4-1-6ttransceiver-20-282-29",
+    "type": "image",
+    "status": "available",
+    "title": "1.6T TRO OSFP module",
+    "title_zh": "",
+    "url": "https://media.lumentum.com/sites/default/files/2025-11/1.4.1.6TTransceiver%20%282%29.png",
+    "platform": "web",
+    "owner": "Lumentum",
+    "official": true,
+    "license": "unknown",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "通信",
+      "数据中心"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "Lumentum",
+      "A17"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "主代理通过官方网站首页/产品页Jina读取提取的实际图链；非Grok输出。来源 https://www.lumentum.com/en 。官方版权，未找到本视频重用授权；只作候选。",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02",
+    "thumb": "thumbs/web-media-1-4-1-6ttransceiver-20-282-29.jpg"
+  },
+  {
+    "id": "web-media-eml200g-web-0",
+    "type": "image",
+    "status": "available",
+    "title": "200G EML laser",
+    "title_zh": "",
+    "url": "https://media.lumentum.com/sites/default/files/2025-12/eml200g-web_0.png",
+    "platform": "web",
+    "owner": "Lumentum",
+    "official": true,
+    "license": "unknown",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "通信",
+      "数据中心"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "Lumentum",
+      "A21"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "主代理通过官方网站首页/产品页Jina读取提取的实际图链；非Grok输出。来源 https://www.lumentum.com/en 。官方版权，未找到本视频重用授权；只作候选。",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02",
+    "thumb": "thumbs/web-media-eml200g-web-0.jpg"
+  },
+  {
+    "id": "web-media-r300ocs-0",
+    "type": "image",
+    "status": "available",
+    "title": "R300 OCS",
+    "title_zh": "",
+    "url": "https://media.lumentum.com/sites/default/files/2025-11/r300ocs_0.png",
+    "platform": "web",
+    "owner": "Lumentum",
+    "official": true,
+    "license": "unknown",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "通信",
+      "数据中心"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "Lumentum",
+      "A22"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "主代理通过官方网站首页/产品页Jina读取提取的实际图链；非Grok输出。来源 https://www.lumentum.com/en 。官方版权，未找到本视频重用授权；只作候选。",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02",
+    "thumb": "thumbs/web-media-r300ocs-0.jpg"
+  },
+  {
+    "status": "available",
+    "title_zh": "SpaceX Crew-12 发射高速摄影",
+    "duration": 143,
+    "windows": [
+      {
+        "start": 14,
+        "end": 50,
+        "desc": "点火到升空"
+      }
+    ],
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29",
+    "thumb": "",
+    "id": "web-nasa-crew-12-launch-clips",
+    "type": "video",
+    "title": "CCP SpaceX Crew-12 Launch (high-speed liftoff)",
+    "url": "https://images.nasa.gov/details/KSC-20260213-MH-CSH01-0001-CCP_SpaceX_Crew_12_Launch_Clips-M19013",
+    "platform": "web",
+    "owner": "NASA / Cory S Huston",
+    "official": true,
+    "license": "public-domain",
+    "published": "2026-02-13",
+    "domain": [
+      "航天"
+    ],
+    "shot": [
+      "发射"
+    ],
+    "tags": [
+      "SpaceX",
+      "Falcon 9",
+      "火箭发射"
+    ],
+    "used_in": [
+      {
+        "project": "2026-10-google-q3",
+        "window": "21-30",
+        "file": "public/2026-10-google-q3/video/rocket.mp4",
+        "date": "2026-10-29"
+      }
+    ],
+    "notes": "NASA 图片视频库直链 mp4（~large.mp4 是 1080p），不需要 cookies。代替 yt-YocP0rWNnNo（YouTube 被拦）。片中取 14-50 秒存为 rocket.mp4，从第 7 秒用起"
+  },
+  {
+    "id": "web-pexels-dynamic-stock-trading-data-on-monitors-39020626",
+    "type": "video",
+    "status": "unavailable",
+    "title": "Dynamic Stock Trading Data on Monitors",
+    "title_zh": "显示器上的动态股票行情",
+    "url": "https://www.pexels.com/video/dynamic-stock-trading-data-on-monitors-39020626/",
+    "platform": "web",
+    "owner": "Pexels / Rafael Minguet Delgado",
+    "official": false,
+    "license": "cc",
+    "published": "2026-08-14",
+    "duration": null,
+    "domain": [
+      "金融市场"
+    ],
+    "shot": [
+      "图表数据",
+      "产品特写"
+    ],
+    "tags": [
+      "stock market",
+      "monitors",
+      "Pexels"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 22,
+        "desc": "full 22s 3840×2160 16:9",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Free 4K, Aug 2026. Close-up of live charts; good 4s earnings-open sting.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "status_reason": "HTTP 403",
+    "verified": "2026-10-29"
+  },
+  {
+    "id": "web-pexels-dynamic-trading-desk-with-real-time-financial-dat",
+    "type": "video",
+    "status": "unavailable",
+    "title": "Dynamic Trading Desk with Real-Time Financial Data",
+    "title_zh": "实时行情交易台",
+    "url": "https://www.pexels.com/video/dynamic-trading-desk-with-real-time-financial-data-37962428/",
+    "platform": "web",
+    "owner": "Pexels / Rafael Minguet Delgado",
+    "official": false,
+    "license": "cc",
+    "published": "2026-06-04",
+    "duration": null,
+    "domain": [
+      "金融市场"
+    ],
+    "shot": [
+      "图表数据",
+      "产品特写"
+    ],
+    "tags": [
+      "stock market",
+      "ticker",
+      "trading desk",
+      "Pexels"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 25,
+        "desc": "full 25s 3840×2160 16:9",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Free Pexels License, 4K, Jun 2026. Desk/charts not a classic NYSE pit. Attribution optional.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "status_reason": "HTTP 403",
+    "verified": "2026-10-29"
+  },
+  {
+    "id": "web-pexels-finance-nyse-wall-street-new-york-city-4319342",
+    "type": "video",
+    "status": "unavailable",
+    "title": "The New York Stock Exchange Building In Low Angle View",
+    "title_zh": "纽约证券交易所大楼仰拍",
+    "url": "https://www.pexels.com/video/finance-nyse-wall-street-new-york-city-4319342/",
+    "platform": "web",
+    "owner": "Pexels / CityXcape",
+    "official": false,
+    "license": "cc",
+    "published": "2020-05-04",
+    "duration": null,
+    "domain": [
+      "金融市场"
+    ],
+    "shot": [
+      "外景航拍"
+    ],
+    "tags": [
+      "NYSE",
+      "Wall Street",
+      "Pexels"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 10,
+        "desc": "full 10s 1920×1080 16:9",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Free 10s NYSE facade. Older than 2025 but classic ticker-story establishing shot. Also: Pixabay 4K clip https://pixabay.com/videos/stock-market-finance-trading-308078/ (published 2025-10-05, Pixabay Content License).",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "status_reason": "HTTP 403",
+    "verified": "2026-10-29"
+  },
+  {
+    "id": "web-pexels-many-cabled-connectors-in-fiber-optic-switch-4497",
+    "type": "image",
+    "status": "unavailable",
+    "title": "Many cabled connectors in fiber optic switch",
+    "title_zh": "光纤交换机上的线缆接头特写（免费图库）",
+    "url": "https://www.pexels.com/photo/many-cabled-connectors-in-fiber-optic-switch-4497195/",
+    "platform": "web",
+    "owner": "Pexels / Brett Sayles",
+    "official": false,
+    "license": "cc",
+    "published": "2020-05-27",
+    "duration": null,
+    "domain": [
+      "数据中心",
+      "通信"
+    ],
+    "shot": [
+      "产品特写",
+      "机房内景"
+    ],
+    "tags": [
+      "fiber",
+      "switch",
+      "cables",
+      "free"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Free-licence fiber/switch close-up; generic, no customer logos required. Not a true assembly line—use as optics-lab/patch-panel filler if factory video is thin.",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "status_reason": "HTTP 403",
+    "verified": "2026-11-02"
+  },
+  {
+    "id": "web-upload-marvell-santa-clara-may-2011",
+    "type": "image",
+    "status": "available",
+    "title": "Marvell Santa Clara headquarters (May 2011)",
+    "title_zh": "Marvell 圣克拉拉总部外景（2011）",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Marvell_Santa_Clara_May_2011.jpg",
+    "platform": "web",
+    "owner": "Wikimedia Commons / King of Hearts",
+    "official": false,
+    "license": "cc",
+    "published": "2011-05",
+    "duration": null,
+    "domain": [
+      "半导体"
+    ],
+    "shot": [
+      "外景航拍"
+    ],
+    "tags": [
+      "Marvell"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "CC BY-SA 3.0，作者 King of Hearts，须署名；4000×1000 全景，需裁 16:9；2011 年拍摄，画面标年份。",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "thumb": "thumbs/web-upload-marvell-santa-clara-may-2011.jpg",
+    "verified": "2026-11-02"
+  },
+  {
+    "id": "web-video-6388894263112",
+    "type": "video",
+    "status": "available",
+    "title": "Cisco Optics: 1.6T and 800G LPO for Power-Efficient AI Networks",
+    "title_zh": "Cisco Optics：1.6T 与 800G LPO 光模块（官方视频门户）",
+    "url": "https://video.cisco.com/detail/video/6388894263112",
+    "platform": "web",
+    "owner": "Cisco",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "通信",
+      "数据中心",
+      "AI"
+    ],
+    "shot": [
+      "产品特写",
+      "动画演示"
+    ],
+    "tags": [
+      "Cisco",
+      "1.6T",
+      "800G",
+      "LPO",
+      "OSFP"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Official Cisco optics portfolio video for 1.6T OSFP and 800G LPO. Prefer over reseller clips for credibility; verify whether live plug-in footage vs animation.",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02"
+  },
+  {
+    "id": "web-videos-6fncksqzirmytpfxbsyusr",
+    "type": "video",
+    "status": "available",
+    "title": "Marvell Ara: Industry's First 1.6T PAM4 Optical DSP Demo at ECOC 2025",
+    "title_zh": "Marvell Ara 1.6T DSP ECOC 2025 展台演示",
+    "url": "https://videos.marvell.com/watch/6FnCkSQZirmytPFXBSyuSR",
+    "platform": "web",
+    "owner": "Marvell",
+    "official": true,
+    "license": "official-press",
+    "published": "2025-09",
+    "duration": 85,
+    "domain": [
+      "半导体",
+      "通信"
+    ],
+    "shot": [
+      "产品特写",
+      "会议演讲"
+    ],
+    "tags": [
+      "Marvell",
+      "DSP",
+      "1.6T",
+      "ECOC"
+    ],
+    "windows": [
+      {
+        "start": 24,
+        "end": 36,
+        "desc": "两块 Ara 评估板静物（37s 起有手入镜）",
+        "source": "checked"
+      }
+    ],
+    "used_in": [],
+    "notes": "Vidyard 托管，86s；有演示人员出镜，只取无人物主体的设备镜头。",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02"
+  },
+  {
+    "id": "web-videos-iafvmfqz3xqyjqrwzy7kws",
+    "type": "video",
+    "status": "available",
+    "title": "How Optical Circuit Switching (OCS) Enables Large-scale GPU Clusters",
+    "title_zh": "OCS 如何支撑大规模 GPU 集群（Marvell 官方动画）",
+    "url": "https://videos.marvell.com/watch/iAFvmfQZ3xqYjqRWZY7kwS",
+    "platform": "web",
+    "owner": "Marvell",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": 55,
+    "domain": [
+      "通信",
+      "数据中心"
+    ],
+    "shot": [
+      "动画演示"
+    ],
+    "tags": [
+      "Marvell",
+      "OCS"
+    ],
+    "windows": [
+      {
+        "start": 15,
+        "end": 20,
+        "desc": "展台 OCS 机箱正面（外观同 Lumentum R300）",
+        "source": "checked"
+      },
+      {
+        "start": 22,
+        "end": 26,
+        "desc": "光纤束特写",
+        "source": "checked"
+      }
+    ],
+    "used_in": [],
+    "notes": "Vidyard 托管，56s；OCS 原理镜头备选，注意不要与 Lumentum/Google 关系混用。",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02"
+  },
+  {
+    "id": "web-videos-u5mxpvccd7fyngbzr3yrmm",
+    "type": "video",
+    "status": "available",
+    "title": "Marvell Ara T: 1.6T PAM4 DSP Optimized for AI Optical Interconnects",
+    "title_zh": "Marvell Ara T 1.6T PAM4 DSP（官方视频）",
+    "url": "https://videos.marvell.com/watch/U5mxPvccD7fynGBzR3YRmm",
+    "platform": "web",
+    "owner": "Marvell",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": 80,
+    "domain": [
+      "半导体",
+      "通信"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "Marvell",
+      "DSP",
+      "1.6T"
+    ],
+    "windows": [
+      {
+        "start": 40,
+        "end": 50,
+        "desc": "线缆与评估板特写（烧录字幕 Industry's first 3nm 1.6T PAM4 DSP）",
+        "source": "checked"
+      }
+    ],
+    "used_in": [],
+    "notes": "Vidyard 托管，80s；1080p 直链来自 play.vidyard.com/player/U5mxPvccD7fynGBzR3YRmm.json（chapters[0].sources.mp4 full_hd）。Grok r1 + Claude 核实。",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02"
+  },
+  {
+    "id": "web-youtube-watch",
+    "type": "video",
+    "status": "unavailable",
+    "title": "Starship's Tenth Flight Test",
+    "title_zh": "星舰第十次飞行试验",
+    "url": "https://www.youtube.com/watch?v=rcd_SQDlnk",
+    "platform": "web",
+    "owner": "SpaceX",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "2025-09-29",
+    "duration": null,
+    "domain": [
+      "航天"
+    ],
+    "shot": [
+      "外景航拍",
+      "生产制造"
+    ],
+    "tags": [
+      "SpaceX",
+      "Starship",
+      "Falcon-class reusable"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Official SpaceX channel. Launch date 2025-08-26; video published 2025-09-29. Tight 2:14 package; easy 4s liftoff cut. Auto-captions/music.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29",
+    "status_reason": "Grok 给的 YouTube 链接 ID 只有 10 位（rcd_SQDlnk），被当成网页导入，标题对不上，疑似写错"
+  },
+  {
+    "id": "x-1968677244861379012",
+    "type": "post",
+    "status": "available",
+    "title": "Satya Nadella: Fairwater Wisconsin, world's most powerful AI datacenter",
+    "title_zh": "纳德拉宣布威斯康星 Fairwater AI 数据中心",
+    "url": "https://x.com/satyanadella/status/1968677244861379012",
+    "platform": "x",
+    "owner": "Satya Nadella (@satyanadella)",
+    "official": true,
+    "license": "official-press",
+    "published": "2025-09-18",
+    "duration": 21.354,
+    "domain": [
+      "数据中心",
+      "AI",
+      "云计算",
+      "半导体"
+    ],
+    "shot": [
+      "机房内景",
+      "建设施工",
+      "外景航拍",
+      "社交媒体帖子"
+    ],
+    "tags": [
+      "Microsoft",
+      "Fairwater",
+      "Azure",
+      "GB200"
+    ],
+    "windows": [
+      {
+        "start": 6,
+        "end": 8,
+        "desc": "微软 Fairwater 航拍",
+        "source": "used"
+      }
+    ],
+    "used_in": [
+      {
+        "project": "2026-10-google-q3",
+        "start": 6,
+        "end": 8,
+        "file": "public/2026-10-google-q3/video/n10-msft-fairwater.mp4",
+        "date": "2026-10-29"
+      }
+    ],
+    "notes": "Official CEO post with Microsoft-shot Fairwater video (MP4 on the post). Best official 2025 B-roll. Pair with Microsoft Source write-up.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29"
+  },
+  {
+    "id": "x-1981460119742533848",
+    "type": "post",
+    "status": "unavailable",
+    "title": "Anthropic: expand use of Google TPUs, ~1 million chips in 2026",
+    "title_zh": "Anthropic 宣布扩用 Google TPU（约 100 万颗）",
+    "url": "https://x.com/AnthropicAI/status/1981460119742533848",
+    "platform": "x",
+    "owner": "Anthropic (@AnthropicAI)",
+    "official": true,
+    "license": "official-press",
+    "published": "2025-10-23",
+    "duration": null,
+    "domain": [
+      "AI",
+      "云计算",
+      "半导体"
+    ],
+    "shot": [
+      "社交媒体帖子",
+      "新闻截图"
+    ],
+    "tags": [
+      "Anthropic",
+      "TPU",
+      "Google Cloud"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Official company post of the Oct 23 2025 TPU deal. Quote-card / screenshot B-roll; thread links the news URL.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "status_reason": "No video formats found!; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template",
+    "verified": "2026-10-29"
+  },
+  {
+    "id": "x-1984005403659641117",
+    "type": "post",
+    "status": "unavailable",
+    "title": "Big news: Project Rainier is now fully operational!",
+    "title_zh": "AWS：Project Rainier 已全面投运",
+    "url": "https://x.com/awscloud/status/1984005403659641117",
+    "platform": "x",
+    "owner": "Amazon Web Services (@awscloud)",
+    "official": true,
+    "license": "official-press",
+    "published": "2025-10-30",
+    "duration": null,
+    "domain": [
+      "数据中心",
+      "云计算",
+      "AI"
+    ],
+    "shot": [
+      "机房内景",
+      "产品特写",
+      "社交媒体帖子"
+    ],
+    "tags": [
+      "AWS",
+      "Project Rainier",
+      "Trainium"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Official @awscloud clip, 9:16 vertical. Recrop for 16:9. Same campaign as the Amazon News 29s spot.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "status_reason": "Unable to download JSON metadata: EOF occurred in violation of protocol (_ssl.c:1007) (caused by SSLError('EOF occurred in violation of protocol (_ssl.c:1007)')); please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template",
+    "verified": "2026-10-29"
+  },
+  {
+    "id": "x-1988653837461369307",
+    "type": "post",
+    "status": "available",
+    "title": "Satya Nadella: Fairwater Atlanta AI superfactory",
+    "title_zh": "纳德拉宣布亚特兰大 Fairwater AI 超级工厂",
+    "url": "https://x.com/satyanadella/status/1988653837461369307",
+    "platform": "x",
+    "owner": "Satya Nadella (@satyanadella)",
+    "official": true,
+    "license": "official-press",
+    "published": "2025-11-12",
+    "duration": 44.544,
+    "domain": [
+      "数据中心",
+      "AI",
+      "云计算"
+    ],
+    "shot": [
+      "机房内景",
+      "外景航拍",
+      "社交媒体帖子"
+    ],
+    "tags": [
+      "Microsoft",
+      "Fairwater",
+      "Atlanta",
+      "Azure"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Official Nov 2025 Fairwater 2 video. Links to Microsoft Source: https://news.microsoft.com/source/features/ai/from-wisconsin-to-atlanta-microsoft-connects-datacenters-to-build-its-first-ai-superfactory/",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29"
+  },
+  {
+    "id": "x-2067016769584177337",
+    "type": "post",
+    "status": "unverified",
+    "title": "NVIDIA post: Sherman TX photonics manufacturing expansion with Coherent",
+    "title_zh": "NVIDIA 官方帖：与 Coherent 在 Sherman 扩建光子制造",
+    "url": "https://x.com/nvidia/status/2067016769584177337",
+    "platform": "x",
+    "owner": "@nvidia",
+    "official": true,
+    "license": "official-press",
+    "published": "2026-06-16",
+    "duration": null,
+    "domain": [
+      "半导体",
+      "AI",
+      "通信"
+    ],
+    "shot": [
+      "社交媒体帖子",
+      "生产制造"
+    ],
+    "tags": [
+      "nvidia",
+      "Coherent",
+      "Sherman",
+      "photonics"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Official X post dated 2026-06-16 UTC about Sherman photonics capacity. Use as on-screen social proof; media attached on X.",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02"
+  },
+  {
+    "id": "x-2102299173932413357",
+    "type": "post",
+    "status": "unverified",
+    "title": "Coherent PhotonLink for CPO/NPO AI connectivity",
+    "title_zh": "Coherent 官方 X：PhotonLink 覆盖 CPO/NPO 光链路",
+    "url": "https://x.com/CoherentCorp/status/2102299173932413357",
+    "platform": "x",
+    "owner": "@CoherentCorp",
+    "official": true,
+    "license": "official-press",
+    "published": "2026-09-22",
+    "duration": null,
+    "domain": [
+      "通信",
+      "AI",
+      "半导体"
+    ],
+    "shot": [
+      "社交媒体帖子",
+      "动画演示"
+    ],
+    "tags": [
+      "Coherent",
+      "PhotonLink",
+      "CPO",
+      "NPO"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Official 2026 CPO/NPO platform post.",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02"
+  },
+  {
+    "id": "x-2114777370452185407",
+    "type": "post",
+    "status": "unverified",
+    "title": "Lumentum DWDM ELSFP laser module demo at ECOC 2026",
+    "title_zh": "Lumentum 官方 X：ECOC 2026 DWDM ELSFP（CPO/NPO）演示",
+    "url": "https://x.com/Lumentum/status/2114777370452185407",
+    "platform": "x",
+    "owner": "@Lumentum",
+    "official": true,
+    "license": "official-press",
+    "published": "2026-10-26",
+    "duration": null,
+    "domain": [
+      "通信",
+      "AI",
+      "半导体"
+    ],
+    "shot": [
+      "社交媒体帖子",
+      "产品特写"
+    ],
+    "tags": [
+      "Lumentum",
+      "ELSFP",
+      "CPO",
+      "ECOC2026"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Official 2026 optics/CPO-related post with video.",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02"
+  },
+  {
+    "id": "yt-0TnHSRNqDqM",
+    "type": "video",
+    "status": "available",
+    "title": "Inside Amazon's new AI supercomputer",
+    "title_zh": "走进亚马逊全新 AI 超级计算机（Project Rainier）",
+    "url": "https://www.youtube.com/watch?v=0TnHSRNqDqM",
+    "platform": "youtube",
+    "owner": "Amazon News",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "2025-10-29",
+    "duration": 29,
+    "domain": [
+      "数据中心",
+      "云计算",
+      "AI",
+      "半导体"
+    ],
+    "shot": [
+      "机房内景",
+      "产品特写",
+      "动画演示"
+    ],
+    "tags": [
+      "AWS",
+      "Project Rainier",
+      "Trainium2",
+      "Anthropic"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 29,
+        "desc": "full official 29s Rainier/Trainium2 cluster package",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Official Amazon News. Description: nearly 500k Trainium2, Anthropic scaling past 1M chips by end-2025. Companion story: https://www.aboutamazon.com/news/aws/aws-project-rainier-ai-trainium-chips-compute-cluster",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29"
+  },
+  {
+    "id": "yt-0uVRHl9gAco",
+    "type": "video",
+    "status": "available",
+    "title": "Meet AI Mode - Try a whole new way to search",
+    "title_zh": "认识 AI Mode：全新搜索方式",
+    "url": "https://www.youtube.com/watch?v=0uVRHl9gAco",
+    "platform": "youtube",
+    "owner": "Google",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "2025-06-02",
+    "duration": 15,
+    "domain": [
+      "AI",
+      "消费"
+    ],
+    "shot": [
+      "产品特写",
+      "动画演示"
+    ],
+    "tags": [
+      "Google",
+      "AI Mode",
+      "Search",
+      "Gemini"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 15,
+        "desc": "full 15s product demo of conversational AI Mode in Search",
+        "source": "grok"
+      },
+      {
+        "start": 1,
+        "end": 9,
+        "desc": "AI Mode 片头和搜索框",
+        "source": "used"
+      }
+    ],
+    "used_in": [
+      {
+        "project": "2026-10-google-q3",
+        "start": 1,
+        "end": 9,
+        "file": "public/2026-10-google-q3/video/ai-mode.mp4",
+        "date": "2026-10-29"
+      }
+    ],
+    "notes": "Official Google 15s ad; chat-style Search UI. Music bed throughout; no spoken product walkthrough. Very high view count; check for burned-in logo.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29"
+  },
+  {
+    "id": "yt-11PBno-cJ1g",
+    "type": "video",
+    "status": "available",
+    "title": "Google Cloud Next '26 Opening Keynote",
+    "title_zh": "Google Cloud Next 2026 开幕主题演讲",
+    "url": "https://www.youtube.com/watch?v=11PBno-cJ1g",
+    "platform": "youtube",
+    "owner": "Google Cloud",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "2026-04-22",
+    "duration": 5938,
+    "domain": [
+      "云计算",
+      "AI",
+      "公司财报"
+    ],
+    "shot": [
+      "会议演讲",
+      "人物采访"
+    ],
+    "tags": [
+      "Thomas Kurian",
+      "Google Cloud Next 2026",
+      "Gemini Enterprise",
+      "keynote",
+      "crowd"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 20,
+        "desc": "intro/crowd",
+        "source": "grok"
+      },
+      {
+        "start": 0,
+        "end": 25,
+        "desc": "music, cheering, wide stage as Kurian is introduced",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Official 1:38:58 keynote. Transcript starts with crowd cheer then Kurian: 'Welcome everyone to Google Cloud Next.' Best 4–6s of him on stage.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29"
+  },
+  {
+    "id": "yt-1ASzWklab2U",
+    "type": "video",
+    "status": "unverified",
+    "title": "Gemini at Work 2026",
+    "title_zh": "Gemini at Work 2026",
+    "url": "https://www.youtube.com/watch?v=1ASzWklab2U",
+    "platform": "youtube",
+    "owner": "Google Cloud",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "unknown",
+    "duration": null,
+    "domain": [
+      "云计算",
+      "AI"
+    ],
+    "shot": [
+      "会议演讲",
+      "人物采访"
+    ],
+    "tags": [
+      "Thomas Kurian",
+      "Gemini at Work",
+      "Google Cloud"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Official Cloud channel, Kurian on a 2026 stage. Different event than Next; use if you want a second look.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29"
+  },
+  {
+    "id": "yt-2IIRef7qa_A",
+    "type": "video",
+    "status": "unverified",
+    "title": "Microsoft president on new AI data center: Expect us to keep making these kinds of investments",
+    "title_zh": "微软总裁谈威斯康星 AI 数据中心投资",
+    "url": "https://www.youtube.com/watch?v=2IIRef7qa_A",
+    "platform": "youtube",
+    "owner": "CNBC Television",
+    "official": false,
+    "license": "youtube-standard",
+    "published": "2025-09-18",
+    "duration": null,
+    "domain": [
+      "数据中心",
+      "AI",
+      "云计算",
+      "能源电力"
+    ],
+    "shot": [
+      "人物采访",
+      "建设施工",
+      "外景航拍"
+    ],
+    "tags": [
+      "Microsoft",
+      "Fairwater",
+      "Brad Smith",
+      "CNBC"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Reputable-media site visit the day of the Wisconsin announcement. CNBC graphics; exterior construction more than white-floor halls. Official Microsoft YouTube Fairwater tour was not in search hits.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29"
   },
   {
     "id": "yt-3Qw_CZkiQQg",
@@ -915,8 +3078,23 @@
       "Google",
       "TPU"
     ],
-    "windows": [],
-    "used_in": [],
+    "windows": [
+      {
+        "start": 35,
+        "end": 42,
+        "desc": "Ironwood芯片特写",
+        "source": "used"
+      }
+    ],
+    "used_in": [
+      {
+        "project": "2026-10-google-q3",
+        "start": 35,
+        "end": 42,
+        "file": "public/2026-10-google-q3/video/ironwood.mp4",
+        "date": "2026-10-29"
+      }
+    ],
     "notes": "Official Google Cloud, 1:26, published 2025-04-09. Product film: TPU history then Ironwood, 9,000-plus chips per pod, HBM, liquid-cooled scale. A 30s cut is https://www.youtube.com/watch?v=ujfLbyS4MXM. No chapters.",
     "found_for": [
       "caspa-ai-profit"
@@ -924,6 +3102,43 @@
     "added": "2026-10-27",
     "verified": "2026-10-27",
     "thumb": "thumbs/yt-9i1ZM0dPyRo.jpg"
+  },
+  {
+    "id": "yt-ABLf2OYgA5E",
+    "type": "video",
+    "status": "unverified",
+    "title": "Coherent | ELSFP Demonstration at ECOC 2025",
+    "title_zh": "Coherent ECOC 2025：ELSFP 外置激光源模块演示",
+    "url": "https://www.youtube.com/watch?v=ABLf2OYgA5E",
+    "platform": "youtube",
+    "owner": "Coherent Corp.",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "2025-12-17",
+    "duration": null,
+    "domain": [
+      "通信",
+      "半导体",
+      "AI",
+      "数据中心"
+    ],
+    "shot": [
+      "产品特写",
+      "会议演讲"
+    ],
+    "tags": [
+      "Coherent",
+      "ELSFP",
+      "CPO",
+      "ECOC2025"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Official datacom laser-module demo. Presenter on camera—avoid portrait close-ups; use module shots. 【预览图已看：Coherent ELSFP 外置激光源模块手持特写（官方频道），讲解人出镜段不用；底部有字幕，需裁切。精确片段待⑩定。】",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02"
   },
   {
     "id": "yt-AJH8B1DIkKI",
@@ -1016,6 +3231,43 @@
     "verified": "2026-10-27"
   },
   {
+    "id": "yt-aQxcomQDHcw",
+    "type": "video",
+    "status": "unverified",
+    "title": "Announcing Ironwood TPUs General Availability and new Axion VMs to power the age of inference",
+    "title_zh": "宣布 Ironwood TPU 正式商用",
+    "url": "https://www.youtube.com/watch?v=aQxcomQDHcw",
+    "platform": "youtube",
+    "owner": "Google Cloud",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "2025-11-06",
+    "duration": null,
+    "domain": [
+      "云计算",
+      "AI",
+      "半导体"
+    ],
+    "shot": [
+      "会议演讲",
+      "产品特写",
+      "动画演示"
+    ],
+    "tags": [
+      "Google Cloud",
+      "Ironwood",
+      "TPU",
+      "Anthropic"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Official Cloud video 10:28 (Nov 6 2025). Mentions Anthropic on Ironwood; more TPU product than handshake photo. Pair with the Anthropic news still.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29"
+  },
+  {
     "id": "yt-coPKHrE2ATI",
     "type": "video",
     "status": "available",
@@ -1065,6 +3317,18 @@
         "end": 62,
         "desc": "Ironwood TPU 介绍（底部有英文字幕，需放大 1.22 倍裁掉）",
         "source": "used"
+      },
+      {
+        "start": 13,
+        "end": 17,
+        "desc": "TPU机架（放慢0.45，避开人物）",
+        "source": "used"
+      },
+      {
+        "start": 34,
+        "end": 42,
+        "desc": "TPU托盘特写",
+        "source": "used"
       }
     ],
     "used_in": [
@@ -1081,15 +3345,150 @@
         "end": 62,
         "file": "public/caspa-ai-profit/video/goog-ironwood.mp4",
         "date": "2026-10-27"
+      },
+      {
+        "project": "2026-10-google-q3",
+        "start": 13,
+        "end": 17,
+        "file": "public/2026-10-google-q3/video/tpu-rack.mp4",
+        "date": "2026-10-29"
+      },
+      {
+        "project": "2026-10-google-q3",
+        "start": 34,
+        "end": 42,
+        "file": "public/2026-10-google-q3/video/tpu-rack2.mp4",
+        "date": "2026-10-29"
       }
     ],
-    "notes": "Official Google Cloud, 1:56. Amin Vahdat unboxes the 7th-gen Ironwood TPU. Chapters: 00:00 intro, 00:25 Ironwood overview, 01:08 AI hypercomputer, 01:44 cloud availability.",
+    "notes": "Official Google Cloud, 1:56. Amin Vahdat unboxes the 7th-gen Ironwood TPU. Chapters: 00:00 intro, 00:25 Ironwood overview, 01:08 AI hypercomputer, 01:44 cloud availability. 【2026-11-02 marvell-lumentum：本期不用（人物主体+烧录字幕），仅本期不适用，不影响其他项目】",
     "found_for": [
       "caspa-ai-profit"
     ],
     "added": "2026-10-27",
-    "verified": "2026-10-27",
+    "verified": "2026-11-02",
     "thumb": "thumbs/yt-coPKHrE2ATI.jpg"
+  },
+  {
+    "id": "yt-CZQ5rf4dZaI",
+    "type": "video",
+    "status": "unavailable",
+    "title": "#OCPSummit25: Lumentum Optics Powering AI Infrastructure",
+    "title_zh": "OCP Summit：Lumentum 谈 OCS / ELS / 1.6T 模块",
+    "url": "https://www.youtube.com/watch?v=CZQ5rf4dZaI",
+    "platform": "youtube",
+    "owner": "unknown (OCP/event clip)",
+    "official": false,
+    "license": "youtube-standard",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "通信",
+      "AI",
+      "数据中心"
+    ],
+    "shot": [
+      "人物采访",
+      "会议演讲"
+    ],
+    "tags": [
+      "Lumentum",
+      "OCS",
+      "1.6T",
+      "OCP"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Mentions OCS and 1.6T modules verbally; talking-head heavy—only use if booth/product cutaways exist. Prefer official Lumentum video pages above.",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "status_reason": "marvell-lumentum ⑦预览图人工复看：第三方频道采访，人物讲解为主，无可用产品镜头",
+    "verified": "2026-11-02"
+  },
+  {
+    "id": "yt-duHhImuaZGU",
+    "type": "video",
+    "status": "available",
+    "title": "Sundar Pichai Opening Remarks | I/O 2026 Keynote",
+    "title_zh": "桑达尔·皮查伊开场｜Google I/O 2026",
+    "url": "https://www.youtube.com/watch?v=duHhImuaZGU",
+    "platform": "youtube",
+    "owner": "Google",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "2026-05-22",
+    "duration": 2528,
+    "domain": [
+      "AI",
+      "公司财报",
+      "消费"
+    ],
+    "shot": [
+      "会议演讲",
+      "人物采访"
+    ],
+    "tags": [
+      "Sundar Pichai",
+      "Google I/O 2026",
+      "Gemini"
+    ],
+    "windows": [
+      {
+        "start": 24,
+        "end": 244,
+        "desc": "Keynote Intro & The Scale of AI",
+        "source": "grok"
+      },
+      {
+        "start": 244,
+        "end": 463,
+        "desc": "Generative Search & Ask YouTube",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Official 42:08 cut of Sundar on the I/O 2026 stage. Chapters marked. Lower-thirds and big-screen graphics; 4–6s talking-head easy from 00:24.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29"
+  },
+  {
+    "id": "yt-eIUqw3_YcCI",
+    "type": "video",
+    "status": "unverified",
+    "title": "Sundar Pichai Opening Remarks | I/O 2025 Keynote",
+    "title_zh": "桑达尔·皮查伊开场｜Google I/O 2025",
+    "url": "https://www.youtube.com/watch?v=eIUqw3_YcCI",
+    "platform": "youtube",
+    "owner": "Google",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "2025-05-22",
+    "duration": null,
+    "domain": [
+      "AI",
+      "消费"
+    ],
+    "shot": [
+      "会议演讲",
+      "人物采访"
+    ],
+    "tags": [
+      "Sundar Pichai",
+      "Google I/O 2025",
+      "AI Overviews"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Official I/O 2025 fallback if you need last year’s stage look. Also usable for AI Overviews talking points.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29"
   },
   {
     "id": "yt-f6D_aiy8qyU",
@@ -1131,6 +3530,47 @@
     "added": "2026-10-27",
     "verified": "2026-10-27",
     "thumb": "thumbs/yt-f6D_aiy8qyU.jpg"
+  },
+  {
+    "id": "yt-Fy2_uMpVunM",
+    "type": "video",
+    "status": "unavailable",
+    "title": "A small town in Texas is leading the charge in AI technology (Coherent Sherman InP fab tour)",
+    "title_zh": "德克萨斯 Sherman：Coherent InP 晶圆厂扩建（含洁净室）",
+    "url": "https://www.youtube.com/watch?v=Fy2_uMpVunM",
+    "platform": "youtube",
+    "owner": "Fox News Clips",
+    "official": false,
+    "license": "youtube-standard",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "半导体",
+      "通信",
+      "AI",
+      "数据中心"
+    ],
+    "shot": [
+      "生产制造",
+      "人物采访",
+      "机房内景"
+    ],
+    "tags": [
+      "Coherent",
+      "Sherman",
+      "InP",
+      "6-inch wafer",
+      "Nvidia"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Shows Coherent Sherman 6-inch InP fab expansion with Jensen Huang and Jim Anderson. People are on camera—use ONLY wide plant/cleanroom B-roll; no close-up portraits. Not Lumentum-owned fab.",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "status_reason": "marvell-lumentum ⑦预览图人工复看：Fox News 电视节目画面：主持人与人物出镜为主、台标和直播字幕满屏，不符合信源与无人物要求",
+    "verified": "2026-11-02"
   },
   {
     "id": "yt-g7vskHVx0Xo",
@@ -1184,6 +3624,43 @@
     ],
     "added": "2026-10-27",
     "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-HpD0QyO6u7c",
+    "type": "video",
+    "status": "unverified",
+    "title": "Coherent | 400G PAM4 Optical Links | OFC 2026 Demo",
+    "title_zh": "Coherent OFC 2026：400G/lane 链路演示（指向 3.2T 可插拔）",
+    "url": "https://www.youtube.com/watch?v=HpD0QyO6u7c",
+    "platform": "youtube",
+    "owner": "Coherent Corp.",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "通信",
+      "半导体",
+      "AI"
+    ],
+    "shot": [
+      "产品特写",
+      "会议演讲"
+    ],
+    "tags": [
+      "Coherent",
+      "400G",
+      "EML",
+      "OFC2026"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Official Coherent demo; person presenting on camera—use product/link B-roll only. Not a full switch faceplate plug-in shot. 【marvell-lumentum 本期不用：Coherent OFC 2026 演示以讲解人出镜为主，产品镜头很少；仅本期不适用】",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02"
   },
   {
     "id": "yt-Hs2yXBlEIWs",
@@ -1417,8 +3894,36 @@
       "数据中心",
       "Google"
     ],
-    "windows": [],
-    "used_in": [],
+    "windows": [
+      {
+        "start": 60,
+        "end": 66,
+        "desc": "冷却管道（镜头5、109）",
+        "source": "used"
+      },
+      {
+        "start": 93,
+        "end": 98,
+        "desc": "建设航拍（镜头98）",
+        "source": "used"
+      }
+    ],
+    "used_in": [
+      {
+        "project": "2026-10-google-q3",
+        "start": 60,
+        "end": 66,
+        "file": "public/2026-10-google-q3/video/dc-google.mp4",
+        "date": "2026-10-29"
+      },
+      {
+        "project": "2026-10-google-q3",
+        "start": 93,
+        "end": 98,
+        "file": "public/2026-10-google-q3/video/dc-google.mp4",
+        "date": "2026-10-29"
+      }
+    ],
     "notes": "Official Google channel, 3:11, 2025-02-25. Data-center operations and build story (fiber, racks, vertical Singapore site, local construction vendors). More people and campus than a substation close-up. No chapters.",
     "found_for": [
       "caspa-ai-profit"
@@ -1474,6 +3979,42 @@
     "verified": "2026-10-27"
   },
   {
+    "id": "yt-LCZfhAlC6M8",
+    "type": "video",
+    "status": "unverified",
+    "title": "800G DR4 OSFP RHS Optical Transceiver for NVIDIA ConnectX-8 SuperNIC in AI Networks | FiberMall",
+    "title_zh": "FiberMall：1.6T 模块插入交换机 + 800G 模块与光纤连接演示",
+    "url": "https://www.youtube.com/watch?v=LCZfhAlC6M8",
+    "platform": "youtube",
+    "owner": "FiberMall",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "通信",
+      "数据中心",
+      "AI"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "800G",
+      "1.6T",
+      "OSFP",
+      "fiber",
+      "switch"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Clear plug-in + fiber close-up. Vendor reseller channel (not Marvell/Lumentum). Watch-outs: Nvidia ConnectX branding in title/graphics—crop logos if script wants non-Nvidia. 【预览图已看：800G OSFP 模块手持特写、插入服务器网卡特写，画质清晰；底部有烧录字幕、片头有促销图卡，需裁切；经销商频道，网卡为 NVIDIA ConnectX。精确片段待⑩定。】",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02"
+  },
+  {
     "id": "yt-lOGipTP0Kqc",
     "type": "video",
     "status": "available",
@@ -1524,6 +4065,47 @@
     ],
     "added": "2026-10-27",
     "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-lsqPct4NnNs",
+    "type": "video",
+    "status": "unverified",
+    "title": "Google Cloud Next ‘26 Keynote: Building the Agentic Enterprise (Every Major Announcement)",
+    "title_zh": "Cloud Next 2026：构建智能体企业（要点剪辑）",
+    "url": "https://www.youtube.com/watch?v=lsqPct4NnNs",
+    "platform": "youtube",
+    "owner": "Google Cloud",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "2026-04-27",
+    "duration": null,
+    "domain": [
+      "云计算",
+      "AI"
+    ],
+    "shot": [
+      "会议演讲",
+      "人物采访"
+    ],
+    "tags": [
+      "Thomas Kurian",
+      "Google Cloud Next 2026",
+      "TPU"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 20,
+        "desc": "Kurian hello/welcome and applause",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Official 10:28 highlight reel. Faster to cut than the full keynote; same stage.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29"
   },
   {
     "id": "yt-MkMQj-Q0bBo",
@@ -1586,6 +4168,141 @@
     ],
     "added": "2026-10-27",
     "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-MMmfXZctlbY",
+    "type": "video",
+    "status": "available",
+    "title": "Gemini 4 Argon Comes to the Gemini App",
+    "title_zh": "Gemini 4 Argon 登陆 Gemini 应用",
+    "url": "https://www.youtube.com/watch?v=MMmfXZctlbY",
+    "platform": "youtube",
+    "owner": "Google Gemini",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "2026-10-13",
+    "duration": 51,
+    "domain": [
+      "AI",
+      "消费"
+    ],
+    "shot": [
+      "产品特写",
+      "动画演示"
+    ],
+    "tags": [
+      "Google",
+      "Gemini",
+      "Gemini 4 Argon",
+      "phone"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 51,
+        "desc": "full 51s Gemini app feature demo",
+        "source": "grok"
+      },
+      {
+        "start": 3,
+        "end": 7,
+        "desc": "Gemini 输入框和画面",
+        "source": "used"
+      }
+    ],
+    "used_in": [
+      {
+        "project": "2026-10-google-q3",
+        "start": 3,
+        "end": 7,
+        "file": "public/2026-10-google-q3/video/gemini-app.mp4",
+        "date": "2026-10-29"
+      }
+    ],
+    "notes": "Official Google Gemini channel; 2026-gen Gemini 4 Argon in the consumer app. Confirm phone vs desktop in cut. 2.9M views.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29"
+  },
+  {
+    "id": "yt-muU8fi-YuKY",
+    "type": "video",
+    "status": "unverified",
+    "title": "What Will You Build? | Google Cloud Next '26",
+    "title_zh": "你将构建什么？｜Cloud Next 2026 预热片",
+    "url": "https://www.youtube.com/watch?v=muU8fi-YuKY",
+    "platform": "youtube",
+    "owner": "Google Cloud",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "unknown",
+    "duration": null,
+    "domain": [
+      "云计算",
+      "AI"
+    ],
+    "shot": [
+      "会议演讲",
+      "抽象背景"
+    ],
+    "tags": [
+      "Google Cloud Next 2026"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 61,
+        "desc": "event sizzle",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Official 61s event sizzle. Likely crowd/stage/branding; confirm before using as a wide keynote plate.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29"
+  },
+  {
+    "id": "yt-N43y-I6rVNU",
+    "type": "video",
+    "status": "unverified",
+    "title": "Analytics in the YouTube App (for Shorts, Videos, Live Streams, and more!)",
+    "title_zh": "YouTube App 内的数据分析",
+    "url": "https://www.youtube.com/watch?v=N43y-I6rVNU",
+    "platform": "youtube",
+    "owner": "YouTube Creators",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "unknown",
+    "duration": null,
+    "domain": [
+      "消费"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "YouTube",
+      "YouTube app",
+      "mobile"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 224,
+        "desc": "YouTube mobile app screens",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Official phone YouTube app UI (3:44). Analytics screens more than ads; still current official app chrome for a 4–6s cut.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29"
   },
   {
     "id": "yt-nJKz9eRrbUw",
@@ -1669,6 +4386,83 @@
     "verified": "2026-10-27"
   },
   {
+    "id": "yt-OjNqE95w1io",
+    "type": "video",
+    "status": "unverified",
+    "title": "Create, capture and convert demand on Google and YouTube",
+    "title_zh": "在 Google 与 YouTube 上创造、捕获并转化需求",
+    "url": "https://www.youtube.com/watch?v=OjNqE95w1io",
+    "platform": "youtube",
+    "owner": "Google Ads",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "unknown",
+    "duration": null,
+    "domain": [
+      "消费",
+      "公司财报"
+    ],
+    "shot": [
+      "产品特写",
+      "动画演示"
+    ],
+    "tags": [
+      "YouTube",
+      "Google Ads",
+      "YouTube ads"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 62,
+        "desc": "ads on YouTube/Google surfaces",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Official Google Ads 62s brand spot showing YouTube/Google ad placements. Marketing polish and logo package.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29"
+  },
+  {
+    "id": "yt-OYL0FocIuu4",
+    "type": "video",
+    "status": "unverified",
+    "title": "Guanglian high-speed optical transceiver automatic production lines",
+    "title_zh": "光联高速光模块自动化产线",
+    "url": "https://www.youtube.com/watch?v=OYL0FocIuu4",
+    "platform": "youtube",
+    "owner": "Guanglian",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "通信",
+      "半导体",
+      "数据中心"
+    ],
+    "shot": [
+      "生产制造",
+      "产品特写"
+    ],
+    "tags": [
+      "optical transceiver",
+      "assembly line",
+      "COB",
+      "test"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Vendor factory B-roll of automatic transceiver production/test lines. No hyperscaler customer names seen in description. Prefer cutaways without Chinese on-screen text if present. 【预览图已看：光联光模块产线（OSA 制造、ROSA 功能测试、端面检测），工人全身防尘服；右上角有 Guanglian 台标、右下角有工序字幕，需裁切。精确片段待⑩下载时定。】",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02"
+  },
+  {
     "id": "yt-pgVHZoZlJjw",
     "type": "video",
     "status": "available",
@@ -1710,6 +4504,214 @@
     "verified": "2026-10-27"
   },
   {
+    "id": "yt-qbqZQFOVfA8",
+    "type": "video",
+    "status": "unverified",
+    "title": "Introducing AI Mode: A New Experiment in Google Search",
+    "title_zh": "推出 AI Mode：Google 搜索新实验",
+    "url": "https://www.youtube.com/watch?v=qbqZQFOVfA8",
+    "platform": "youtube",
+    "owner": "Google",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "2025-04-09",
+    "duration": null,
+    "domain": [
+      "AI",
+      "消费"
+    ],
+    "shot": [
+      "产品特写",
+      "动画演示"
+    ],
+    "tags": [
+      "Google",
+      "AI Mode",
+      "Search Labs"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 97,
+        "desc": "full Labs-era demo of chat-style answers and follow-ups",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Longer official intro (1:37). Early 2025 Labs UI; later US-rollout spots (tD-V9emq6A8) look more current.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29"
+  },
+  {
+    "id": "yt-qhPmcchMSqA",
+    "type": "video",
+    "status": "available",
+    "title": "Using Mid-roll Ads on YouTube",
+    "title_zh": "在 YouTube 使用中插广告",
+    "url": "https://www.youtube.com/watch?v=qhPmcchMSqA",
+    "platform": "youtube",
+    "owner": "YouTube Creators",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "2025-03-25",
+    "duration": 157,
+    "domain": [
+      "消费",
+      "公司财报"
+    ],
+    "shot": [
+      "产品特写",
+      "动画演示"
+    ],
+    "tags": [
+      "YouTube",
+      "ads",
+      "YouTube Studio"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 157,
+        "desc": "Studio/ad-slot UI",
+        "source": "grok"
+      },
+      {
+        "start": 22,
+        "end": 31,
+        "desc": "YouTube 中插广告设置界面（压暗模糊）",
+        "source": "used"
+      }
+    ],
+    "used_in": [
+      {
+        "project": "2026-10-google-q3",
+        "start": 22,
+        "end": 31,
+        "file": "public/2026-10-google-q3/video/youtube-ads.mp4",
+        "date": "2026-10-29"
+      }
+    ],
+    "notes": "Official YouTube Creators tutorial of ads on the player. Creator-facing UI; pin player/ad overlay, not talking-head. Pinned comment about May 2025 ad-slot changes.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29"
+  },
+  {
+    "id": "yt-SIMnxI_DU6s",
+    "type": "video",
+    "status": "unverified",
+    "title": "Blastoff! SpaceX launches Starlink satellites on 117th Falcon 9 flight of 2026, nails landing",
+    "title_zh": "2026 年第 117 次猎鹰 9 号星链发射与回收",
+    "url": "https://www.youtube.com/watch?v=SIMnxI_DU6s",
+    "platform": "youtube",
+    "owner": "VideoFromSpace",
+    "official": false,
+    "license": "unknown",
+    "published": "2026-10-27",
+    "duration": null,
+    "domain": [
+      "航天"
+    ],
+    "shot": [
+      "外景航拍"
+    ],
+    "tags": [
+      "SpaceX",
+      "Falcon 9",
+      "Starlink",
+      "2026"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Current-gen Falcon 9 (Oct 27 2026). Not SpaceX’s own channel; Space.com edit of SpaceX cameras. Official SpaceX 2026 Falcon webcasts were not in the @SpaceX search hits (mission playlist is older).",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29"
+  },
+  {
+    "id": "yt-stnSRel03e8",
+    "type": "video",
+    "status": "unverified",
+    "title": "Search | I/O 2025 Keynote",
+    "title_zh": "搜索专场｜Google I/O 2025 主题演讲",
+    "url": "https://www.youtube.com/watch?v=stnSRel03e8",
+    "platform": "youtube",
+    "owner": "Google",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "2025-05-22",
+    "duration": null,
+    "domain": [
+      "AI",
+      "消费"
+    ],
+    "shot": [
+      "会议演讲",
+      "产品特写",
+      "图表数据"
+    ],
+    "tags": [
+      "Google",
+      "AI Overviews",
+      "AI Mode",
+      "I/O 2025"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Official Google I/O 2025 Search segment (21:58). Stage presenter plus big-screen Search UI; also shows AI Mode. Stage lighting and audience audio.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29"
+  },
+  {
+    "id": "yt-tD-V9emq6A8",
+    "type": "video",
+    "status": "unverified",
+    "title": "AI Mode is now available in the U.S. Find it in the Google app or in a new tab in Search",
+    "title_zh": "AI Mode 已在美国上线：Google App 与搜索新标签",
+    "url": "https://www.youtube.com/watch?v=tD-V9emq6A8",
+    "platform": "youtube",
+    "owner": "Google",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "2025-06-26",
+    "duration": null,
+    "domain": [
+      "AI",
+      "消费"
+    ],
+    "shot": [
+      "产品特写",
+      "动画演示"
+    ],
+    "tags": [
+      "Google",
+      "AI Mode",
+      "Search",
+      "phone UI"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 23,
+        "desc": "phone Google app AI Mode button",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Best 23s official phone+desktop UI of current-gen AI Mode. VO plus UI overlays; trim around on-screen captions.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29"
+  },
+  {
     "id": "yt-TfW5pWpsHAo",
     "type": "video",
     "status": "available",
@@ -1735,14 +4737,235 @@
       "数据中心",
       "Google"
     ],
-    "windows": [],
-    "used_in": [],
+    "windows": [
+      {
+        "start": 24,
+        "end": 29,
+        "desc": "数据中心航拍（放大裁掉台标和字幕条）",
+        "source": "used"
+      }
+    ],
+    "used_in": [
+      {
+        "project": "2026-10-google-q3",
+        "start": 24,
+        "end": 29,
+        "file": "public/2026-10-google-q3/video/abc-dc.mp4",
+        "date": "2026-10-29"
+      }
+    ],
     "notes": "ABC News, 5:37, 2026-06-19. On-site report from a Google AI campus: active construction expansion and the site's own power substation. No chapters, so those shots are untimed. Reputable news, not Google's channel.",
     "found_for": [
       "caspa-ai-profit"
     ],
     "added": "2026-10-27",
     "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-UMMfJ4au1o4",
+    "type": "video",
+    "status": "unverified",
+    "title": "Inside one of the world’s most efficient Data Centers (Meta facility tour)",
+    "title_zh": "Meta 数据中心内部：机架、光纤束与网络间",
+    "url": "https://www.youtube.com/watch?v=UMMfJ4au1o4",
+    "platform": "youtube",
+    "owner": "creator tour (Meta-invited)",
+    "official": false,
+    "license": "youtube-standard",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "云计算",
+      "数据中心",
+      "AI"
+    ],
+    "shot": [
+      "机房内景",
+      "产品特写"
+    ],
+    "tags": [
+      "Meta",
+      "fiber",
+      "rack",
+      "AI inference",
+      "H100"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Not Nvidia-branded facility tour; shows Meta racks and fiber. Some Nvidia H100 shots appear in AI training rack—avoid those cuts. Creator-hosted though Meta-invited; not Meta corporate channel. 【marvell-lumentum 本期不用：网红出镜的机房参观，人物为主体，非官方；仅本期不适用】",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02"
+  },
+  {
+    "id": "yt-vi4YI9isLcQ",
+    "type": "video",
+    "status": "available",
+    "title": "The Agentic Cloud: Google Cloud Next ‘26 Opening Keynote Highlights",
+    "title_zh": "Cloud Next 2026 开幕演讲精华",
+    "url": "https://www.youtube.com/watch?v=vi4YI9isLcQ",
+    "platform": "youtube",
+    "owner": "Google Cloud",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "2026-04-27",
+    "duration": 56,
+    "domain": [
+      "云计算",
+      "AI"
+    ],
+    "shot": [
+      "会议演讲",
+      "动画演示"
+    ],
+    "tags": [
+      "Google Cloud Next 2026",
+      "TPU",
+      "Gemini Enterprise"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 56,
+        "desc": "full 56s stage/announcement package",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Official 56s. Fast cuts of stage plus product graphics; good if you only need a few seconds of Next 2026 look.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29"
+  },
+  {
+    "id": "yt-vnGC4YS36gU",
+    "type": "video",
+    "status": "unverified",
+    "title": "No Nvidia Chips Needed! Amazon’s New AI Data Center For Anthropic Is Truly Massive",
+    "title_zh": "CNBC 探访亚马逊为 Anthropic 建造的印第安纳 AI 数据中心",
+    "url": "https://www.youtube.com/watch?v=vnGC4YS36gU",
+    "platform": "youtube",
+    "owner": "CNBC",
+    "official": false,
+    "license": "youtube-standard",
+    "published": "2025-10-29",
+    "duration": null,
+    "domain": [
+      "数据中心",
+      "云计算",
+      "AI"
+    ],
+    "shot": [
+      "机房内景",
+      "建设施工",
+      "人物采访",
+      "外景航拍"
+    ],
+    "tags": [
+      "AWS",
+      "Project Rainier",
+      "Anthropic",
+      "Indiana"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 157,
+        "desc": "intro/site",
+        "source": "grok"
+      },
+      {
+        "start": 157,
+        "end": 401,
+        "desc": "rapid buildout exteriors",
+        "source": "grok"
+      },
+      {
+        "start": 401,
+        "end": 581,
+        "desc": "Trainium halls",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "CNBC exclusive walk-through of New Carlisle, Indiana Rainier campus. Reporter on camera; CNBC lower-thirds. Strong exteriors plus racks.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29"
+  },
+  {
+    "id": "yt-wYSncx9zLIU",
+    "type": "video",
+    "status": "unverified",
+    "title": "Google I/O '26 Keynote",
+    "title_zh": "Google I/O 2026 主题演讲全程",
+    "url": "https://www.youtube.com/watch?v=wYSncx9zLIU",
+    "platform": "youtube",
+    "owner": "Google",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "2026-05-22",
+    "duration": null,
+    "domain": [
+      "AI",
+      "公司财报"
+    ],
+    "shot": [
+      "会议演讲",
+      "人物采访"
+    ],
+    "tags": [
+      "Sundar Pichai",
+      "Google I/O 2026"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Full official live keynote (9.2M views). Wider stage/crowd than the isolated opening-remarks cut. Same event as duHhImuaZGU.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29"
+  },
+  {
+    "id": "yt-X9mmCagxJTo",
+    "type": "video",
+    "status": "unverified",
+    "title": "Alphabet 2026 Q3 Earnings Call",
+    "title_zh": "Alphabet 2026 年三季度财报电话会",
+    "url": "https://www.youtube.com/watch?v=X9mmCagxJTo",
+    "platform": "youtube",
+    "owner": "unknown",
+    "official": false,
+    "license": "unknown",
+    "published": "2026-10-28",
+    "duration": null,
+    "domain": [
+      "公司财报",
+      "AI",
+      "云计算"
+    ],
+    "shot": [
+      "人物采访",
+      "图表数据"
+    ],
+    "tags": [
+      "Anat Ashkenazi",
+      "Alphabet",
+      "Q3 2026",
+      "earnings"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Q3 2026 earnings audio/video posted same day as results. Confirm whether Ashkenazi is on-camera or voice-only before cutting. Prefer official IR webcast if this upload is a rehost.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29"
   },
   {
     "id": "yt-xz-uLRfkrj8",
@@ -1812,6 +5035,47 @@
     "added": "2026-10-27",
     "status_reason": "Private video",
     "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-YocP0rWNnNo",
+    "type": "video",
+    "status": "available",
+    "title": "SpaceX launches its Starship into orbit for the first time",
+    "title_zh": "SpaceX 星舰首次进入轨道",
+    "url": "https://www.youtube.com/watch?v=YocP0rWNnNo",
+    "platform": "youtube",
+    "owner": "Associated Press",
+    "official": false,
+    "license": "unknown",
+    "published": "2026-09-28",
+    "duration": 108,
+    "domain": [
+      "航天"
+    ],
+    "shot": [
+      "外景航拍",
+      "新闻截图"
+    ],
+    "tags": [
+      "SpaceX",
+      "Starship",
+      "Flight 14"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 108,
+        "desc": "liftoff, booster splashdown, 'go for orbit' call, Starlink V3 deploy",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Reputable-media 1:48 of 2026 Flight 14 (first orbital Starship). AP lower-thirds; archive licensing via newsroom.ap.org. Uses SpaceX webcast audio.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29",
+    "verified": "2026-10-29"
   },
   {
     "id": "yt-yQtLzFt4tQQ",
@@ -1930,6 +5194,47 @@
     ],
     "added": "2026-10-27",
     "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-z_zf7P67BHY",
+    "type": "video",
+    "status": "unverified",
+    "title": "Take Daily Busywork Off Your Plate with Gemini 4 Argon",
+    "title_zh": "用 Gemini 4 Argon 处理日常琐事",
+    "url": "https://www.youtube.com/watch?v=z_zf7P67BHY",
+    "platform": "youtube",
+    "owner": "Google Gemini",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "unknown",
+    "duration": null,
+    "domain": [
+      "AI",
+      "消费"
+    ],
+    "shot": [
+      "产品特写",
+      "动画演示"
+    ],
+    "tags": [
+      "Google",
+      "Gemini",
+      "Gemini 4 Argon"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 67,
+        "desc": "full app task demo",
+        "source": "grok"
+      }
+    ],
+    "used_in": [],
+    "notes": "Official 67s Gemini app workflow. Watch for lifestyle talent faces if you want UI-only; crop to screen.",
+    "found_for": [
+      "2026-10-google-q3"
+    ],
+    "added": "2026-10-29"
   },
   {
     "id": "yt-zWNa3HX45aQ",

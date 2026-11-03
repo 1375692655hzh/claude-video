@@ -1,7 +1,7 @@
 # YouTube 长视频标准：英文版（发布用）
 
-适用：频道「Andy's Market Lens」的英文视频（2026-10-29 起频道只发英文视频；中文稿只作内部底稿）。
-账号英文基础信息（频道名、Handle、频道简介）见 `../_人设/Andy人设.md`；那份文档其余内容（开场结尾话术、Slogan 用法、视觉方向、内容定位等）是 chatbot 的模拟方案，不采用。
+适用：已确认人设的英文 YouTube 长视频；中文稿只作可选的内部底稿。
+人设、频道名、简介和 Handle 从每期 `00-项目设置.md` 指定的人设文件读取；Andy 只是预存人设之一。
 **这份文件只写和中文版不同的地方**；没写到的一律按 `youtube-long.md`（〔官方〕M1–M10、章节、双层节拍、数据三要素、复盘方法都通用）。
 编号沿用中文版，后缀 `-en` 表示英文版改写过的规则。
 
@@ -11,11 +11,11 @@
 
 ## 〇、英文稿怎么来
 
-- **源头是审核通过的中文 `03-终稿.md`**。英文稿是改写（transcreation），不是逐句翻译：事实、数字、章节顺序、判断强度和中文稿一致；
+- 正常路径的源头是 `01-初稿.md` 和 `02-外部建议.md`；有中文底稿时，英文稿是改写（transcreation），不是逐句翻译：事实、数字、章节顺序、判断强度和中文稿一致，
   句式、例子、过渡按英文观众的习惯重写。中文稿改了，英文稿跟着改，不单独改事实。
-- 文件：`<期名>/03-终稿-en.md`（审核通过后做发布包装 `04-发布包装-youtube-en.md`）。
+- 用户可以直接交付英文成稿，保存为 `<期名>/03-终稿-en.md` 并跳过④⑤；不强制倒补中文稿。审核通过后再按需做 `04-发布包装-youtube-en.md`。
 - **信源规则和中文版完全一样**（见 `../AGENTS.md`「信源规则」）：只点名知名投行、知名研究 / 数据机构、金融和企业界名人、公司一手资料。
-- 去 AI 味用 `humanizer` skill，再按本文第五节的口播补充自检。
+- 去 AI 味用 `humanizer` skill，再按本文第五节的口播补充自检；最终由用户人工修改并确认。
 
 ---
 
@@ -42,7 +42,7 @@ T4、T5、T7、T10、T11 和评分表照中文版；评分表里"前 12 字宽"�
 | # | 要求 |
 |---|---|
 | 长度 | **≤ 75 个英文词**（约 150 词 / 分钟，约 28 秒）；MiMo 英文音色语速未实测，第一期配音后按实测改 |
-| H3-en | 开头 75 词里不说 "Welcome back to the channel"、"I'm Andy"、"In today's video"；名片条：`Andy | 10+ years investing in US & HK stocks`（措辞待用户定）。频道名和主持人只靠名片条和 YouTube 界面露出，口播不加自我介绍句（2026-10-29 定：新频道没有品牌认知，这句话不提供信息，还占开头节奏） |
+| H3-en | 开头 75 词里不说 "Welcome back to the channel"、"I'm …"、"In today's video"；名片条两行：第一行主持人 + 频道，第二行小字写人设中已确认的真实资历。Andy 人设可用 `Andy · Andy's Market Lens` / `10+ years investing in US & HK stocks`。频道名和主持人只靠名片条和 YouTube 界面露出，口播不加自我介绍句 |
 | H5-en | 人名第一次出现带身份（`Alphabet's CFO`、`Bank of America analyst Justin Post`）；前 30 秒只用身份，不报全名 |
 | H6-en | **一句 ≤ 20 个词**，一句一层意思；数字之间至少隔一个短句，别连报三个金额 |
 | H8-en | 禁用填充：Let's dive in、Buckle up、Here's the thing、It's worth noting、Without further ado、In this video we'll、Make sure to watch until the end、game-changer、a whole new level |
@@ -82,14 +82,14 @@ H1、H2、H4、H7、H9、H10 照中文版（四要素：钩子、利害、信源
 
 ## 六、发布包装（英文）
 
-照 `youtube-long.md` 第四节，改动：简介前两行英文（钩子 + `Alphabet (GOOGL, GOOG)`）、英文章节时间戳、
-标签加英文常见搜索词（`alphabet earnings`, `googl stock`, `google q3 2026`）、免责声明用上面的英文版。频道 Handle（`@AndysMarketLens`，待确认可注册）和频道简介见 `../_人设/Andy人设.md`。
+照 `youtube-long.md` 第四节，改动：简介前两行英文（钩子 + 公司和代码，例如 `Alphabet (GOOGL, GOOG)`）、英文章节时间戳、
+标签加英文常见搜索词（如 `alphabet earnings`, `googl stock`, `google q3 2026`）、免责声明用上面的英文版。Handle 和频道简介从本期人设文件读取。
 
 ---
 
 ## 七、英文稿自检（贴在 `03-终稿-en.md` 末尾逐项打勾）
 
-- [ ] 事实、数字、章节顺序、判断强度和中文终稿一致；单位换算逐个核过
+- [ ] 有中文底稿时，事实、数字、章节顺序、判断强度和它一致，单位换算逐个核过；直接英文成稿已完成独立事实核查
 - [ ] 点名的信源都在信源规则名单里
 - [ ] 开头 ≤ 75 词、每句 ≤ 20 词，四要素齐，首句钩子、末句追问
 - [ ] 没有 H3-en、H8-en、T6-en 的禁用说法

@@ -1,0 +1,59 @@
+{
+  "accounts": {
+    "Andy": "Andy's Market Lens · @Andy_gmgx"
+  },
+  "records": [
+    {
+      "date": "2026-10-27",
+      "project": "caspa-ai-profit",
+      "account": "Andy",
+      "vendor": "mimo",
+      "id": "冰糖",
+      "name": "冰糖",
+      "gender": "女",
+      "lang": "中文",
+      "file": "mimo-冰糖-女-中文.mp3",
+      "status": "成片",
+      "note": "中文旧期（原名 Andy港美观察），按当时默认音色推断"
+    },
+    {
+      "date": "2026-10-29",
+      "project": "2026-10-google-q3",
+      "account": "Andy",
+      "vendor": "mimo",
+      "id": "Chloe",
+      "name": "Chloe",
+      "gender": "女",
+      "lang": "英语",
+      "file": "mimo-Chloe-女-英语.mp3",
+      "status": "成片",
+      "note": ""
+    },
+    {
+      "date": "2026-10-30",
+      "project": "2026-10-google-q3-cards",
+      "account": "Andy",
+      "vendor": "mimo",
+      "id": "Chloe",
+      "name": "Chloe",
+      "gender": "女",
+      "lang": "英语",
+      "file": "mimo-Chloe-女-英语.mp3",
+      "status": "成片",
+      "note": ""
+    },
+    {
+      "date": "2026-11-03",
+      "project": "2026-11-02-marvell-lumentum",
+      "account": "Andy",
+      "vendor": "ark",
+      "id": "en_female_joanne_uranus_bigtts",
+      "name": "Joanne",
+      "gender": "女",
+      "lang": "美式英语",
+      "file": "ark-Joanne-女-美式英语.mp3",
+      "status": "成片",
+      "note": "旧稿 v1.1 出片（交易未签约版）"
+    }
+  ]
+}

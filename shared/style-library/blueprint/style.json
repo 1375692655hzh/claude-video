@@ -1,0 +1,14 @@
+{
+  "id": "blueprint",
+  "name": "blueprint · 蓝图 / 工程图",
+  "status": "candidate",
+  "theme": null,
+  "look": "深蓝底双层网格、线框图、尺寸标注线、黄色手写批注",
+  "fit": "半导体、产业链、产品拆解",
+  "avoid": "",
+  "fonts": "IBM Plex Mono + Caveat",
+  "works": [],
+  "palette": [],
+  "kit": null,
+  "needsPhoto": false
+}

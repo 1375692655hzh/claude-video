@@ -84,6 +84,13 @@
       "sourceType": "github",
       "skillPath": "skills/remotion-upgrade/SKILL.md",
       "computedHash": "24670eb76f24668698adc6d8e90ea52ba8841dcbc02b0d7977adb5bb3d14f5b6"
+    },
+    "video-shotcraft": {
+      "source": "Vincentwei1021/video-shotcraft",
+      "sourceType": "github",
+      "skillPath": "SKILL-原版.md（已改名，不作为技能加载）",
+      "ref": "1266a3ec4831289c4d893d42dd5102723658039a",
+      "note": "参考用：只保留配方卡与示例代码，见 .agents/skills/video-shotcraft/本项目说明.md"
     }
   }
 }
