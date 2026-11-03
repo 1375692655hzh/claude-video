@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 // 项目工具：每期视频一个独立项目目录 projects/YYYY/MM/<项目ID>/（无第三方依赖）。
 //
-//   project new <英文短名> [--date YYYY-MM-DD] [--persona Andy] [--platform youtube-long]
+//   project new <英文短名> [--date YYYY-MM-DD] [--persona Andy] [--platform youtube-long] [--fast]
+//     --fast：FAST 模式（用户交付成稿 → 脚本 → 视频，零审核、不停顿，见 AGENTS.md「FAST 模式」）
 //   project list                      新项目 + 旧期（旧期只读、标 legacy）
 //   project status <ID>               进度、下一步、阻塞、各阶段文件
 //   project check <ID> [--step N]     按当前步骤（或指定步骤）检查门禁，不通过时退出码 1
@@ -117,6 +118,10 @@ function cmdNew({ pos, flags }) {
     id, createdAt: date, persona: flags.persona ?? null, platform, deliveredFinal: false, finalConfirmed: false, adviceSkipped: false,
     step: 1, status: "active", next: "①选择人设：列出 1-视频稿/_人设/ 的预存人设，或整理新人设，等用户确认", blockers: [],
   };
+  if (flags.fast) {
+    Object.assign(meta, { mode: "fast", step: meta.persona && platform ? 3 : 1,
+      next: meta.persona && platform ? `FAST①：用户交付成稿 → project final ${id} <成稿文件>` : "FAST：补 --persona 和 --platform（set），再收用户成稿" });
+  }
   fs.writeFileSync(path.join(dir, "project.json"), JSON.stringify(meta, null, 2) + "\n");
 
   // 项目设置：从模板生成，路径改成项目所在层级
@@ -228,7 +233,8 @@ function check(p, stepOverride) {
     if (!p.meta.persona) err("project.json 未写 persona（①未完成）"); else ok(`人设：${p.meta.persona}`);
     if (!p.meta.platform || !PLATFORMS[p.meta.platform]) err("project.json 未写有效 platform（②未完成）"); else ok(`平台：${p.meta.platform}`);
     const st = statusLine(settings);
-    if (!confirmed(st, /^已确认/)) err(`00-项目设置.md 状态不是“已确认”：${st || "空"}`);
+    if (p.meta.mode === "fast") ok("FAST 模式：设置无需逐项确认");
+    else if (!confirmed(st, /^已确认/)) err(`00-项目设置.md 状态不是“已确认”：${st || "空"}`);
     const name = field(settings, "人设名称");
     if (p.meta.persona && name && !name.includes(p.meta.persona)) err(`人设不一致：project.json=${p.meta.persona}，00-项目设置.md=${name}`);
     const pl = field(settings, "平台");
@@ -246,9 +252,13 @@ function check(p, stepOverride) {
     }
   }
   // ⑥–⑧
-  if (step >= 7 && !fs.existsSync(p.scriptDraft)) err("缺 02-脚本/script-draft.md（⑥）");
-  if (step >= 7 && !fs.existsSync(p.assets)) err("缺 02-脚本/assets.md（⑥⑦）");
-  if (step >= 9) {
+  const fast = p.meta.mode === "fast";
+  if (fast) ok("FAST 模式：成稿由用户交付，零审核；跳过⑥–⑧和参考图");
+  if (!fast && step >= 7 && !fs.existsSync(p.scriptDraft)) err("缺 02-脚本/script-draft.md（⑥）");
+  if (!fast && step >= 7 && !fs.existsSync(p.assets)) err("缺 02-脚本/assets.md（⑥⑦）");
+  if (fast && step >= 9 && !p.meta.style) warn("project.json 没有 style：FAST 默认沿用该账号上次的风格，style.mjs use 登记");
+  if (fast && step >= 9 && !p.meta.voice) warn("project.json 没有 voice：FAST 默认沿用该账号上次的音色，voice.mjs use 登记");
+  if (!fast && step >= 9) {
     const a = read(p.assets);
     const open = openAssetRows(a);
     if (open.length) err(`素材缺口未关闭，不能进⑨：${open.join("、")}`); else if (a) ok("素材总表没有未关闭缺口");
@@ -259,10 +269,12 @@ function check(p, stepOverride) {
   if (step >= 10) {
     const sc = read(p.script);
     if (!sc) err("缺 02-脚本/script.md（⑨脚本成稿）");
+    else if (fast) ok("FAST：脚本无需确认");
     else if (!confirmed(statusLine(sc), /已确认（可进⑩）/)) err(`script.md 状态不是“已确认（可进⑩）”：${statusLine(sc) || "空"}`);
     else ok("脚本成稿已确认");
     const refs = fs.existsSync(p.refs) ? fs.readdirSync(p.refs).filter((f) => IMG_RE.test(f)) : [];
-    if (!refs.length) err("03-素材/refs/ 没有风格参考图（⑨必须至少一张）");
+    if (fast) { /* FAST 不要求参考图 */ }
+    else if (!refs.length) err("03-素材/refs/ 没有风格参考图（⑨必须至少一张）");
     else {
       ok(`风格参考图 ${refs.length} 张`);
       if (sc && !refs.some((f) => sc.includes(f))) warn("script.md 没有写到任何一张参考图的文件名");
@@ -306,7 +318,7 @@ function cmdStatus(p) {
   if (p.kind === "legacy") { console.log(`${p.id}（旧期，走原三目录路径）`); printCheck(check(p)); return; }
   const m = p.meta;
   console.log(`${m.id}  ${rel(p.dir)}/`);
-  console.log(`  人设：${m.persona ?? "未定"}    平台：${m.platform ?? "未定"}    状态：${m.status}${m.deliveredFinal ? "    （用户直接交付成稿）" : ""}`);
+  console.log(`  人设：${m.persona ?? "未定"}    平台：${m.platform ?? "未定"}    状态：${m.status}${m.mode === "fast" ? "    【FAST】" : ""}${m.deliveredFinal ? "    （用户直接交付成稿）" : ""}`);
   console.log(`  当前：${STEPS[m.step] ?? m.step}`);
   console.log(`  下一步：${m.next || "—"}`);
   if (m.blockers?.length) console.log(`  阻塞：\n${m.blockers.map((b) => "    - " + b).join("\n")}`);
@@ -331,6 +343,7 @@ function cmdSet(p, kvs) {
     else if (k === "blocker") p.meta.blockers.push(v);
     else if (k === "blockers") p.meta.blockers = v ? v.split(";").map((x) => x.trim()).filter(Boolean) : [];
     else if (["deliveredFinal", "finalConfirmed", "adviceSkipped"].includes(k)) p.meta[k] = v === "true";
+    else if (k === "mode") { if (!["fast", "standard"].includes(v)) fail("mode 只能是 fast / standard"); if (v === "fast") p.meta.mode = "fast"; else delete p.meta.mode; }
     else if (["next", "status", "persona"].includes(k)) p.meta[k] = v;
     else fail(`不认识的字段 ${k}`);
   }
@@ -341,11 +354,14 @@ function cmdFinal(p, file) {
   if (p.kind !== "project") fail("旧期请按原路径保存");
   if (!file || !fs.existsSync(file)) fail("用法：final <ID> <用户交付的成稿文件>");
   if (fs.existsSync(p.finalEn)) fail(`已有 ${rel(p.finalEn)}，不覆盖`);
-  if (p.meta.step < 3) fail("先完成①②（人设、平台确认后 step 至少为 3）");
+  const fast = p.meta.mode === "fast";
+  if (fast && (!p.meta.persona || !p.meta.platform)) fail("FAST 也要先有 persona 和 platform：set <ID> persona=… platform=…");
+  if (!fast && p.meta.step < 3) fail("先完成①②（人设、平台确认后 step 至少为 3）");
   fs.copyFileSync(file, p.finalEn);
-  Object.assign(p.meta, { deliveredFinal: true, finalConfirmed: true, step: 6, next: "⑥脚本初稿：读成稿，定风格、分镜、动效和逐镜素材需求" });
+  if (fast) Object.assign(p.meta, { deliveredFinal: true, finalConfirmed: true, step: 9, next: "FAST②脚本：成稿直接拆成 script.md（不改口播），音色/风格沿用上次，然后直接进⑩出片" });
+  else Object.assign(p.meta, { deliveredFinal: true, finalConfirmed: true, step: 6, next: "⑥脚本初稿：读成稿，定风格、分镜、动效和逐镜素材需求" });
   saveMeta(p);
-  console.log(`✓ 成稿已存为 ${rel(p.finalEn)}，跳过④⑤，进入⑥`);
+  console.log(fast ? `✓ 成稿已存为 ${rel(p.finalEn)}（FAST：零审核），进入脚本` : `✓ 成稿已存为 ${rel(p.finalEn)}，跳过④⑤，进入⑥`);
 }
 
 function cmdPaths(p) {
