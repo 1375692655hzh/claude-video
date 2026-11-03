@@ -29,7 +29,7 @@ for (let i = 0; i < args.length; i++) {
 }
 const [input, out] = positional;
 
-const key = process.env.ARK_PLAN_API_KEY;
+const key = process.env.ARK_PLAN_API_KEY || process.env.VOLC_TTS_ACCESS_TOKEN;
 if (!key) {
   fail(
     "没有找到环境变量 ARK_PLAN_API_KEY。\n" +

@@ -739,7 +739,7 @@
       "caspa-ai-profit"
     ],
     "added": "2026-10-27",
-    "verified": "2026-10-27",
+    "verified": "2026-11-02",
     "thumb": "thumbs/img-nvidia-nvl72.jpg"
   },
   {
@@ -1079,6 +1079,178 @@
     ],
     "added": "2026-10-29",
     "verified": "2026-10-29"
+  },
+  {
+    "id": "web-cdn-marvell-chip2-v1-ara-16t-pam4-dsp-",
+    "type": "image",
+    "status": "available",
+    "title": "Marvell Ara 1.6T PAM4 DSP chip (press kit)",
+    "title_zh": "Marvell Ara 1.6T PAM4 DSP 芯片官方照片",
+    "url": "https://cdn.brandfolder.io/T6Z654FK/at/vh36bz3n38q7kfjxqng5w64/Marvell_chip2_v1_Ara_16T_PAM4_DSP_.jpg",
+    "platform": "web",
+    "owner": "Marvell",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "半导体"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "Marvell",
+      "DSP"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "来自 Marvell 官方 Ara press kit 页 https://www.marvell.com/company/media-kit/ara-3nm-1-6tbps-pam4-dsp-press-kit.html",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "thumb": "thumbs/web-cdn-marvell-chip2-v1-ara-16t-pam4-dsp-.jpg",
+    "verified": "2026-11-02"
+  },
+  {
+    "id": "web-coherent-6-inch-inp-scalable-wafers",
+    "type": "image",
+    "status": "available",
+    "title": "Coherent 6-inch InP scalable wafers",
+    "title_zh": "Coherent 6 英寸磷化铟晶圆（官方博客图）",
+    "url": "https://www.coherent.com/content/dam/coherent/site/en/images/photography/blog/6-inch-inp-scalable-wafer-fabs/6-inch-inp-scalable-wafers.jpg",
+    "platform": "web",
+    "owner": "Coherent",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "半导体",
+      "通信"
+    ],
+    "shot": [
+      "生产制造",
+      "产品特写"
+    ],
+    "tags": [
+      "Coherent",
+      "InP"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "来源 https://www.coherent.com/news/blog/indium-phosphide-wafer-fab ；可作 A18 激光器晶圆示意（标 Coherent，不冒充 Lumentum）或 A25。",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "thumb": "thumbs/web-coherent-6-inch-inp-scalable-wafers.jpg",
+    "verified": "2026-11-02"
+  },
+  {
+    "id": "web-coherent-coherent-ipoh-malaysia-300m-transceivers",
+    "type": "image",
+    "status": "available",
+    "title": "Coherent transceiver assembly in Ipoh, Malaysia",
+    "title_zh": "Coherent 马来西亚怡保光模块组装线（官方新闻图）",
+    "url": "https://www.coherent.com/content/dam/coherent/site/en/images/photography/press-releases/coherent-ipoh-malaysia-300m-transceivers.jpg",
+    "platform": "web",
+    "owner": "Coherent",
+    "official": true,
+    "license": "official-press",
+    "published": "2024-06-12",
+    "duration": null,
+    "domain": [
+      "通信",
+      "半导体"
+    ],
+    "shot": [
+      "生产制造"
+    ],
+    "tags": [
+      "Coherent",
+      "transceiver"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "来自 Coherent 3 亿只光模块里程碑新闻稿；A24 模块组装画面（标 Coherent，不冒充 Lumentum/Marvell）。",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02",
+    "thumb": "thumbs/web-coherent-coherent-ipoh-malaysia-300m-transceivers.jpg"
+  },
+  {
+    "id": "web-coherent-ftce4517e1pxm",
+    "type": "image",
+    "status": "available",
+    "title": "Coherent OSFP 1.6T transceiver product image",
+    "title_zh": "Coherent OSFP 光模块产品图",
+    "url": "https://www.coherent.com/content/dam/coherent/site/en/products/networking/optical-transceivers/osfp/ftce4517e1pxm.jpg",
+    "platform": "web",
+    "owner": "Coherent",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "通信",
+      "数据中心"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "Coherent",
+      "transceiver"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "来自 Coherent 1.6T-DR8 产品页 https://www.coherent.com/networking/transceivers/datacom/FTCF2519E1PCM（页面主图文件名为 ftce4517e1pxm，型号以页面为准）。",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "thumb": "thumbs/web-coherent-ftce4517e1pxm.jpg",
+    "verified": "2026-11-02"
+  },
+  {
+    "id": "web-coherent-manufacturing-milestone-300-million-transceiver",
+    "type": "image",
+    "status": "available",
+    "title": "Coherent Ipoh Malaysia transceiver assembly (300 million milestone PR)",
+    "title_zh": "Coherent 马来西亚怡保光模块组装产线（3亿只里程碑新闻稿配图）",
+    "url": "https://www.coherent.com/news/press-releases/manufacturing-milestone-300-million-transceiveres-shipped",
+    "platform": "web",
+    "owner": "Coherent Corp.",
+    "official": true,
+    "license": "official-press",
+    "published": "2024-06-12",
+    "duration": null,
+    "domain": [
+      "通信",
+      "半导体",
+      "数据中心"
+    ],
+    "shot": [
+      "生产制造"
+    ],
+    "tags": [
+      "Coherent",
+      "Ipoh",
+      "transceiver assembly",
+      "800G"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Official press page includes Image 1: Transceiver assembly in Ipoh, Malaysia (asset path coherent-ipoh-malaysia-300m-transceivers.jpg). Good still for assembly-line context; not motion B-roll.",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02"
   },
   {
     "id": "web-commons-file-belgique---bruxelles---schuman---berlaymont",
@@ -1429,6 +1601,288 @@
     "notes": "图片 GCNEXT2026_0422_085831-8501_ALIV（width-2200 webp 转 jpg）；cloud.google.com 的 day-1 recap 里还有 7 张主会场照片。画面署名：Photo: Google Cloud Next 26"
   },
   {
+    "id": "web-lumentum-16t-dr4-osfp-module-400g-differential-emls-ofc-",
+    "type": "video",
+    "status": "available",
+    "title": "1.6T DR4 OSFP Module with 400G Differential EMLs | OFC 2026 Demo | Lumentum",
+    "title_zh": "Lumentum 官方：OFC 2026 1.6T DR4 OSFP（400G 差分 EML）",
+    "url": "https://www.lumentum.com/en/videos/16t-dr4-osfp-module-400g-differential-emls-ofc-2026-demo",
+    "platform": "web",
+    "owner": "Lumentum",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": 118,
+    "domain": [
+      "通信",
+      "半导体",
+      "AI"
+    ],
+    "shot": [
+      "产品特写",
+      "动画演示"
+    ],
+    "tags": [
+      "Lumentum",
+      "1.6T",
+      "EML",
+      "OFC2026"
+    ],
+    "windows": [
+      {
+        "start": 0,
+        "end": 10,
+        "desc": "OFC 2026 Lumentum 展台全景（人物小）",
+        "source": "checked"
+      },
+      {
+        "start": 18,
+        "end": 28,
+        "desc": "官方原理图：1.6T DR4 模块内 4×400G EML",
+        "source": "checked"
+      }
+    ],
+    "used_in": [],
+    "notes": "Grok r2. Official Lumentum video page for 1.6T + EML demo. Prefer product-only frames; confirm embedded player has no face close-ups.",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02",
+    "thumb": "thumbs/web-lumentum-16t-dr4-osfp-module-400g-differential-emls-ofc-.jpg"
+  },
+  {
+    "id": "web-lumentum-optical-circuit-switching-ocs-large-scale-gpu-c",
+    "type": "video",
+    "status": "unavailable",
+    "title": "Optical Circuit Switching (OCS) for Large-Scale GPU Clusters | Lumentum",
+    "title_zh": "Lumentum 官方：R300 OCS 用于大规模 GPU 集群",
+    "url": "https://www.lumentum.com/en/videos/optical-circuit-switching-ocs-large-scale-gpu-clusters",
+    "platform": "web",
+    "owner": "Lumentum",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "通信",
+      "数据中心",
+      "AI"
+    ],
+    "shot": [
+      "产品特写",
+      "动画演示"
+    ],
+    "tags": [
+      "Lumentum",
+      "R300",
+      "OCS",
+      "Marvell"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Official page explicitly names Lumentum R300 OCS for AI/ML clusters. Check for Marvell co-branding before use if you want Lumentum-only visuals.",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02",
+    "status_reason": "与 web-videos-iafvmfqz3xqyjqrwzy7kws 为同一支视频（Marvell×Lumentum OCS 展台），保留 Marvell 那条"
+  },
+  {
+    "id": "web-lumentum-revolutionizing-optical-switching-lumentums-new",
+    "type": "video",
+    "status": "available",
+    "title": "Revolutionizing Optical Switching: New Lumentum OCS",
+    "title_zh": "Lumentum 官方：新一代 OCS（R300 相关）讲解视频",
+    "url": "https://www.lumentum.com/en/videos/revolutionizing-optical-switching-lumentums-new-ocs",
+    "platform": "web",
+    "owner": "Lumentum",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": 148,
+    "domain": [
+      "通信",
+      "数据中心",
+      "AI"
+    ],
+    "shot": [
+      "产品特写",
+      "人物采访",
+      "动画演示"
+    ],
+    "tags": [
+      "Lumentum",
+      "OCS",
+      "R300"
+    ],
+    "windows": [
+      {
+        "start": 5,
+        "end": 12,
+        "desc": "OFC 展馆空镜",
+        "source": "checked"
+      },
+      {
+        "start": 42,
+        "end": 50,
+        "desc": "Lumentum 展台空镜",
+        "source": "checked"
+      },
+      {
+        "start": 60,
+        "end": 70,
+        "desc": "OCS 架构对比图：今天的数据中心 vs AI 数据中心",
+        "source": "checked"
+      }
+    ],
+    "used_in": [],
+    "notes": "Grok r2. Official OCS explainer featuring Michael DeMerchant. People on camera—use only as background or cut to product graphics; no portrait close-ups.",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02",
+    "thumb": "thumbs/web-lumentum-revolutionizing-optical-switching-lumentums-new.jpg"
+  },
+  {
+    "id": "web-media-1-3-elsfptransceiver-1",
+    "type": "image",
+    "status": "available",
+    "title": "ELSFP external laser source",
+    "title_zh": "",
+    "url": "https://media.lumentum.com/sites/default/files/2026-01/1.3.ELSFPtransceiver_1.png",
+    "platform": "web",
+    "owner": "Lumentum",
+    "official": true,
+    "license": "unknown",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "通信",
+      "数据中心"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "Lumentum",
+      "A23"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "主代理通过官方网站首页/产品页Jina读取提取的实际图链；非Grok输出。来源 https://www.lumentum.com/en 。官方版权，未找到本视频重用授权；只作候选。",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02",
+    "thumb": "thumbs/web-media-1-3-elsfptransceiver-1.jpg"
+  },
+  {
+    "id": "web-media-1-4-1-6ttransceiver-20-282-29",
+    "type": "image",
+    "status": "available",
+    "title": "1.6T TRO OSFP module",
+    "title_zh": "",
+    "url": "https://media.lumentum.com/sites/default/files/2025-11/1.4.1.6TTransceiver%20%282%29.png",
+    "platform": "web",
+    "owner": "Lumentum",
+    "official": true,
+    "license": "unknown",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "通信",
+      "数据中心"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "Lumentum",
+      "A17"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "主代理通过官方网站首页/产品页Jina读取提取的实际图链；非Grok输出。来源 https://www.lumentum.com/en 。官方版权，未找到本视频重用授权；只作候选。",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02",
+    "thumb": "thumbs/web-media-1-4-1-6ttransceiver-20-282-29.jpg"
+  },
+  {
+    "id": "web-media-eml200g-web-0",
+    "type": "image",
+    "status": "available",
+    "title": "200G EML laser",
+    "title_zh": "",
+    "url": "https://media.lumentum.com/sites/default/files/2025-12/eml200g-web_0.png",
+    "platform": "web",
+    "owner": "Lumentum",
+    "official": true,
+    "license": "unknown",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "通信",
+      "数据中心"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "Lumentum",
+      "A21"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "主代理通过官方网站首页/产品页Jina读取提取的实际图链；非Grok输出。来源 https://www.lumentum.com/en 。官方版权，未找到本视频重用授权；只作候选。",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02",
+    "thumb": "thumbs/web-media-eml200g-web-0.jpg"
+  },
+  {
+    "id": "web-media-r300ocs-0",
+    "type": "image",
+    "status": "available",
+    "title": "R300 OCS",
+    "title_zh": "",
+    "url": "https://media.lumentum.com/sites/default/files/2025-11/r300ocs_0.png",
+    "platform": "web",
+    "owner": "Lumentum",
+    "official": true,
+    "license": "unknown",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "通信",
+      "数据中心"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "Lumentum",
+      "A22"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "主代理通过官方网站首页/产品页Jina读取提取的实际图链；非Grok输出。来源 https://www.lumentum.com/en 。官方版权，未找到本视频重用授权；只作候选。",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02",
+    "thumb": "thumbs/web-media-r300ocs-0.jpg"
+  },
+  {
     "status": "available",
     "title_zh": "SpaceX Crew-12 发射高速摄影",
     "duration": 143,
@@ -1600,6 +2054,243 @@
     "added": "2026-10-29",
     "status_reason": "HTTP 403",
     "verified": "2026-10-29"
+  },
+  {
+    "id": "web-pexels-many-cabled-connectors-in-fiber-optic-switch-4497",
+    "type": "image",
+    "status": "unavailable",
+    "title": "Many cabled connectors in fiber optic switch",
+    "title_zh": "光纤交换机上的线缆接头特写（免费图库）",
+    "url": "https://www.pexels.com/photo/many-cabled-connectors-in-fiber-optic-switch-4497195/",
+    "platform": "web",
+    "owner": "Pexels / Brett Sayles",
+    "official": false,
+    "license": "cc",
+    "published": "2020-05-27",
+    "duration": null,
+    "domain": [
+      "数据中心",
+      "通信"
+    ],
+    "shot": [
+      "产品特写",
+      "机房内景"
+    ],
+    "tags": [
+      "fiber",
+      "switch",
+      "cables",
+      "free"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Free-licence fiber/switch close-up; generic, no customer logos required. Not a true assembly line—use as optics-lab/patch-panel filler if factory video is thin.",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "status_reason": "HTTP 403",
+    "verified": "2026-11-02"
+  },
+  {
+    "id": "web-upload-marvell-santa-clara-may-2011",
+    "type": "image",
+    "status": "available",
+    "title": "Marvell Santa Clara headquarters (May 2011)",
+    "title_zh": "Marvell 圣克拉拉总部外景（2011）",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Marvell_Santa_Clara_May_2011.jpg",
+    "platform": "web",
+    "owner": "Wikimedia Commons / King of Hearts",
+    "official": false,
+    "license": "cc",
+    "published": "2011-05",
+    "duration": null,
+    "domain": [
+      "半导体"
+    ],
+    "shot": [
+      "外景航拍"
+    ],
+    "tags": [
+      "Marvell"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "CC BY-SA 3.0，作者 King of Hearts，须署名；4000×1000 全景，需裁 16:9；2011 年拍摄，画面标年份。",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "thumb": "thumbs/web-upload-marvell-santa-clara-may-2011.jpg",
+    "verified": "2026-11-02"
+  },
+  {
+    "id": "web-video-6388894263112",
+    "type": "video",
+    "status": "available",
+    "title": "Cisco Optics: 1.6T and 800G LPO for Power-Efficient AI Networks",
+    "title_zh": "Cisco Optics：1.6T 与 800G LPO 光模块（官方视频门户）",
+    "url": "https://video.cisco.com/detail/video/6388894263112",
+    "platform": "web",
+    "owner": "Cisco",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "通信",
+      "数据中心",
+      "AI"
+    ],
+    "shot": [
+      "产品特写",
+      "动画演示"
+    ],
+    "tags": [
+      "Cisco",
+      "1.6T",
+      "800G",
+      "LPO",
+      "OSFP"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Official Cisco optics portfolio video for 1.6T OSFP and 800G LPO. Prefer over reseller clips for credibility; verify whether live plug-in footage vs animation.",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02"
+  },
+  {
+    "id": "web-videos-6fncksqzirmytpfxbsyusr",
+    "type": "video",
+    "status": "available",
+    "title": "Marvell Ara: Industry's First 1.6T PAM4 Optical DSP Demo at ECOC 2025",
+    "title_zh": "Marvell Ara 1.6T DSP ECOC 2025 展台演示",
+    "url": "https://videos.marvell.com/watch/6FnCkSQZirmytPFXBSyuSR",
+    "platform": "web",
+    "owner": "Marvell",
+    "official": true,
+    "license": "official-press",
+    "published": "2025-09",
+    "duration": 85,
+    "domain": [
+      "半导体",
+      "通信"
+    ],
+    "shot": [
+      "产品特写",
+      "会议演讲"
+    ],
+    "tags": [
+      "Marvell",
+      "DSP",
+      "1.6T",
+      "ECOC"
+    ],
+    "windows": [
+      {
+        "start": 24,
+        "end": 36,
+        "desc": "两块 Ara 评估板静物（37s 起有手入镜）",
+        "source": "checked"
+      }
+    ],
+    "used_in": [],
+    "notes": "Vidyard 托管，86s；有演示人员出镜，只取无人物主体的设备镜头。",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02"
+  },
+  {
+    "id": "web-videos-iafvmfqz3xqyjqrwzy7kws",
+    "type": "video",
+    "status": "available",
+    "title": "How Optical Circuit Switching (OCS) Enables Large-scale GPU Clusters",
+    "title_zh": "OCS 如何支撑大规模 GPU 集群（Marvell 官方动画）",
+    "url": "https://videos.marvell.com/watch/iAFvmfQZ3xqYjqRWZY7kwS",
+    "platform": "web",
+    "owner": "Marvell",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": 55,
+    "domain": [
+      "通信",
+      "数据中心"
+    ],
+    "shot": [
+      "动画演示"
+    ],
+    "tags": [
+      "Marvell",
+      "OCS"
+    ],
+    "windows": [
+      {
+        "start": 15,
+        "end": 20,
+        "desc": "展台 OCS 机箱正面（外观同 Lumentum R300）",
+        "source": "checked"
+      },
+      {
+        "start": 22,
+        "end": 26,
+        "desc": "光纤束特写",
+        "source": "checked"
+      }
+    ],
+    "used_in": [],
+    "notes": "Vidyard 托管，56s；OCS 原理镜头备选，注意不要与 Lumentum/Google 关系混用。",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02"
+  },
+  {
+    "id": "web-videos-u5mxpvccd7fyngbzr3yrmm",
+    "type": "video",
+    "status": "available",
+    "title": "Marvell Ara T: 1.6T PAM4 DSP Optimized for AI Optical Interconnects",
+    "title_zh": "Marvell Ara T 1.6T PAM4 DSP（官方视频）",
+    "url": "https://videos.marvell.com/watch/U5mxPvccD7fynGBzR3YRmm",
+    "platform": "web",
+    "owner": "Marvell",
+    "official": true,
+    "license": "official-press",
+    "published": "",
+    "duration": 80,
+    "domain": [
+      "半导体",
+      "通信"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "Marvell",
+      "DSP",
+      "1.6T"
+    ],
+    "windows": [
+      {
+        "start": 40,
+        "end": 50,
+        "desc": "线缆与评估板特写（烧录字幕 Industry's first 3nm 1.6T PAM4 DSP）",
+        "source": "checked"
+      }
+    ],
+    "used_in": [],
+    "notes": "Vidyard 托管，80s；1080p 直链来自 play.vidyard.com/player/U5mxPvccD7fynGBzR3YRmm.json（chapters[0].sources.mp4 full_hd）。Grok r1 + Claude 核实。",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02"
   },
   {
     "id": "web-youtube-watch",
@@ -1803,6 +2494,114 @@
     ],
     "added": "2026-10-29",
     "verified": "2026-10-29"
+  },
+  {
+    "id": "x-2067016769584177337",
+    "type": "post",
+    "status": "unverified",
+    "title": "NVIDIA post: Sherman TX photonics manufacturing expansion with Coherent",
+    "title_zh": "NVIDIA 官方帖：与 Coherent 在 Sherman 扩建光子制造",
+    "url": "https://x.com/nvidia/status/2067016769584177337",
+    "platform": "x",
+    "owner": "@nvidia",
+    "official": true,
+    "license": "official-press",
+    "published": "2026-06-16",
+    "duration": null,
+    "domain": [
+      "半导体",
+      "AI",
+      "通信"
+    ],
+    "shot": [
+      "社交媒体帖子",
+      "生产制造"
+    ],
+    "tags": [
+      "nvidia",
+      "Coherent",
+      "Sherman",
+      "photonics"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Official X post dated 2026-06-16 UTC about Sherman photonics capacity. Use as on-screen social proof; media attached on X.",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02"
+  },
+  {
+    "id": "x-2102299173932413357",
+    "type": "post",
+    "status": "unverified",
+    "title": "Coherent PhotonLink for CPO/NPO AI connectivity",
+    "title_zh": "Coherent 官方 X：PhotonLink 覆盖 CPO/NPO 光链路",
+    "url": "https://x.com/CoherentCorp/status/2102299173932413357",
+    "platform": "x",
+    "owner": "@CoherentCorp",
+    "official": true,
+    "license": "official-press",
+    "published": "2026-09-22",
+    "duration": null,
+    "domain": [
+      "通信",
+      "AI",
+      "半导体"
+    ],
+    "shot": [
+      "社交媒体帖子",
+      "动画演示"
+    ],
+    "tags": [
+      "Coherent",
+      "PhotonLink",
+      "CPO",
+      "NPO"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Official 2026 CPO/NPO platform post.",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02"
+  },
+  {
+    "id": "x-2114777370452185407",
+    "type": "post",
+    "status": "unverified",
+    "title": "Lumentum DWDM ELSFP laser module demo at ECOC 2026",
+    "title_zh": "Lumentum 官方 X：ECOC 2026 DWDM ELSFP（CPO/NPO）演示",
+    "url": "https://x.com/Lumentum/status/2114777370452185407",
+    "platform": "x",
+    "owner": "@Lumentum",
+    "official": true,
+    "license": "official-press",
+    "published": "2026-10-26",
+    "duration": null,
+    "domain": [
+      "通信",
+      "AI",
+      "半导体"
+    ],
+    "shot": [
+      "社交媒体帖子",
+      "产品特写"
+    ],
+    "tags": [
+      "Lumentum",
+      "ELSFP",
+      "CPO",
+      "ECOC2026"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Official 2026 optics/CPO-related post with video.",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02"
   },
   {
     "id": "yt-0TnHSRNqDqM",
@@ -2305,6 +3104,43 @@
     "thumb": "thumbs/yt-9i1ZM0dPyRo.jpg"
   },
   {
+    "id": "yt-ABLf2OYgA5E",
+    "type": "video",
+    "status": "unverified",
+    "title": "Coherent | ELSFP Demonstration at ECOC 2025",
+    "title_zh": "Coherent ECOC 2025：ELSFP 外置激光源模块演示",
+    "url": "https://www.youtube.com/watch?v=ABLf2OYgA5E",
+    "platform": "youtube",
+    "owner": "Coherent Corp.",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "2025-12-17",
+    "duration": null,
+    "domain": [
+      "通信",
+      "半导体",
+      "AI",
+      "数据中心"
+    ],
+    "shot": [
+      "产品特写",
+      "会议演讲"
+    ],
+    "tags": [
+      "Coherent",
+      "ELSFP",
+      "CPO",
+      "ECOC2025"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Official datacom laser-module demo. Presenter on camera—avoid portrait close-ups; use module shots. 【预览图已看：Coherent ELSFP 外置激光源模块手持特写（官方频道），讲解人出镜段不用；底部有字幕，需裁切。精确片段待⑩定。】",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02"
+  },
+  {
     "id": "yt-AJH8B1DIkKI",
     "type": "video",
     "status": "available",
@@ -2525,13 +3361,51 @@
         "date": "2026-10-29"
       }
     ],
-    "notes": "Official Google Cloud, 1:56. Amin Vahdat unboxes the 7th-gen Ironwood TPU. Chapters: 00:00 intro, 00:25 Ironwood overview, 01:08 AI hypercomputer, 01:44 cloud availability.",
+    "notes": "Official Google Cloud, 1:56. Amin Vahdat unboxes the 7th-gen Ironwood TPU. Chapters: 00:00 intro, 00:25 Ironwood overview, 01:08 AI hypercomputer, 01:44 cloud availability. 【2026-11-02 marvell-lumentum：本期不用（人物主体+烧录字幕），仅本期不适用，不影响其他项目】",
     "found_for": [
       "caspa-ai-profit"
     ],
     "added": "2026-10-27",
-    "verified": "2026-10-27",
+    "verified": "2026-11-02",
     "thumb": "thumbs/yt-coPKHrE2ATI.jpg"
+  },
+  {
+    "id": "yt-CZQ5rf4dZaI",
+    "type": "video",
+    "status": "unavailable",
+    "title": "#OCPSummit25: Lumentum Optics Powering AI Infrastructure",
+    "title_zh": "OCP Summit：Lumentum 谈 OCS / ELS / 1.6T 模块",
+    "url": "https://www.youtube.com/watch?v=CZQ5rf4dZaI",
+    "platform": "youtube",
+    "owner": "unknown (OCP/event clip)",
+    "official": false,
+    "license": "youtube-standard",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "通信",
+      "AI",
+      "数据中心"
+    ],
+    "shot": [
+      "人物采访",
+      "会议演讲"
+    ],
+    "tags": [
+      "Lumentum",
+      "OCS",
+      "1.6T",
+      "OCP"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Mentions OCS and 1.6T modules verbally; talking-head heavy—only use if booth/product cutaways exist. Prefer official Lumentum video pages above.",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "status_reason": "marvell-lumentum ⑦预览图人工复看：第三方频道采访，人物讲解为主，无可用产品镜头",
+    "verified": "2026-11-02"
   },
   {
     "id": "yt-duHhImuaZGU",
@@ -2658,6 +3532,47 @@
     "thumb": "thumbs/yt-f6D_aiy8qyU.jpg"
   },
   {
+    "id": "yt-Fy2_uMpVunM",
+    "type": "video",
+    "status": "unavailable",
+    "title": "A small town in Texas is leading the charge in AI technology (Coherent Sherman InP fab tour)",
+    "title_zh": "德克萨斯 Sherman：Coherent InP 晶圆厂扩建（含洁净室）",
+    "url": "https://www.youtube.com/watch?v=Fy2_uMpVunM",
+    "platform": "youtube",
+    "owner": "Fox News Clips",
+    "official": false,
+    "license": "youtube-standard",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "半导体",
+      "通信",
+      "AI",
+      "数据中心"
+    ],
+    "shot": [
+      "生产制造",
+      "人物采访",
+      "机房内景"
+    ],
+    "tags": [
+      "Coherent",
+      "Sherman",
+      "InP",
+      "6-inch wafer",
+      "Nvidia"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Shows Coherent Sherman 6-inch InP fab expansion with Jensen Huang and Jim Anderson. People are on camera—use ONLY wide plant/cleanroom B-roll; no close-up portraits. Not Lumentum-owned fab.",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "status_reason": "marvell-lumentum ⑦预览图人工复看：Fox News 电视节目画面：主持人与人物出镜为主、台标和直播字幕满屏，不符合信源与无人物要求",
+    "verified": "2026-11-02"
+  },
+  {
     "id": "yt-g7vskHVx0Xo",
     "type": "video",
     "status": "available",
@@ -2709,6 +3624,43 @@
     ],
     "added": "2026-10-27",
     "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-HpD0QyO6u7c",
+    "type": "video",
+    "status": "unverified",
+    "title": "Coherent | 400G PAM4 Optical Links | OFC 2026 Demo",
+    "title_zh": "Coherent OFC 2026：400G/lane 链路演示（指向 3.2T 可插拔）",
+    "url": "https://www.youtube.com/watch?v=HpD0QyO6u7c",
+    "platform": "youtube",
+    "owner": "Coherent Corp.",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "通信",
+      "半导体",
+      "AI"
+    ],
+    "shot": [
+      "产品特写",
+      "会议演讲"
+    ],
+    "tags": [
+      "Coherent",
+      "400G",
+      "EML",
+      "OFC2026"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Official Coherent demo; person presenting on camera—use product/link B-roll only. Not a full switch faceplate plug-in shot. 【marvell-lumentum 本期不用：Coherent OFC 2026 演示以讲解人出镜为主，产品镜头很少；仅本期不适用】",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02"
   },
   {
     "id": "yt-Hs2yXBlEIWs",
@@ -3025,6 +3977,42 @@
     ],
     "added": "2026-10-27",
     "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-LCZfhAlC6M8",
+    "type": "video",
+    "status": "unverified",
+    "title": "800G DR4 OSFP RHS Optical Transceiver for NVIDIA ConnectX-8 SuperNIC in AI Networks | FiberMall",
+    "title_zh": "FiberMall：1.6T 模块插入交换机 + 800G 模块与光纤连接演示",
+    "url": "https://www.youtube.com/watch?v=LCZfhAlC6M8",
+    "platform": "youtube",
+    "owner": "FiberMall",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "通信",
+      "数据中心",
+      "AI"
+    ],
+    "shot": [
+      "产品特写"
+    ],
+    "tags": [
+      "800G",
+      "1.6T",
+      "OSFP",
+      "fiber",
+      "switch"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Clear plug-in + fiber close-up. Vendor reseller channel (not Marvell/Lumentum). Watch-outs: Nvidia ConnectX branding in title/graphics—crop logos if script wants non-Nvidia. 【预览图已看：800G OSFP 模块手持特写、插入服务器网卡特写，画质清晰；底部有烧录字幕、片头有促销图卡，需裁切；经销商频道，网卡为 NVIDIA ConnectX。精确片段待⑩定。】",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02"
   },
   {
     "id": "yt-lOGipTP0Kqc",
@@ -3439,6 +4427,42 @@
     "added": "2026-10-29"
   },
   {
+    "id": "yt-OYL0FocIuu4",
+    "type": "video",
+    "status": "unverified",
+    "title": "Guanglian high-speed optical transceiver automatic production lines",
+    "title_zh": "光联高速光模块自动化产线",
+    "url": "https://www.youtube.com/watch?v=OYL0FocIuu4",
+    "platform": "youtube",
+    "owner": "Guanglian",
+    "official": true,
+    "license": "youtube-standard",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "通信",
+      "半导体",
+      "数据中心"
+    ],
+    "shot": [
+      "生产制造",
+      "产品特写"
+    ],
+    "tags": [
+      "optical transceiver",
+      "assembly line",
+      "COB",
+      "test"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Vendor factory B-roll of automatic transceiver production/test lines. No hyperscaler customer names seen in description. Prefer cutaways without Chinese on-screen text if present. 【预览图已看：光联光模块产线（OSA 制造、ROSA 功能测试、端面检测），工人全身防尘服；右上角有 Guanglian 台标、右下角有工序字幕，需裁切。精确片段待⑩下载时定。】",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02"
+  },
+  {
     "id": "yt-pgVHZoZlJjw",
     "type": "video",
     "status": "available",
@@ -3736,6 +4760,44 @@
     ],
     "added": "2026-10-27",
     "verified": "2026-10-27"
+  },
+  {
+    "id": "yt-UMMfJ4au1o4",
+    "type": "video",
+    "status": "unverified",
+    "title": "Inside one of the world’s most efficient Data Centers (Meta facility tour)",
+    "title_zh": "Meta 数据中心内部：机架、光纤束与网络间",
+    "url": "https://www.youtube.com/watch?v=UMMfJ4au1o4",
+    "platform": "youtube",
+    "owner": "creator tour (Meta-invited)",
+    "official": false,
+    "license": "youtube-standard",
+    "published": "",
+    "duration": null,
+    "domain": [
+      "云计算",
+      "数据中心",
+      "AI"
+    ],
+    "shot": [
+      "机房内景",
+      "产品特写"
+    ],
+    "tags": [
+      "Meta",
+      "fiber",
+      "rack",
+      "AI inference",
+      "H100"
+    ],
+    "windows": [],
+    "used_in": [],
+    "notes": "Grok r2. Not Nvidia-branded facility tour; shows Meta racks and fiber. Some Nvidia H100 shots appear in AI training rack—avoid those cuts. Creator-hosted though Meta-invited; not Meta corporate channel. 【marvell-lumentum 本期不用：网红出镜的机房参观，人物为主体，非官方；仅本期不适用】",
+    "found_for": [
+      "2026-11-02-marvell-lumentum"
+    ],
+    "added": "2026-11-02",
+    "verified": "2026-11-02"
   },
   {
     "id": "yt-vi4YI9isLcQ",

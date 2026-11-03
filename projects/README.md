@@ -14,6 +14,7 @@
 | 改进度 | `set <ID> step=6 next="…" blocker="…" blockers= persona=… platform=… status=done` |
 | 用户直接交付成稿 | `final <ID> <文件>`（存为 `01-视频稿/03-终稿-en.md`，跳过④⑤到⑥） |
 | 各阶段路径 | `paths <ID>`（新项目和旧期通用） |
+| 外部交付提示词 | `handoff <ID> list` / `new <H01…H07> --tool grok` / `send|done|close <编号>`（模板与规则见 `shared/handoff/README.md`） |
 | Studio / 渲染 / 检查代码 | `studio <ID>` / `render <ID> [--comp X] [--deliver youtube-shorts-01] [--preview [文件名]] [-- 其他 remotion 参数]` / `lint <ID>` |
 
 `render` 会先自动跑第⑩步门禁，不通过就拒绝写 `06-交付/`；只想看效果（⑨定风格、⑩先出关键段）用 `--preview`，输出到 `05-制作/cache/preview/`。
@@ -39,6 +40,7 @@
     cache/               临时文件（Windows 下的合成 public 链接也在这里）
   06-交付/<平台>[-NN]/   video.mp4、subtitles.srt、cover.png、发布包装.md
   07-复盘.md             发布后复盘（需要时再建）
+  08-外部交付/           交给 Grok / Gemini / Codex / 用户的提示词与原始回复（handoff 命令生成，编号 NN-Hxx-模板-工具）
   derivatives/<平台-NN>/ 由本期长视频拆出的短视频稿件、脚本（需要时再建；成片仍进 06-交付/<平台-NN>/）
 ```
 

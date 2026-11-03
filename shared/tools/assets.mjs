@@ -107,7 +107,7 @@ function parseWindows(text) {
 // ---------- 外部程序 ----------
 
 function bin(name) {
-  const which = spawnSync("where", [name], { encoding: "utf8" });
+  const which = spawnSync(process.platform === "win32" ? "where" : "which", [name], { encoding: "utf8" });
   // 返回完整路径：yt-dlp 的 --ffmpeg-location 只认路径，不认裸命令名
   if (which.status === 0) return which.stdout.split(/\r?\n/)[0].trim();
   const winget = path.join(process.env.LOCALAPPDATA || "", "Microsoft", "WinGet", "Links", `${name}.exe`);

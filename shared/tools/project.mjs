@@ -10,6 +10,7 @@
 //   project final <ID> <成稿文件>      用户直接交付成稿：存为 01-视频稿/03-终稿-en.md，跳过④⑤到⑥
 //   project paths <ID>                打印各阶段路径（新项目和旧期通用，供其他工具和 Claude 使用）
 //   project studio <ID>               以本项目启动 Remotion Studio
+//   project handoff <ID> list | new <H01…> --tool grok | send|done|close <编号>   外部交付提示词（模板在 shared/handoff/）
 //   project render <ID> [--comp X] [--deliver youtube-long] [--preview [文件名]] [-- 其他 remotion 参数]
 //                                     先自动跑第⑩步门禁，不通过拒绝渲染；--preview 不过门禁，只写到 05-制作/cache/preview/
 //   project lint <ID>                 类型检查 + ESLint 本项目的 05-制作/remotion
@@ -36,6 +37,8 @@ const STEPS = ["", "①选择人设", "②选择平台和视频方式", "③视�
   "⑥脚本初稿", "⑦素材搜寻", "⑧素材补全", "⑨重新规划视频脚本", "⑩视频生成"];
 const DIRS = ["01-视频稿", "02-脚本", "03-素材/原始", "03-素材/生产", "03-素材/refs", "04-音频/voice",
   "04-音频/host", "04-音频/mix", "05-制作/remotion", "05-制作/cache", "06-交付"];
+const HANDOFF_DIR = "08-外部交付";
+const HANDOFF_LIB = path.join(ROOT, "shared", "handoff");
 const ID_RE = /^(\d{4})-(\d{2})-(\d{2})-([a-z0-9]+(?:-[a-z0-9]+)*)$/;
 const LEGACY_RE = /^\d{4}-\d{2}-[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const PENDING_RE = /待找|候选未核实|未核实|待定片段/;
@@ -109,6 +112,7 @@ function cmdNew({ pos, flags }) {
   if (fs.existsSync(dir)) fail(`项目已存在，不覆盖：${rel(dir)}`);
 
   for (const d of DIRS) fs.mkdirSync(path.join(dir, d), { recursive: true });
+  fs.mkdirSync(path.join(dir, HANDOFF_DIR), { recursive: true });
   const meta = {
     id, createdAt: date, persona: flags.persona ?? null, platform, deliveredFinal: false, finalConfirmed: false, adviceSkipped: false,
     step: 1, status: "active", next: "①选择人设：列出 1-视频稿/_人设/ 的预存人设，或整理新人设，等用户确认", blockers: [],
@@ -264,6 +268,16 @@ function check(p, stepOverride) {
     }
     if (!fs.existsSync(path.join(p.remotion, "Composition.tsx"))) err("缺 05-制作/remotion/Composition.tsx");
   }
+  // 外部交付
+  const hd = path.join(p.dir, HANDOFF_DIR);
+  if (fs.existsSync(hd)) {
+    for (const f of fs.readdirSync(hd).filter((x) => x.endsWith("-提示词.md"))) {
+      const t = fs.readFileSync(path.join(hd, f), "utf8");
+      const left = t.match(/\{\{填写[^}]*\}\}/g);
+      if (left) err(`${HANDOFF_DIR}/${f} 还有 ${left.length} 处 {{填写}} 没换成本期内容`);
+    }
+  }
+  for (const h of p.meta.handoffs ?? []) if (h.status !== "已验收") warn(`外部交付 ${h.no}（${h.template} · ${h.tool}）${h.status}：${h.prompt}`);
   // 引用边界
   // 代码里引用其他项目 / 旧期素材 / 绝对路径是错误（渲染会串期）；文档里提到只是提醒
   let n = 0;
@@ -299,6 +313,8 @@ function cmdStatus(p) {
   console.log(`  文件：${files.map(([n, f]) => `${fs.existsSync(f) ? "✓" : "·"}${n}`).join("  ")}`);
   const deliv = fs.existsSync(p.deliver) ? fs.readdirSync(p.deliver) : [];
   console.log(`  交付：${deliv.length ? deliv.join("、") : "—"}`);
+  const hs = m.handoffs ?? [];
+  if (hs.length) console.log(`  外部交付：\n${hs.map((h) => `    ${h.no} ${h.template} · ${h.tool} · ${h.status}${h.note ? " · " + h.note : ""}`).join("\n")}`);
   console.log("\n门禁检查：");
   printCheck(check(p));
 }
@@ -418,6 +434,71 @@ function cmdLint(p) {
 }
 
 // ---------- main ----------
+// ---------- handoff：外部交付提示词 ----------
+function handoffTemplates() {
+  if (!fs.existsSync(HANDOFF_LIB)) fail("缺 shared/handoff/ 模板库");
+  return fs.readdirSync(HANDOFF_LIB).filter((f) => /^H\d{2}-.+\.md$/.test(f)).sort();
+}
+function cmdHandoff(p, pos, flags) {
+  if (p.kind !== "project") fail("外部交付只用于新项目");
+  const sub = pos[0] ?? "list";
+  p.meta.handoffs ??= [];
+  const dir = path.join(p.dir, HANDOFF_DIR);
+  if (sub === "list") {
+    console.log("模板（shared/handoff/）：");
+    for (const f of handoffTemplates()) console.log(`  ${f.replace(/\.md$/, "")}`);
+    console.log(`\n${p.id} 已交付：`);
+    if (!p.meta.handoffs.length) console.log("  —");
+    for (const h of p.meta.handoffs) console.log(`  ${h.no}  ${h.template} · ${h.tool} · ${h.status} · ${h.created}${h.note ? " · " + h.note : ""}\n      提示词 ${h.prompt}\n      回复   ${h.reply}`);
+    return;
+  }
+  if (sub === "new") {
+    const key = (pos[1] ?? "").toUpperCase();
+    const tpl = handoffTemplates().find((f) => f.startsWith(key + "-") || f.replace(/\.md$/, "") === pos[1]);
+    if (!tpl) fail(`用法：handoff <ID> new <H01…> --tool grok [--note "…"]；可用模板：${handoffTemplates().map((f) => f.slice(0, 3)).join(" ")}`);
+    const tool = typeof flags.tool === "string" ? flags.tool.toLowerCase() : "external";
+    fs.mkdirSync(dir, { recursive: true });
+    const no = String(p.meta.handoffs.length + 1).padStart(2, "0");
+    const base = `${no}-${tpl.replace(/\.md$/, "")}-${tool}`;
+    const prompt = path.join(dir, `${base}-提示词.md`), reply = path.join(dir, `${base}-回复.md`);
+    const rp = (f) => path.relative(p.dir, f).split(path.sep).join("/");
+    const persona = p.meta.persona ?? "（未定）";
+    const platform = p.meta.platform ? `${PLATFORMS[p.meta.platform].label}（${PLATFORMS[p.meta.platform].w}×${PLATFORMS[p.meta.platform].h}）` : "（未定）";
+    let t = fs.readFileSync(path.join(HANDOFF_LIB, tpl), "utf8")
+      .replaceAll("{{自动:项目ID}}", p.id).replaceAll("{{自动:项目目录}}", rel(p.dir)).replaceAll("{{自动:今天}}", today())
+      .replaceAll("{{自动:人设}}", persona).replaceAll("{{自动:平台}}", platform).replaceAll("{{自动:编号}}", no)
+      .replaceAll("{{自动:回复文件}}", `${rel(p.dir)}/${rp(reply)}`);
+    fs.writeFileSync(prompt, t);
+    fs.writeFileSync(reply, `# ${no}｜${tpl.replace(/\.md$/, "")} · ${tool} · 原始回复\n\n> 把外部工具的回复**逐字**贴在下面，不删改。贴完告诉 Claude，或运行 \`npm run project -- handoff ${p.id} done ${no}\`。\n\n`);
+    const left = (t.match(/\{\{填写[^}]*\}\}/g) ?? []).length;
+    p.meta.handoffs.push({ no, template: tpl.replace(/\.md$/, ""), tool, prompt: rp(prompt), reply: rp(reply), status: "待填写", created: today(), note: typeof flags.note === "string" ? flags.note : "" });
+    saveMeta(p);
+    console.log(`✓ 已生成外部交付 ${no}`);
+    console.log(`  提示词：${rel(prompt)}`);
+    console.log(`  回复：  ${rel(reply)}`);
+    console.log(left ? `  还有 ${left} 处 {{填写:…}} 要换成本期内容；填完运行 handoff ${p.id} send ${no}` : `  没有待填项；确认后运行 handoff ${p.id} send ${no}`);
+    return;
+  }
+  const no = String(pos[1] ?? "").padStart(2, "0");
+  const h = p.meta.handoffs.find((x) => x.no === no);
+  if (!h) fail(`没有外部交付 ${no}；先看 handoff ${p.id} list`);
+  const note = typeof flags.note === "string" ? flags.note : null;
+  if (sub === "send") {
+    const t = read(path.join(p.dir, h.prompt)) ?? "";
+    const left = t.match(/\{\{填写[^}]*\}\}/g);
+    if (left) fail(`${h.prompt} 还有 ${left.length} 处没填：${left.slice(0, 3).join("、")}…`);
+    const m = /===== 复制开始 =====\n([\s\S]*?)\n===== 复制结束 =====/.exec(t);
+    h.status = "已发出待回收"; if (note) h.note = note;
+    p.meta.next = `等待外部交付 ${no}（${h.template} · ${h.tool}）回收：回复贴到 ${h.reply}`;
+    saveMeta(p);
+    console.log(`✓ ${no} 标记为已发出。给用户：\n  1) 提示词文件：${rel(p.dir)}/${h.prompt}\n  2) 复制块：${m ? `${m[1].length} 字（两条分隔线之间）` : "未找到分隔线"}\n  3) 回收位置：${rel(p.dir)}/${h.reply}`);
+    return;
+  }
+  if (sub === "done") { h.status = "已回收待验收"; if (note) h.note = note; saveMeta(p); console.log(`✓ ${no} 已回收，等 Claude 验收`); return; }
+  if (sub === "close") { h.status = "已验收"; if (note) h.note = note; saveMeta(p); console.log(`✓ ${no} 已验收`); return; }
+  fail("handoff 子命令：list / new / send / done / close");
+}
+
 const [cmd, ...argv] = process.argv.slice(2);
 const a = parseArgs(argv);
 switch (cmd) {
@@ -431,6 +512,7 @@ switch (cmd) {
   case "studio": cmdStudio(resolve(a.pos[0]), a.rest); break;
   case "render": cmdRender(resolve(a.pos[0]), a.flags, a.rest); break;
   case "lint": cmdLint(resolve(a.pos[0])); break;
+  case "handoff": cmdHandoff(resolve(a.pos[0]), a.pos.slice(1), a.flags); break;
   default:
     console.log(fs.readFileSync(fileURLToPath(import.meta.url), "utf8").split("\n").slice(1, 15).map((l) => l.replace(/^\/\/ ?/, "")).join("\n"));
 }

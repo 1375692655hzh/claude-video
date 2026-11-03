@@ -44,3 +44,11 @@ shared/voice-library/**/*.mp3
 # 新项目：每期一个独立目录 projects/YYYY/MM/<ID>/，内容只留本地（只提交说明）
 projects/*
 !projects/README.md
+
+# 本机密钥文件（用户 2026-11-02 起可选方案），永不提交
+.secrets/
+
+# 音色库打包与待删文件
+shared/*.zip
+_to_delete/
+shared/_to_delete/

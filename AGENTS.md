@@ -17,11 +17,11 @@ Andy 的已确认账号信息见 `1-视频稿/_人设/Andy人设.md`（Handle �
 | ① 选择人设 | `1-视频稿/` | 选择预存人设，或输入、整理并确认新人设 | 人设文件路径 |
 | ② 选择平台和视频方式 | `1-视频稿/` | YouTube 长视频 / YouTube Shorts / Instagram Reels / TikTok；确定语言、画幅、目标时长和来源模式 | `<期名>/00-项目设置.md` |
 | ③ 视频初稿 | `1-视频稿/` | 在仓库对话中按人设、平台和素材生成初稿；**用户直接交付成稿时跳过④⑤，直接进⑥** | `<期名>/01-初稿.md`，或用户交付的成稿 |
-| ④ 修改建议 | `1-视频稿/` | 用户自行拿初稿去 Grok / Gemini 问询，把原始回复贴回本项目；不自动调用外部智能体 | `<期名>/02-外部建议.md` |
+| ④ 修改建议 | `1-视频稿/` | Claude 用外部交付 **H01** 生成外审提示词交给用户，用户拿去 Grok / Gemini 问询并把原始回复贴回；不自动调用外部智能体 | `<期名>/02-外部建议.md` |
 | ⑤ 视频成稿 | `1-视频稿/` | 处理建议、去 AI 化、用户人工修改并确认；事实和判断强度不能漂移 | `<期名>/03-终稿-en.md`；有中文底稿时同时保留 `03-终稿.md` |
-| ⑥ 脚本初稿 | `2-脚本/` | 读懂成稿，初步定风格、分镜、动效和逐镜素材需求；可在仓库对话做，也可由用户去 GPT / Claude 做后贴回 | `<期名>/script-draft.md` |
-| ⑦ 素材搜寻 | `2-脚本/` + 素材库 | 查库、搜索、导入、核实、缩略图，登记素材与缺口 | `<期名>/assets.md` + 素材库记录 |
-| ⑧ 素材补全 | `2-脚本/` | 用户补股价、财报截图、录屏等方便人工取得的材料；登记后再搜剩余缺口，直到无阻塞缺口 | 完整 `assets.md` + `<期名>/材料/` |
+| ⑥ 脚本初稿 | `2-脚本/` | 读懂成稿，初步定风格、分镜、动效和逐镜素材需求；可在仓库对话做，也可用外部交付 **H03** 交给 Codex / GPT 做后贴回 | `<期名>/script-draft.md` |
+| ⑦ 素材搜寻 | `2-脚本/` + 素材库 | 查库；库里没有的用外部交付 **H04** 交给 Grok 找源；导入、核实、缩略图，登记素材与缺口 | `<期名>/assets.md` + 素材库记录 |
+| ⑧ 素材补全 | `2-脚本/` | 用外部交付 **H05** 给用户补件清单（股价、付费报道截图、录屏等）；登记后再搜剩余缺口，直到无阻塞缺口 | 完整 `assets.md` + `<期名>/材料/` |
 | ⑨ 重新规划视频脚本 | `2-脚本/` | 根据真实素材重排画面、片段、动效和声音，交用户确认；准备至少一张风格参考图 | `<期名>/script.md` + `<期名>/refs/` |
 | ⑩ 视频生成 | `3-视频生成/`（引擎） | 默认由 Claude 在本工作区直接完成配音、素材下载、动画、配乐音效和渲染；Claude Chat 交接包改为可选 | 新项目 `06-交付/<平台>/video.mp4`；旧期 `out/<期名>.mp4` |
 
@@ -41,14 +41,22 @@ projects/                新项目：projects/YYYY/MM/<项目ID>/，一期一个
 3-视频生成/              工作流⑩：Claude Chat 交接 + Remotion 项目（node_modules 在这里）
 shared/                  两步以上共用
   asset-library/         素材库：只记来源链接、可用片段、分类、缩略图，不存原文件（⑦⑧搜索登记，⑩下载回填）
-  voice-library/         音色试听（⑥选音色，⑩配音）
+  voice-library/         全厂商全音色试听（ark / minimax / qwen / mimo，文件名 厂商-名称-性别-语种；总表 音色总表.csv、voices.json）
+  handoff/               外部交付提示词模板 H01–H07 + 规则（见下文「外部交付」）
   tools/                 无依赖的 Node 脚本，从哪个文件夹运行都行：
     fetch-tencent-doc.mjs  腾讯文档 → Markdown（含图片）
     tts-mimo.mjs           MiMo 配音
+    tts-ark.mjs            火山豆包 2.0 配音（key：ARK_PLAN_API_KEY 或 keys.env 的 VOLC_TTS_ACCESS_TOKEN）
+    voice-library-build.mjs  按 voices.json 批量补齐音色试听（四家）
+    voice.mjs              选音色：list 筛选 / history 各账号用过的音色 / use 登记本期音色 / page 生成 voice-library/试听.html
+    tts-shots.mjs          ⑩逐镜配音（四家通用，音色取 project.json 的 voice），输出 04-音频/voice/shots.json（含实测时长）
+    timeline.mjs           ⑩按配音时长排时间轴（章首停顿、配乐分段、音效点）→ 04-音频/timeline.json，画面和混音共用
+    mix-audio.mjs          ⑩按 timeline.json 用 ffmpeg 混配音 + 配乐 + 音效（13 分钟片约 15 秒）
+    render-chunks.sh       ⑩长片分段渲染：bundle → 反复 next → join（适配单条命令 3 分钟的 Linux 环境）
     gen-image-qwen.mjs     qwen-image 生图
     gen-image-codex.mjs    Codex CLI 生图（ChatGPT 账号，和 qwen 并列）
     assets.mjs             素材库工具（查 / 导入 / 核实 / 缩略图 / 按片段下载 / 回填）
-    project.mjs            项目工具：new / list / status / check / set / final / paths / studio / render / lint
+    project.mjs            项目工具：new / list / status / check / set / final / paths / studio / render / lint / handoff
     consult-agy.mjs        请 agy（Gemini 等）给第二意见，只读
 .agents/skills           项目级 skill（.claude/skills 指向它）：Remotion 系列、humanizer、humanizer-zh；清单在 skills-lock.json
 ```
@@ -74,6 +82,7 @@ shared/                  两步以上共用
   | 本期素材（下载片段、生成图、截图） | `3-视频生成/public/<期名>/` | `03-素材/生产/`（代码里 `staticFile("assets/…")`） |
   | 配音、数字人、混音 | `3-视频生成/public/<期名>/voice…`、`host/` | `04-音频/voice/`、`host/`、`mix/`（`staticFile("audio/…")`） |
   | 动画代码 | `3-视频生成/effects/<期名>/` + 注册表 | `05-制作/remotion/Composition.tsx`（不进注册表） |
+  | 外部交付提示词与回复 | —（旧期写在各阶段目录） | `08-外部交付/NN-Hxx-<模板>-<工具>-提示词.md`、`…-回复.md` |
   | 成片 / 字幕 / 封面 | `3-视频生成/out/<期名>.mp4` | `06-交付/<平台>[-NN]/video.mp4`、`subtitles.srt`、`cover.png` |
 
   素材库（`shared/asset-library/`）、人设、平台规范、模板、音色库、动效库、公共配乐音效字体仍然全局共享。
@@ -92,25 +101,47 @@ shared/                  两步以上共用
   到闸门必须停下等用户，不要一口气跑到底；外部修改建议不等于用户已经采纳。
 - **信源**：口播和画面里只点名知名投行、知名研究机构、金融和企业界名人，或公司一手资料（财报、电话会）；海豚研究、长桥、华尔街见闻等不点名。细则见 `1-视频稿/AGENTS.md`「信源规则」。
 
+## 外部交付（handoff，2026-11-03 起）
+
+凡是交给外部工具（Grok、Gemini、Codex、GPT）或用户本人去做的环节，一律走 `shared/handoff/` 的模板，不在聊天里临时写长提示词。
+详细规则和交付点总表见 `shared/handoff/README.md`。要点：
+
+1. `npm run project -- handoff <ID> new <H01…H07> --tool <grok|gemini|codex|user>` 生成 `08-外部交付/` 下的提示词和空回复文件，并登记到 `project.json`。
+2. Claude 把提示词里所有 `{{填写:…}}` 换成本期真实内容（外部工具读不到仓库时，正文要自带稿件全文和规则摘录），然后 `handoff <ID> send <编号>`（有遗漏会被拦下）。
+3. **在聊天里一次给齐四样**：① 提示词文件路径；② 要附带的文件路径（或“无需附件”）；③ 可直接复制的提示词正文（太长时说明复制哪一段）；
+   ④ 回收方式（贴到哪个文件、什么格式、贴完说什么）。缺一样都算没交付。
+4. 停下等回收；用户贴回后 `handoff done`，Claude 验收处理完 `handoff close`。外部回复里的事实要核实后才能进稿件或素材台账。
+5. `project check` 会拦下残留 `{{填写}}` 的提示词，并提醒尚未验收的交付。
+
+**⑩ 制作流水线（2026-11-03 起）**：`tts-shots.mjs <ID>` 逐镜配音 → `timeline.mjs <ID> --chapters …` 排时间轴 →
+Remotion 合成读 `04-音频/timeline.json` → `render-chunks.sh <ID> bundle / next / join` 分段渲染 → `mix-audio.mjs <ID>` 混音并在 join 时合入。
+只看效果先出 `05-制作/cache/preview/`，用户说出片再复制到 `06-交付/<平台>/video.mp4`，同时生成 `captions-en.srt`。
+
+**时效复查（H02）**：时效性选题（并购传闻、财报前后、监管事件）在 ⑤确认前、⑨确认前、⑩录音前各做一次“事实与时效核查”。
+有新进展就回视频稿阶段改稿并重新确认，不在画面上静默替换。（2026-11-02 一期在⑩才发现交易已公告，⑥–⑨全部作废。）
+
 ## 提交规则
 
 - 仓库在 GitHub `1375692655hzh/claude-video`（公开）。**只提交代码、工具、规范和模板**；每期的视频稿、脚本、素材、
   配音、配乐、音效、数字人结果都只留在本地（见 `.gitignore`）。只在用户要求时提交和推送。
-- 密钥只放在用户环境变量里，不写进任何文件，也不在聊天里回显。
+- 密钥放在用户环境变量里；云端（Linux 环境）读本机密钥文件 `.secrets/keys.env`（用户 2026-11-02 决定，已在 .gitignore，永不提交）。
+  密钥不写进其他任何文件，也不在聊天里回显；脚本读取时不打印值。
 
 ## 环境
 
 - **Claude 的 Linux 环境（Cowork，执行⑩的默认环境）**：Claude 在用户电脑上的隔离 Ubuntu 22.04（2 核、约 4GB 内存、约 10GB 盘），
   仓库挂载在 `$HOME/mnt/claude-video`。Node v22、FFmpeg 4.4、Python 3.10；yt-dlp 用 `pip3 install --user yt-dlp` 装（YouTube 解析加 `--js-runtimes node`）。
-  联网走 claude.ai「设置 → 功能 → 网域许可清单」：除套件管理工具外已加 `api.xiaomimimo.com`、`*.aliyuncs.com`、`docs.qq.com`、`*.docs.qq.com`、
-  `*.youtube.com`、`*.googlevideo.com`、`*.ytimg.com`（2026-11-02）。新服务要先加域名。
-  读不到 Windows 用户环境变量；**密钥文件方案待用户确定**，确定前需要密钥的命令（配音、生图、腾讯文档）由用户在 PowerShell 运行。
-  TopviewAI 数字人只装在 Claude Code 的 MCP 里，这里暂时没有。
+  联网走 claude.ai「设置 → 功能 → 网域许可清单」：2026-11-02 起用户改为**允许全部网域**（实测 MiniMax、火山 openspeech、Topview、MiMo、Google 均可达）。
+  读不到 Windows 用户环境变量；改读 `.secrets/keys.env`（2026-11-02 定）。
+  **数字人由 Codex 负责**（用户 2026-11-02 决定，不用 Claude Code）：Codex 装 Topview 官方插件 `topview-browser@topview`（远程 MCP `https://mcp-browser.topview.ai`，浏览器 OAuth，无 API Key），
+  一键配置 `shared/tools/setup-codex-topview.ps1`（PowerShell 运行）。Topview 的 Unlimited 套餐不支持 MCP / 插件自动化调用。
+  2026-11-02 已在 Codex 跑通（93 个直接工具）。数字人入口：`topview_avatar_video`（照片数字人说话视频）、`topview_generate_video` 的 `taskType="video_avatar"`；
+  参数先用只读的 `topview_get_generation_config` 查，`topview_quote_creation` 报价，`topview_query_task` 查进度；没有独立的 lip_sync 工具。
 - Windows 11，Node.js v24.15.0，npm 11.12.1，FFmpeg / FFprobe 8.1.2（winget，系统级）
 - 密钥（用户环境变量，用 `setx` 保存）：`TENCENT_DOCS_TOKEN`（腾讯文档）、`MIMO_API_KEY`（配音）、
   `DASHSCOPE_API_KEY`（生图）、`MINIMAX_API_KEY`（MiniMax，音乐 API 无权限）。
 - 外部工具：Codex CLI 0.162.1（npm 全局，ChatGPT 账号登录，生图用）、yt-dlp（winget）、Grok CLI（`C:\Users\hzh\.grok\bin\grok.exe`）、agy（Antigravity CLI，`C:\Users\hzh\AppData\Local\agy\bin\agy.exe`）、
-  TopviewAI 插件（Claude Code MCP，OAuth 已登录：数字人、音效、视频生成）。
+  TopviewAI：旧版装在 Claude Code MCP 里（已弃用）；现改由 Codex 的 topview-browser 插件调用。
 
 ## 通用的已验证问题与解决方法
 
@@ -123,7 +154,15 @@ shared/                  两步以上共用
   正文用 `get_content`；图片用 `doc.get_images` 取 URL 和位置，再用 `doc.resolve_document_structure` 对回段落，下载到
   `<输出名>/01.png…` 并以 `![图N](...)` 插回原位（对不上的放文末）。图片服务器 docimg*.docs.qq.com 必须带
   `Referer: https://docs.qq.com/`，否则 403。图片定位只支持 Word 类文档。拉不到时先在浏览器打开一次该文档（进"最近浏览"）。
-- **配音（小米 MiMo TTS）**：统一用 MiMo。英文视频的音色从 Mia、Chloe、Milo、Dean 里选（英文效果待试听，选定后写在这里）；"冰糖"是中文音色，只用于中文。接口 `https://api.xiaomimimo.com/v1/chat/completions`，模型 `mimo-v2.5-tts`，
+- **选音色流程（⑥定、⑩用）**：
+  1. Claude 先跑 `node shared/tools/voice.mjs history --account <人设>`，把这个账号用过的音色和次数告诉用户；
+  2. 给用户试听入口：`shared/voice-library/试听.html`（双击用浏览器打开，选账号后用过的排在最前、可按厂商 / 性别 / 语种筛选，点调用 ID 复制），
+     或 `音色总表.csv`；用户自己挑，Claude 不替用户定；
+  3. 用户选定后 `node shared/tools/voice.mjs use <项目ID> <试听文件名> [--status 选定]`：写入 `project.json` 的 voice 和 `usage.json` 历史，并刷新试听页；出片后再 `--status 成片` 登记一次。
+- **配音选型**：不再默认 MiMo。⑥按 `shared/voice-library/音色总表.csv` 让用户试听选定（2026-11-03 起四家全量：火山 466、MiniMax 303、Qwen 3.0-tts-plus 599、MiMo 9），音色和调用 ID 记进 `00-项目设置.md`。
+  ⑩逐镜生成配音（一镜一个文件，时长即镜头时长，不用估算）；火山接口 `openspeech.bytedance.com/api/v3/plan/tts/unidirectional`，`X-Api-Resource-Id: seed-tts-2.0`。
+  Qwen TTS 用 `sk-sp-` 套餐 key（keys.env 的 `QWEN_TTS_API_KEY`），只走 `token-plan.cn-beijing.maas.aliyuncs.com/api/v1/services/audio/tts/SpeechSynthesizer`，且只开通了 `qwen-audio-3.0-tts-plus`；3.0-flash / 3.1-plus 需要按量付费的普通 key。MiniMax TTS 有每分钟请求上限，批量时并发 1、间隔约 2.4 秒。
+- **配音（小米 MiMo TTS）**：英文视频的音色从 Mia、Chloe、Milo、Dean 里选（英文效果待试听，选定后写在这里）；"冰糖"是中文音色，只用于中文。接口 `https://api.xiaomimimo.com/v1/chat/completions`，模型 `mimo-v2.5-tts`，
   要读的文字放在 `assistant` 消息里，`audio: { format, voice }`，返回 `choices[0].message.audio.data`（base64），24kHz 单声道。
   中文语速约 290 字/分钟（37 字 7.7 秒），英文按约 150 词/分钟估算（未实测），动画时长以 `ffprobe` 实测为准。音色：mimo_default、冰糖、茉莉、苏打、白桦、Mia、Chloe、Milo、Dean。
 - **生图（阿里百炼 Token Plan，qwen-image-3.0-pro）**：必须走原生接口
@@ -158,7 +197,9 @@ shared/                  两步以上共用
   （remotion.media / storage.googleapis.com 被挡）。之后 `npm run project -- render <ID>` 自动用它；旧期用 `bash tools/linux-render.sh render <期名> out/<期名>.mp4`。
   速度约 24 帧/秒（1080p），16 分钟长片约 20 分钟。
 - **Linux 环境的单条命令最长 3 分钟，后台进程在命令结束后没有网络**：需要联网的步骤（npm 安装、配音、下载）必须在一条命令内跑完，
-  分批做；渲染不需要网络，长片用 `nohup … &` 后台跑，再轮询日志。
+  分批做。**后台进程会在命令结束时被杀**（2026-11-03 实测 `nohup` 也不行），长片要先 `remotion bundle` 一次，再按帧段分批 `render --frames=a-b --muted`（每段 ≤ 1000 帧、≤ 170 秒），
+  最后 ffmpeg `concat` 拼接；音轨不要用 Remotion 渲（也要逐帧走浏览器），按同一时间表用 ffmpeg `adelay + amix` 直接混配音、配乐、音效。2 核虚拟机实测约 7 帧/秒，13 分钟片约 55 分钟。
+- **yt-dlp 在 Linux 环境装在 `~/.local/bin`**，调用前 `export PATH=$HOME/.local/bin:$PATH`。Lumentum 官网视频是 Brightcove：页面里找 `players.brightcove.net/<账号>/<播放器>/index.html?videoId=<id>` 交给 yt-dlp；Marvell 视频站是 Vidyard（mp4 要带 `Referer: https://play.vidyard.com/`）。
 - **Linux 环境默认不能删文件**（rm 报 Operation not permitted），要删时先向用户申请删除权限，或移到 `_to_delete/`。
 
 ## 环境验证记录
