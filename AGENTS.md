@@ -27,9 +27,9 @@ Andy 的已确认账号信息见 `1-视频稿/_人设/Andy人设.md`（Handle �
 
 ## FAST 模式（上面 10 步是“标准模式”）
 
-FAST 去掉的是审核和反复修改，**不是用户的选择**：标准模式里由用户选的，FAST 一样由用户选（人设、平台、视频风格、音色、数字人），只是在开工时一次选完，之后三段一口气做完、中途不停。
+FAST 去掉的是审核和反复修改，**不是用户的选择**：标准模式里由用户选的，FAST 一样由用户选（人设、平台、视频风格、音色、AI 生图、数字人），只是在开工时一次选完，之后三段一口气做完、中途不停。
 
-**开工时一次问齐**（用 AskUserQuestion，一次最多 4 问）：人设和平台；视频风格（先给 `style.mjs history` 和 `shared/style-library/预览.html`，用过的标出来，用户挑，可以每期换）；音色（先给 `voice.mjs history` 和 `shared/voice-library/试听.html`，用户挑）。还有数字人要不要用（标准⑩里中途要确认的模式和积分，FAST 在这里一次确认：用的话按成稿字数估好时长和积分给用户定，出片时不再问）。用户想用参考图做新风格也可以，按风格库 README 做，展示卡给用户看过再用——这是用户的选择，不是审核。Claude 不替用户定，也不默认“沿用上次”；用户明确说“跟上次一样”才沿用。选完用 `style.mjs use` / `voice.mjs use` 登记。
+**开工时一次问齐**（用 AskUserQuestion，一次最多 4 问，问不完分两次）：人设和平台；视频风格（先给 `style.mjs history` 和 `shared/style-library/预览.html`，用过的标出来，用户挑，可以每期换）；音色（先给 `voice.mjs history` 和 `shared/voice-library/试听.html`，用户挑）。要不要 AI 生图（要的话没配生图 key 就提醒用户自行配置，不配就改为不用，素材只剩动效图表和用户附件）；还有数字人要不要用（标准⑩里中途要确认的模式和积分，FAST 在这里一次确认：用的话按成稿字数估好时长和积分给用户定，出片时不再问）。用户想用参考图做新风格也可以，按风格库 README 做，展示卡给用户看过再用——这是用户的选择，不是审核。Claude 不替用户定，也不默认“沿用上次”；用户明确说“跟上次一样”才沿用。选完用 `style.mjs use` / `voice.mjs use` 登记。
 
 用户交付成稿 → 脚本 → 视频，新建：`node shared/tools/project.mjs new <短名> --persona <人设> --platform <平台> --fast`（project.json 记 `mode: "fast"`）。
 

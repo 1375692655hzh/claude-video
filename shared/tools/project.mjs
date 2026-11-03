@@ -17,6 +17,7 @@
 //   project lint <ID>                 类型检查 + ESLint 本项目的 05-制作/remotion
 //
 // 进度只记在 project.json（唯一状态源）；00-项目设置.md 只写人设、平台等决定，不写进度。
+import { keyConfigured, keyHint } from "./vendor-keys.mjs";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
@@ -259,6 +260,10 @@ function check(p, stepOverride) {
   if (fast && step >= 9) {
     if (!p.meta.style) err("FAST 也要用户选风格：给 style.mjs history + 预览.html，用户选定后 style.mjs use 登记"); else ok(`风格：${p.meta.style}`);
     if (!p.meta.voice) err("FAST 也要用户选音色：给 voice.mjs history + 试听.html，用户选定后 voice.mjs use 登记"); else ok("音色已登记");
+    if (p.meta.aiImages === undefined) warn("FAST：开工时问用户要不要 AI 生图（set <ID> aiImages=true/false）");
+    else if (!p.meta.aiImages) ok("AI 生图：不用");
+    else if (!keyConfigured("image", ROOT)) err(`AI 生图：${keyHint("image")}；或改为不用 AI 生图（set <ID> aiImages=false）`);
+    else ok("AI 生图：用（key 已配置）");
     if (p.meta.avatar === undefined) warn("FAST：开工时问用户要不要数字人（set <ID> avatar=true/false），出片时不再问"); else ok(`数字人：${p.meta.avatar ? "用" : "不用"}`);
   }
   if (!fast && step >= 9) {
@@ -346,6 +351,7 @@ function cmdSet(p, kvs) {
     else if (k === "blocker") p.meta.blockers.push(v);
     else if (k === "blockers") p.meta.blockers = v ? v.split(";").map((x) => x.trim()).filter(Boolean) : [];
     else if (["deliveredFinal", "finalConfirmed", "adviceSkipped"].includes(k)) p.meta[k] = v === "true";
+    else if (k === "aiImages") p.meta.aiImages = v === "true";
     else if (k === "avatar") p.meta.avatar = v === "true";
     else if (k === "mode") { if (!["fast", "standard"].includes(v)) fail("mode 只能是 fast / standard"); if (v === "fast") p.meta.mode = "fast"; else delete p.meta.mode; }
     else if (["next", "status", "persona"].includes(k)) p.meta[k] = v;
