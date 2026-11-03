@@ -28,6 +28,6 @@
 - **mimo**：官方只有 9 个音色，全收。旧试听移到 `mimo/_old/`。
 - Key 全部在 `.secrets/keys.env`，不进仓库。
 
-## 用哪家音色就配哪家的 key
+## key
 
-试听不需要 key。选定音色后 `voice.mjs use` 会提示这家要什么 key；没配 key 时 `tts-shots.mjs` 会停下来说明去哪开通、填哪个变量。模板：`shared/keys.env.example` → 复制成 `.secrets/keys.env` 填写。
+试听不需要 key。用哪家的音色配音，需要自行配置那家的 key。
