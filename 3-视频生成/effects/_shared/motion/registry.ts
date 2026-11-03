@@ -20,8 +20,9 @@ import {
 import { CashPath, Flywheel } from "./motions-flow";
 import { BrowserCard, ChapterProgress, IrisPreentry, MediaCard } from "./motions-media";
 import { DocZoom, FootageStat, PhotoStack, PinLabel, SplitMedia } from "./motions-overlay";
+import { AxisRescale, BeforeAfter, BlindsWipe, CardFan, CrashZoom, Flyline, GaugeNeedle, ListBrake, MarkerUnderline, OutlineFill, ParallaxPan, ScanBracket, ScoreSlam, SpotlightSweep, TimelineTravel, TitleDemote, TraceCircle, WhipPan } from "./motions-shot";
 
-export type MotionCategory = "文字" | "卡片" | "数据" | "流程" | "媒体" | "转场" | "全局" | "实拍卡";
+export type MotionCategory = "文字" | "卡片" | "数据" | "流程" | "媒体" | "转场" | "全局" | "实拍卡" | "镜头" | "强调" | "入场";
 type AnyProps = Record<string, unknown>;
 
 export type MotionEntry = {
@@ -113,6 +114,26 @@ export const MOTIONS: MotionEntry[] = [
     use: "几张实拍快速交代一个场景（capex 买的是什么）",
   }),
   m({ id: "iris-preentry", name: "圆窗叠入下一幕", category: "转场", ref: "next-shot-preentry", durationMs: 1500, Component: IrisPreentry, use: "实拍切到卡片界面" }),
+
+  // 镜头配方（2026-11-03 纳入，参考 video-shotcraft 配方卡，ref 写 shotcraft:<分类>/<卡名>）
+  m({ id: "crash-zoom", name: "急推点名", category: "镜头", ref: "shotcraft:camera/crash-zoom-punch", durationMs: 2200, Component: CrashZoom, use: "全景里先用四角标点名，再急推到截图 / 图表的某一块；slam 撞停震屏、bounce 过冲回弹" }),
+  m({ id: "parallax-pan", name: "分层视差横移", category: "镜头", ref: "shotcraft:camera/depth-layer-moves", durationMs: 4200, Component: ParallaxPan, use: "一排公司 / 产品 / 环节横向巡览，有纵深；停稳时主角卡浮起" }),
+  m({ id: "gauge-needle", name: "仪表扫针读数", category: "数据", ref: "shotcraft:data/gauge-readout-moves", durationMs: 2400, Component: GaugeNeedle, use: "满足率、利用率、估值分位、情绪指数：先满弧扫针再回落真值" }),
+  m({ id: "axis-rescale", name: "冲破图框重标轴", category: "数据", ref: "shotcraft:data/chart-live-moves", durationMs: 3300, Component: AxisRescale, use: "最后一个值冲出图框、y 轴被迫重标——“增长装不下”" }),
+  m({ id: "timeline-travel", name: "时间轴横移", category: "数据", ref: "shotcraft:data/timeline-travel", durationMs: 3800, Component: TimelineTravel, use: "事件时间线：每过一个日期弹立一张卡，末一站急停推近" }),
+  m({ id: "before-after", name: "前后对比拉杆", category: "数据", ref: "shotcraft:data/before-after-slider-scrub", durationMs: 2600, Component: BeforeAfter, use: "两年对比、改前改后：分割杆甩一下再慢扫，杆过处“之后”显影" }),
+  m({ id: "list-brake", name: "长列表急刹", category: "数据", ref: "shotcraft:data/scroll-brake-moves", durationMs: 2900, Component: ListBrake, use: "排行榜、历史交易表：高速滚动后精准停在目标行并抬起" }),
+  m({ id: "spotlight-sweep", name: "暗场聚光扫过", category: "强调", ref: "shotcraft:effects/spotlight-sweep-moves", durationMs: 3300, Component: SpotlightSweep, use: "逐个介绍 2–4 个产品 / 业务：光到即亮，最后全场点亮" }),
+  m({ id: "scan-bracket", name: "文档扫描核实", category: "强调", ref: "shotcraft:effects/scan-bracket-sweep", durationMs: 3500, Component: ScanBracket, use: "财报 / 公告原文“正在读、已核实”的过程镜头，比 doc-zoom 更有仪式感" }),
+  m({ id: "score-slam", name: "数字重拳砸入", category: "强调", ref: "shotcraft:effects/slam-entrance-moves", durationMs: 1200, Component: ScoreSlam, use: "全片最重的一两个数字（交易额、跌幅）：透视急停 + 冲击环 + 震屏" }),
+  m({ id: "flyline", name: "弧线飞线流动", category: "流程", ref: "shotcraft:effects/glow-flyline-moves", durationMs: 2400, Component: Flyline, use: "投资关系、资金流、供货关系：弧线描出后光点持续流动" }),
+  m({ id: "blinds-wipe", name: "百叶窗翻页", category: "转场", ref: "shotcraft:transition/wipe-transitions", durationMs: 1700, Component: BlindsWipe, use: "章节之间的通用几何转场，不依赖画面里有什么元素" }),
+  m({ id: "whip-pan", name: "甩镜转场", category: "转场", ref: "shotcraft:transition/shot-transitions", durationMs: 1100, Component: WhipPan, use: "能量高的衔接：上一幕急甩出画、下一幕甩入急刹" }),
+  m({ id: "marker-underline", name: "马克笔下划线", category: "文字", ref: "shotcraft:typography/marker-underline-title", durationMs: 1800, Component: MarkerUnderline, use: "标题里强调一个词：标题落定后一笔手写下划线" }),
+  m({ id: "outline-fill", name: "空心字点亮", category: "文字", ref: "shotcraft:typography/outline-word-fill", durationMs: 2100, Component: OutlineFill, use: "一个词的重锤一拍（SCARCITY / DILUTION），两侧可放前后读数" }),
+  m({ id: "title-demote", name: "标题降为小标签", category: "文字", ref: "shotcraft:typography/title-demote-to-label", durationMs: 2800, Component: TitleDemote, use: "章节开场：大标题先当主角，再缩到左上角让位给内容卡" }),
+  m({ id: "card-fan", name: "卡片叠落展扇", category: "入场", ref: "shotcraft:ui-entrance/card-stack", durationMs: 3400, Component: CardFan, use: "“有这么几件事”：卡片叠成一摞、展成扇面、抽出要讲的那张" }),
+  m({ id: "trace-circle", name: "描边画出卡片", category: "入场", ref: "shotcraft:ui-entrance/draw-svg-trace", durationMs: 2800, Component: TraceCircle, use: "单个重点卡被“点名”入场：笔头描一圈，闭合后内容上色，重点数字补一笔下划线" }),
   m({ id: "chapter-progress", name: "章节进度条推进", category: "全局", ref: "timeline-progress", durationMs: 1500, Component: ChapterProgress, use: "每章开头：底部分段进度条、右上章节名" }),
 ];
 

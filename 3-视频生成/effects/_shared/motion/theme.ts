@@ -4,7 +4,7 @@
 import React, { createContext, useContext } from "react";
 
 export type Theme = {
-  name: "cards" | "navy";
+  name: "cards" | "navy" | "deco";
   bg: string; // 画面底色
   bgGlow: string; // 底色上的柔光（叠在 bg 上的渐变）
   card: string; // 卡片 / 胶囊的底
@@ -98,7 +98,40 @@ export const NAVY: Theme = {
   radius: 20,
 };
 
-export const THEMES = { cards: CARDS, navy: NAVY };
+
+// deco：Gilded Deco（2026-11-02-marvell-lumentum 确认的风格）——近黑底、宝石深蓝卡片、香槟金线和强调、奶油色文字、Montserrat
+export const DECO: Theme = {
+  name: "deco",
+  bg: "#0B0C11",
+  bgGlow: "radial-gradient(1200px 760px at 50% 40%, rgba(201,169,97,0.10) 0%, rgba(11,12,17,0) 65%)",
+  card: "#151833",
+  cardSoft: "rgba(21,24,51,0.92)",
+  line: "rgba(201,169,97,0.55)",
+  ink: "#F3EAD0",
+  ink2: "#D6CCB0",
+  ink3: "#A9A08A",
+  ph: "#3A3524",
+  ph2: "#1E1C17",
+  track: "rgba(201,169,97,0.40)",
+  blue: "#C9A961",
+  blueT: "rgba(201,169,97,0.16)",
+  teal: "#8FD3A8",
+  tealT: "rgba(143,211,168,0.16)",
+  red: "#F08C7A",
+  redT: "rgba(240,140,122,0.16)",
+  amber: "#F1E3B6",
+  amberT: "rgba(241,227,182,0.16)",
+  onAccent: "#0B0C11",
+  sub: "rgba(11,12,17,0.88)",
+  progress: "#C9A961",
+  brandLine: "#C9A961",
+  shadow: "0 24px 60px rgba(0,0,0,0.55)",
+  shadowHot: (a) => `0 0 ${48 * a}px rgba(233,210,150,${0.45 * a}), 0 24px 60px rgba(0,0,0,0.55)`,
+  font: "Montserrat, Inter, 'Noto Sans SC', 'Microsoft YaHei', 'Segoe UI', Arial, sans-serif",
+  radius: 6,
+};
+
+export const THEMES = { cards: CARDS, navy: NAVY, deco: DECO };
 export type ThemeName = keyof typeof THEMES;
 
 const Ctx = createContext<Theme>(CARDS);

@@ -10,6 +10,7 @@ export * from "./motions-data";
 export * from "./motions-flow";
 export * from "./motions-media";
 export * from "./motions-overlay";
+export * from "./motions-shot";
 export * from "./frame";
 export * from "./registry";
 export { Motion } from "./Motion";

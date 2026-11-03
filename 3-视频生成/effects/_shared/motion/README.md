@@ -1,9 +1,11 @@
 # 动效库（effects/_shared/motion）
 
-各期共用的 Remotion 动效：33 个动作（其中 5 个是"实拍卡"类）+ 界面框架（Frame / Heading / NoteCard / ChannelMark）+ 6 个拼版小部件，两套主题（`cards` 浅灰白卡片，默认；`navy` 深海军蓝，即 caspa-ai-profit / 2026-10-google-q3 的风格）。
+各期共用的 Remotion 动效：51 个动作（33 个基础动作，其中 5 个实拍卡；2026-11-03 新增 18 个镜头配方）+ 界面框架（Frame / Heading / NoteCard / ChannelMark）+ 6 个拼版小部件，三套主题（`cards` 浅灰白卡片，默认；`navy` 深海军蓝，即 caspa-ai-profit / 2026-10-google-q3 的风格；`deco` Gilded Deco 近黑底 + 香槟金，即 2026-11-02-marvell-lumentum 的风格）。
+
+**动效和风格分开**：动作只管怎么动（路径、节奏、缓动、触发时机），颜色、字体、圆角、阴影全部从主题读。同一个动作换主题就换整套画面，新增风格只要在 `theme.ts` 加一套主题，现有动作全部可用。
 第 2 步脚本里按**动效 ID** 写动画设计，第 3 步照 ID 调用，不再每期从头写图表动画。
 
-- 看全部动作：`npm run dev` → Studio 左侧 `motion-library` 文件夹。`motion-gallery`（卡片风）、`motion-gallery-navy`（深蓝）连播全部动作，左上角写 ID；`motion-<id>` 单独预览，右侧 Props 面板可以改 `theme` 和 `props` 试内容。
+- 看全部动作：`npm run dev` → Studio 左侧 `motion-library` 文件夹。`motion-gallery`（卡片风）、`motion-gallery-navy`（深蓝）、`motion-gallery-deco`（Gilded Deco）连播全部动作，左上角写 ID；`motion-<id>` 单独预览，右侧 Props 面板可以改 `theme` 和 `props` 试内容。
 - 渲染一个动作给别人看：`npx remotion render motion-waterfall out/motion-waterfall.mp4`（Studio 开着时加 `--port=3123`）。
 
 ## 在一期动画里用
@@ -103,6 +105,33 @@ export const Main: React.FC = () => {
 | 转场 | `iris-preentry` | 圆窗叠入下一幕 | 1.5s | 实拍 → 卡片界面 | `src` `cx` `cy` `next`（下一幕的节点） |
 | 全局 | `chapter-progress` | 章节进度条推进 | 1.5s | 每章开头 | `from` `to` `labels` `brand` `episode` |
 
+### 镜头配方（2026-11-03 新增，参考 video-shotcraft 配方卡）
+
+| 分类 | ID | 名称 | 时长 | 适合的财经画面 | 主要 props |
+|---|---|---|---|---|---|
+| 镜头 | `crash-zoom` | 急推点名 | 2.2s | 财报截图 / K 线 / 产品图里点名一块：先四角标锁定，再急推 | `src` `target{x,y,w,h}` `zoom` `mode`（slam / bounce） `label` `tone` |
+| 镜头 | `parallax-pan` | 分层视差横移 | 4.2s | 产业链一排公司、几条业务线横向巡览，停稳时主角卡浮起 | `items[{kicker,value,tone}]` `backdropText` `hero` |
+| 数据 | `gauge-needle` | 仪表扫针读数 | 2.4s | 需求满足率、产能利用率、估值分位、情绪指数 | `value` `min` `max` `unit` `label` `zones[{to,tone,label}]` |
+| 数据 | `axis-rescale` | 冲破图框重标轴 | 3.3s | 营收 / 利润突然跳升，“旧坐标装不下” | `points[{label,value}]` `burst{label,value}` `unit` `title` |
+| 数据 | `timeline-travel` | 时间轴横移 | 3.8s | 事件时间线（投资、财报、传闻、公告），末站急停 | `events[{date,title,sub,tone}]` |
+| 数据 | `before-after` | 前后对比拉杆 | 2.6s | 两年对比、改前改后、预期 vs 实际 | `before{kicker,value,sub}` `after{…}` `srcBefore` `srcAfter` |
+| 数据 | `list-brake` | 长列表急刹 | 2.9s | 排行榜、历史大交易表：滚动后停在本期主角那行 | `rows[{rank,label,value}]` `target` `title` |
+| 强调 | `spotlight-sweep` | 暗场聚光扫过 | 3.3s | 逐个介绍 2–4 个产品 / 业务，最后全场点亮 | `panels[{kicker,value,tone}]` |
+| 强调 | `scan-bracket` | 文档扫描核实 | 3.5s | 财报 / 公告 / 8-K 原文“读过、核实过”，比 `doc-zoom` 更有仪式感 | `src` `label` `passes` `tone` |
+| 强调 | `score-slam` | 数字重拳砸入 | 1.2s | 全片最重的一两个数字（交易额、两日跌幅） | `value` `decimals` `prefix` `unit` `label` `tone` `plus` |
+| 流程 | `flyline` | 弧线飞线流动 | 2.4s | 投资关系、资金流、供货关系，光点持续流动 | `nodes[{id,x,y,label,tone}]` `links[{from,to,label,tone}]` |
+| 转场 | `blinds-wipe` | 百叶窗翻页 | 1.7s | 章节之间的通用几何转场 | `from` `to` `slats` |
+| 转场 | `whip-pan` | 甩镜转场 | 1.1s | 能量高的衔接（结论 → 下一章） | `from` `to` |
+| 文字 | `marker-underline` | 马克笔下划线 | 1.8s | 标题里强调一个词（rivals / dilution） | `kicker` `before` `mark` `after` `tone` |
+| 文字 | `outline-fill` | 空心字点亮 | 2.1s | 一个词的重锤一拍，两侧放前后读数 | `word` `leftLabel` `rightLabel` `tone` |
+| 文字 | `title-demote` | 标题降为小标签 | 2.8s | 章节开场：大标题让位给内容卡 | `num` `title` `items[{kicker,value,tone}]` |
+| 入场 | `card-fan` | 卡片叠落展扇 | 3.4s | “接下来看这几件事”：展开后抽出要讲的一张 | `cards[{kicker,title,tone}]` `pick` |
+| 入场 | `trace-circle` | 描边画出卡片 | 2.8s | 单个重点数字卡被点名入场，数字下补一笔 | `kicker` `value` `sub` `tone` |
+
+用法和基础动作一样：`<Motion id="crash-zoom" props={{ src: staticFile("assets/docs/A09.png"), target: {...} }} />`。
+`blinds-wipe` / `whip-pan` 独立预览时自带前后两幕；正片里做两段画面之间的转场时，把前后两段的标题传进来，或参照写法用两段真实画面替换 `Scene`。
+选用提示：`score-slam`、`outline-fill`、`whip-pan` 能量高，一支片各用 1–2 次；`scan-bracket`、`spotlight-sweep` 适合暗色主题（`navy` / `deco`），在 `cards` 上效果偏弱。
+
 素材：`src` 传 `staticFile("<期名>/video/x.mp4")` 或图片地址。视频用 `OffthreadVideo`（静音，跟时间轴走），`startFrom` 是片段内的起始秒数。不传 `src` 显示占位插画，可以先排版后补素材。
 
 ## 拼版小部件（blocks.tsx）
@@ -119,6 +148,7 @@ export const Main: React.FC = () => {
 
 ## 来源和授权
 
+- 镜头配方类 18 个动作参考 [video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft)（Apache-2.0，commit 1266a3e）的配方卡，代码为本项目按本库规范重写（`motions-shot.tsx`），不含原项目素材；`registry.ts` 的 `ref` 写 `shotcraft:<分类>/<卡名>`。配方卡原文和参考实现留在 `.agents/skills/video-shotcraft/`。
 - 节奏分级和部分动作关系参考 [wise-motion](https://github.com/wisewong6/wise-motion)（Apache-2.0）。本目录的代码为本项目重新编写，不含 wise-motion 的源码或素材；`registry.ts` 的 `ref` 字段记着每个动作借鉴的条目名。
-- 字体 Inter（SIL OFL 1.1）。字体文件放在 `public/library/fonts/`，按 `.gitignore` 不进仓库；新电脑上从 Google Fonts 下载 Inter 可变字体，存成 `inter-var.woff2`。
+- 字体 Inter、Montserrat（均 SIL OFL 1.1）。字体文件放在 `public/library/fonts/`，按 `.gitignore` 不进仓库；新电脑上从 Google Fonts 下载 Inter 可变字体存成 `inter-var.woff2`，Montserrat 600–900 存成 `montserrat-latin-<字重>-normal.woff2`（`deco` 主题用；缺文件时自动退回 Inter）。
 - 其他开源动效库的授权和适用场景见同目录 `OPEN-SOURCE.md`。

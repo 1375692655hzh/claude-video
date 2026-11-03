@@ -16,6 +16,12 @@
 | `@remotion/layout-utils` | `fitText` 等按宽度算字号 | 标题长度不定时自动缩字 |
 | `@remotion/noise` | 确定性噪声 | 背景粒子、轻微抖动，不破坏逐帧一致 |
 
+## 〇·五、已纳入的镜头配方库
+
+| 库 | 授权 | 怎么用 |
+|---|---|---|
+| [video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft) | Apache-2.0（音频逐个授权，未纳入） | 2026-11-03 纳入：124 张镜头配方卡 + Remotion 参考实现，留在 `.agents/skills/video-shotcraft/`；挑了 18 个适合财经解说的配方重写进本库（`motions-shot.tsx`）。它的产品宣传片出片流程、工作台、剪映导出、社媒发布不接入 |
+
 ## 一、直接出视频的框架（代码 → MP4）
 
 | 库 | 授权 | 适合做什么 | 对本频道的适配 |

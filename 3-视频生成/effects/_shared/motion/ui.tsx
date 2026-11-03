@@ -8,17 +8,11 @@ import { lerp } from "./time";
 export const useMotionFont = () => {
   const [handle] = useState(() => delayRender("load Inter (motion library)"));
   useEffect(() => {
-    const face = new FontFace("Inter", `url(${staticFile("library/fonts/inter-var.woff2")})`, { weight: "100 900" });
-    face
-      .load()
-      .then((f) => {
-        document.fonts.add(f);
-        continueRender(handle);
-      })
-      .catch((err) => {
-        console.error(err);
-        continueRender(handle);
-      });
+    const faces = [
+      new FontFace("Inter", `url(${staticFile("library/fonts/inter-var.woff2")})`, { weight: "100 900" }),
+      ...[600, 700, 800, 900].map((w) => new FontFace("Montserrat", `url(${staticFile(`library/fonts/montserrat-latin-${w}-normal.woff2`)})`, { weight: String(w) })),
+    ];
+    Promise.all(faces.map((f) => f.load().then((x) => document.fonts.add(x)).catch(() => null))).then(() => continueRender(handle));
   }, [handle]);
 };
 

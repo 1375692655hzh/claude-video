@@ -9,6 +9,7 @@ export const MotionGalleryComposition: React.FC = () => (
   <Folder name="motion-library">
     <Composition id="motion-gallery" component={MotionGallery} durationInFrames={galleryFrames(FPS)} fps={FPS} width={1920} height={1080} defaultProps={{ theme: "cards" as const }} />
     <Composition id="motion-gallery-navy" component={MotionGallery} durationInFrames={galleryFrames(FPS)} fps={FPS} width={1920} height={1080} defaultProps={{ theme: "navy" as const }} />
+    <Composition id="motion-gallery-deco" component={MotionGallery} durationInFrames={galleryFrames(FPS)} fps={FPS} width={1920} height={1080} defaultProps={{ theme: "deco" as const }} />
     {MOTIONS.map((e) => (
       <Composition
         key={e.id}
