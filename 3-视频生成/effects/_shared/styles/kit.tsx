@@ -27,7 +27,7 @@ export type StyleKit = {
 };
 
 // 公共字体：3-视频生成/public/library/fonts/（均为 SIL OFL，来自 @fontsource），按需加载
-const FACES: [string, string, string][] = [
+const FACES: [string, string, string, string?][] = [
   ["Inter", "inter-var", "100 900"],
   ["Montserrat", "montserrat-latin-600-normal", "600"], ["Montserrat", "montserrat-latin-700-normal", "700"], ["Montserrat", "montserrat-latin-800-normal", "800"], ["Montserrat", "montserrat-latin-900-normal", "900"],
   ["Cinzel", "cinzel-latin-600-normal", "600"], ["Cinzel", "cinzel-latin-700-normal", "700"],
@@ -35,12 +35,21 @@ const FACES: [string, string, string][] = [
   ["Lora", "lora-latin-400-normal", "400"], ["Lora", "lora-latin-600-normal", "600"],
   ["JetBrains Mono", "jetbrains-mono-latin-400-normal", "400"], ["JetBrains Mono", "jetbrains-mono-latin-700-normal", "700"],
   ["Space Grotesk", "space-grotesk-latin-500-normal", "500"], ["Space Grotesk", "space-grotesk-latin-700-normal", "700"],
+  // 2026-11-05 B-roll 模板风格（broll-kits.tsx）
+  ["Geist", "geist-latin-600-normal", "600"], ["Geist", "geist-latin-700-normal", "700"], ["Geist", "geist-latin-900-normal", "900"], ["Geist Mono", "geist-mono-latin-500-normal", "500"],
+  ["Inter Tight", "inter-tight-latin-500-normal", "500"], ["Inter Tight", "inter-tight-latin-700-normal", "700"], ["Inter Tight", "inter-tight-latin-800-normal", "800"], ["Inter Tight", "inter-tight-latin-900-normal", "900"],
+  ["Archivo Black", "archivo-black-latin-400-normal", "400"], ["Archivo", "archivo-latin-800-normal", "800"],
+  ["Space Mono", "space-mono-latin-400-normal", "400"], ["Space Mono", "space-mono-latin-700-normal", "700"], ["DM Mono", "dm-mono-latin-500-normal", "500"],
+  ["Rubik", "rubik-latin-500-normal", "500"], ["Rubik", "rubik-latin-800-normal", "800"], ["Rubik", "rubik-latin-900-normal", "900"],
+  ["Bricolage Grotesque", "bricolage-grotesque-latin-800-normal", "800"], ["DM Serif Display", "dm-serif-display-latin-400-normal", "400"],
+  ["Caveat", "caveat-latin-700-normal", "700"], ["IBM Plex Mono", "ibm-plex-mono-latin-400-normal", "400"], ["IBM Plex Mono", "ibm-plex-mono-latin-600-normal", "600"],
+  ["DM Serif Display", "dm-serif-display-latin-400-italic", "400", "italic"], ["Instrument Serif", "instrument-serif-latin-400-italic", "400", "italic"],
 ];
 /** 整片最外层调用一次：加载风格库用到的全部字体（缺文件的跳过） */
 export const useStyleFonts = () => {
   const [h] = useState(() => delayRender("style fonts"));
   useEffect(() => {
-    Promise.all(FACES.map(([fam, file, w]) => new FontFace(fam, `url(${staticFile(`library/fonts/${file}.woff2`)})`, { weight: w }).load().then((f) => document.fonts.add(f)).catch(() => null))).then(() => continueRender(h));
+    Promise.all(FACES.map(([fam, file, w, style = "normal"]) => new FontFace(fam, `url(${staticFile(`library/fonts/${file}.woff2`)})`, { weight: w, style }).load().then((f) => document.fonts.add(f)).catch(() => null))).then(() => continueRender(h));
   }, [h]);
 };
 

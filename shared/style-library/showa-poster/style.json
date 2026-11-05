@@ -1,0 +1,35 @@
+{
+  "id": "showa-poster",
+  "name": "showa-poster · 昭和海报",
+  "status": "ready",
+  "theme": "showa-poster",
+  "look": "黑页 + 红色放射线、衬线巨字 + 红色下划线、倾斜红幅标签、双线直角框和方框判子",
+  "fit": "强观点、重磅事件、翻车 / 颠覆类开场",
+  "avoid": "轻松闲聊、温和教程、多图并列",
+  "fonts": "Playfair Display + Archivo",
+  "works": [],
+  "palette": [
+    {
+      "hex": "#10110F",
+      "role": "底"
+    },
+    {
+      "hex": "#F3F3E9",
+      "role": "奶白"
+    },
+    {
+      "hex": "#D4002F",
+      "role": "朱红 / 跌"
+    },
+    {
+      "hex": "#8BC79A",
+      "role": "涨"
+    },
+    {
+      "hex": "#8A8880",
+      "role": "次文字"
+    }
+  ],
+  "kit": "3-视频生成/effects/_shared/styles（STYLES.showa-poster）",
+  "needsPhoto": false
+}

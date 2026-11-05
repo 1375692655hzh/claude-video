@@ -1,0 +1,39 @@
+{
+  "id": "retro-sunburst",
+  "name": "retro-sunburst · 复古旭日",
+  "status": "ready",
+  "theme": "retro-sunburst",
+  "look": "奶油色旭日放射条、橙色厚描边立体大字、金边白卡、锯齿金徽章，居中对称的庆典海报",
+  "fit": "里程碑、破纪录、年度榜单、欢庆向结尾",
+  "avoid": "严肃观点、负面翻车、冷静对比",
+  "fonts": "Rubik + DM Mono",
+  "works": [],
+  "palette": [
+    {
+      "hex": "#F8E9C8",
+      "role": "奶油"
+    },
+    {
+      "hex": "#4F2E16",
+      "role": "可可"
+    },
+    {
+      "hex": "#F28C28",
+      "role": "橙"
+    },
+    {
+      "hex": "#F6C453",
+      "role": "金"
+    },
+    {
+      "hex": "#5E8C3A",
+      "role": "涨"
+    },
+    {
+      "hex": "#C4442A",
+      "role": "跌"
+    }
+  ],
+  "kit": "3-视频生成/effects/_shared/styles（STYLES.retro-sunburst）",
+  "needsPhoto": false
+}

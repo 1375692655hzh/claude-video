@@ -1,0 +1,39 @@
+{
+  "id": "sticky-audit",
+  "name": "sticky-audit · 便签复盘",
+  "status": "ready",
+  "theme": "sticky-audit",
+  "look": "冷白方格证据墙、带编号标签的纸卡、黄便签手写批注、底部四色阶段轨道，工程复盘感",
+  "fit": "流程拆解、排查复盘、逐项验收、前后对比",
+  "avoid": "需要大图冲击力的开场",
+  "fonts": "Inter Tight + IBM Plex Mono + Caveat",
+  "works": [],
+  "palette": [
+    {
+      "hex": "#F4F4EC",
+      "role": "底"
+    },
+    {
+      "hex": "#15141A",
+      "role": "墨"
+    },
+    {
+      "hex": "#E4572E",
+      "role": "橙 / 跌"
+    },
+    {
+      "hex": "#7A5AE0",
+      "role": "紫"
+    },
+    {
+      "hex": "#3461E0",
+      "role": "蓝"
+    },
+    {
+      "hex": "#2FB67C",
+      "role": "绿 / 涨"
+    }
+  ],
+  "kit": "3-视频生成/effects/_shared/styles（STYLES.sticky-audit）",
+  "needsPhoto": false
+}

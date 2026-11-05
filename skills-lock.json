@@ -91,6 +91,13 @@
       "skillPath": "SKILL-原版.md（已改名，不作为技能加载）",
       "ref": "1266a3ec4831289c4d893d42dd5102723658039a",
       "note": "参考用：只保留配方卡与示例代码，见 .agents/skills/video-shotcraft/本项目说明.md"
+    },
+    "ajiang-video-broll": {
+      "source": "NanmiCoder/ajiang-vibe-coding-skills",
+      "sourceType": "github",
+      "skillPath": "skills/ajiang-video-broll/SKILL.md",
+      "ref": "00608a6c0d9cc44f8bede165588ddfb4b82ec4c8",
+      "note": "B-roll / MG 包装；10 套模板已移植进风格库，见 .agents/skills/ajiang-video-broll/本项目说明.md"
     }
   }
 }

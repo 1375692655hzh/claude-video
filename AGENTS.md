@@ -93,7 +93,7 @@ shared/                  两步以上共用
     assets.mjs             素材库工具（查 / 导入 / 核实 / 缩略图 / 按片段下载 / 回填）
     project.mjs            项目工具：new / list / status / check / set / final / paths / studio / render / lint / handoff
     consult-agy.mjs        请 agy（Gemini 等）给第二意见，只读
-.agents/skills           项目级 skill（.claude/skills 指向它）：Remotion 系列、humanizer、humanizer-zh；清单在 skills-lock.json
+.agents/skills           项目级 skill（.claude/skills 指向它）：Remotion 系列、humanizer、humanizer-zh、ajiang-video-broll（B-roll 包装，10 套模板已移植进风格库，见其 本项目说明.md）；清单在 skills-lock.json
 ```
 
 每个执行文件夹都有 `package.json`，把共享工具映射成 `npm run fetch-doc / image / image-codex / assets / tts / consult / project`；
@@ -198,6 +198,8 @@ Remotion 合成读 `04-音频/timeline.json` → `render-chunks.sh <ID> bundle /
   1. Claude 先跑 `node shared/tools/style.mjs history --account <人设>`，告诉用户这个账号用过哪些风格；
   2. 给用户看 `shared/style-library/预览.html`（每套风格展示卡 + 4 张标准样张，用过的排最前）或各风格 `preview.jpg`；用户自己挑，也可以给参考图做新风格（按 `shared/style-library/README.md`「新增一套风格」，展示卡给用户确认后才算可用）；
   3. 选定后 `node shared/tools/style.mjs use <项目ID> <风格ID>`：写入 `project.json` 的 style 和使用历史；⑩用 `getStyle(id)` 取外观组件、`<MotionTheme theme=…>` 给动效配色；出片后 `--status 成片` 再登记。风格只管“长什么样”，动效库管“怎么动”，两者任意搭配。
+     风格库共 18 套可用（2026-11-05 起含从 ajiang-video-broll 移植的 10 套：paper-signal、sticker-pop、mint-switch、warm-haze、sticky-audit、riso-print、showa-poster、retro-sunburst、color-cards、bauhaus-grid，用户已确认）。新风格做完先标 review（待确认），用户看过展示卡再改 ready。
+     需要原汁原味的 B-roll 版式（整屏包装段落盖在口播 / 数字人上）时，按 `.agents/skills/ajiang-video-broll/本项目说明.md` 走原 skill 流程。
 - **配音选型**：不再默认 MiMo。⑥按 `shared/voice-library/音色总表.csv` 让用户试听选定（2026-11-03 起四家全量：火山 466、MiniMax 303、Qwen 3.0-tts-plus 599、MiMo 9），音色和调用 ID 记进 `00-项目设置.md`。
   ⑩逐镜生成配音（一镜一个文件，时长即镜头时长，不用估算）；火山接口 `openspeech.bytedance.com/api/v3/plan/tts/unidirectional`，`X-Api-Resource-Id: seed-tts-2.0`。
   Qwen TTS 用 `sk-sp-` 套餐 key（keys.env 的 `QWEN_TTS_API_KEY`），只走 `token-plan.cn-beijing.maas.aliyuncs.com/api/v1/services/audio/tts/SpeechSynthesizer`，且只开通了 `qwen-audio-3.0-tts-plus`；3.0-flash / 3.1-plus 需要按量付费的普通 key。MiniMax TTS 有每分钟请求上限，批量时并发 1、间隔约 2.4 秒。

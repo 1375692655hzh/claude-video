@@ -1,0 +1,35 @@
+{
+  "id": "mint-switch",
+  "name": "mint-switch · 黑白薄荷",
+  "status": "ready",
+  "theme": "mint-switch",
+  "look": "近黑柔光舞台 + 淡网格、深色卡片、等宽大数字，只有一个薄荷绿；顶部步骤条",
+  "fit": "工作原理、几步走、流程拆解、AI / 自动化讲解",
+  "avoid": "吐槽、情绪段落",
+  "fonts": "Inter Tight + JetBrains Mono",
+  "works": [],
+  "palette": [
+    {
+      "hex": "#0B0D0C",
+      "role": "底"
+    },
+    {
+      "hex": "#141816",
+      "role": "卡片"
+    },
+    {
+      "hex": "#F3F5EF",
+      "role": "文字"
+    },
+    {
+      "hex": "#4DEB9F",
+      "role": "薄荷 / 涨"
+    },
+    {
+      "hex": "#FF6B5E",
+      "role": "跌"
+    }
+  ],
+  "kit": "3-视频生成/effects/_shared/styles（STYLES.mint-switch）",
+  "needsPhoto": false
+}

@@ -24,6 +24,21 @@
 | `blueprint` | 蓝图 / 工程图 | 待做 | 半导体、产业链、产品拆解 |
 | `neon` | 赛博霓虹 | 待做 | 加密货币、游戏（要节制） |
 | `journal` | 手账 / 便签 | 待做 | 轻松科普、投资入门 |
+| `paper-signal` | 纸白信号橙 | 可用 | 产品发布、功能清单、步骤流程、数据结论 |
+| `sticker-pop` | 贴纸波普 | 可用 | 痛点 → 踩坑 → 方案、工具翻车、轻松教程 |
+| `mint-switch` | 黑白薄荷 | 可用 | 工作原理、几步走、AI / 自动化讲解 |
+| `warm-haze` | 暖雾 | 可用 | 产品演示、温和的上手教程 |
+| `sticky-audit` | 便签复盘 | 可用 | 流程拆解、排查复盘、前后对比 |
+| `riso-print` | 孔版印刷 | 可用 | 轻松的工具盘点、三五个要点、A 对 B |
+| `showa-poster` | 昭和海报 | 可用 | 强观点、重磅事件、翻车开场 |
+| `retro-sunburst` | 复古旭日 | 可用 | 里程碑、破纪录、榜单、欢庆结尾 |
+| `color-cards` | 彩卡拼贴 | 可用 | 功能枚举、案例墙 |
+| `bauhaus-grid` | 包豪斯几何 | 可用 | 结构、拆模块、产业链 / 架构 |
+
+后 10 套（2026-11-05 引入，同日用户确认全部可用）从 `ajiang-video-broll` skill 的 B-roll 模板移植：外观组件在 `3-视频生成/effects/_shared/styles/broll-kits.tsx`，
+原模板（含招牌版式、动效编排、拟音配乐）在 `.agents/skills/ajiang-video-broll/assets/themes/<id>/`，怎么用见该目录的 `本项目说明.md`。
+
+**状态**：`ready` 可用 → `review` 待确认（组件和样张已做好、`use` 会拦下，用户看过展示卡后在 `_build/build_library.py` 里改成 `ready` 并重跑）→ `candidate` 待做（只有静态概念图）。
 
 ## 一套风格包含什么
 
