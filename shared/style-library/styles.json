@@ -75,5 +75,75 @@
     "status": "candidate",
     "fit": "轻松科普、投资入门",
     "preview": "journal/preview.jpg"
+  },
+  {
+    "id": "paper-signal",
+    "name": "paper-signal · 纸白信号橙",
+    "status": "ready",
+    "fit": "产品发布、功能清单、步骤流程、数据结论、观点总结",
+    "preview": "paper-signal/preview.jpg"
+  },
+  {
+    "id": "sticker-pop",
+    "name": "sticker-pop · 贴纸波普",
+    "status": "ready",
+    "fit": "痛点 → 踩坑 → 方案、工具翻车、轻松向教程",
+    "preview": "sticker-pop/preview.jpg"
+  },
+  {
+    "id": "mint-switch",
+    "name": "mint-switch · 黑白薄荷",
+    "status": "ready",
+    "fit": "工作原理、几步走、流程拆解、AI / 自动化讲解",
+    "preview": "mint-switch/preview.jpg"
+  },
+  {
+    "id": "warm-haze",
+    "name": "warm-haze · 暖雾",
+    "status": "ready",
+    "fit": "产品演示、功能讲解、温和的上手教程",
+    "preview": "warm-haze/preview.jpg"
+  },
+  {
+    "id": "sticky-audit",
+    "name": "sticky-audit · 便签复盘",
+    "status": "ready",
+    "fit": "流程拆解、排查复盘、逐项验收、前后对比",
+    "preview": "sticky-audit/preview.jpg"
+  },
+  {
+    "id": "riso-print",
+    "name": "riso-print · 孔版印刷",
+    "status": "ready",
+    "fit": "轻松的工具介绍和盘点、三五个要点、A 对 B",
+    "preview": "riso-print/preview.jpg"
+  },
+  {
+    "id": "showa-poster",
+    "name": "showa-poster · 昭和海报",
+    "status": "ready",
+    "fit": "强观点、重磅事件、翻车 / 颠覆类开场",
+    "preview": "showa-poster/preview.jpg"
+  },
+  {
+    "id": "retro-sunburst",
+    "name": "retro-sunburst · 复古旭日",
+    "status": "ready",
+    "fit": "里程碑、破纪录、年度榜单、欢庆向结尾",
+    "preview": "retro-sunburst/preview.jpg"
+  },
+  {
+    "id": "color-cards",
+    "name": "color-cards · 彩卡拼贴",
+    "status": "ready",
+    "fit": "“它能做什么”式盘点、案例墙、功能枚举",
+    "preview": "color-cards/preview.jpg"
+  },
+  {
+    "id": "bauhaus-grid",
+    "name": "bauhaus-grid · 包豪斯几何",
+    "status": "ready",
+    "fit": "结构和方法、拆模块、列原则、产业链 / 架构",
+    "preview": "bauhaus-grid/preview.jpg"
   }
 ]

@@ -1,0 +1,39 @@
+{
+  "id": "bauhaus-grid",
+  "name": "bauhaus-grid · 包豪斯几何",
+  "status": "ready",
+  "theme": "bauhaus-grid",
+  "look": "米白纸 + 150px 细网格 + 四角十字 + 底部刻度尺、右侧蓝黄红黑几何格、立体斜体衬线大数（涨用蓝、跌用红）",
+  "fit": "结构和方法、拆模块、列原则、产业链 / 架构",
+  "avoid": "情绪化吐槽、字很多的页",
+  "fonts": "DM Serif Display + Archivo Black + IBM Plex Mono",
+  "works": [],
+  "palette": [
+    {
+      "hex": "#F1EDE4",
+      "role": "纸"
+    },
+    {
+      "hex": "#161414",
+      "role": "黑"
+    },
+    {
+      "hex": "#2D4BD8",
+      "role": "蓝 / 涨"
+    },
+    {
+      "hex": "#F4B62C",
+      "role": "黄"
+    },
+    {
+      "hex": "#F04A1E",
+      "role": "红 / 跌"
+    },
+    {
+      "hex": "#FF4F1F",
+      "role": "橙红"
+    }
+  ],
+  "kit": "3-视频生成/effects/_shared/styles（STYLES.bauhaus-grid）",
+  "needsPhoto": false
+}

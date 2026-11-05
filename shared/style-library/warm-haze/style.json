@@ -1,0 +1,35 @@
+{
+  "id": "warm-haze",
+  "name": "warm-haze · 暖雾",
+  "status": "ready",
+  "theme": "warm-haze",
+  "look": "米白底上漂着桃色 / 绿色雾团、大圆角白色产品面板、深色药丸字幕，柔和有景深",
+  "fit": "产品演示、功能讲解、温和的上手教程",
+  "avoid": "快节奏盘点、强对比、坏消息",
+  "fonts": "Inter Tight + Inter",
+  "works": [],
+  "palette": [
+    {
+      "hex": "#F8F5EE",
+      "role": "底"
+    },
+    {
+      "hex": "#1E1E1C",
+      "role": "文字"
+    },
+    {
+      "hex": "#4E7D54",
+      "role": "绿 / 涨"
+    },
+    {
+      "hex": "#E4A86C",
+      "role": "桃"
+    },
+    {
+      "hex": "#C4553A",
+      "role": "跌"
+    }
+  ],
+  "kit": "3-视频生成/effects/_shared/styles（STYLES.warm-haze）",
+  "needsPhoto": false
+}

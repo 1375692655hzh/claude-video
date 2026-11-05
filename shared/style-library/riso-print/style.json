@@ -1,0 +1,39 @@
+{
+  "id": "riso-print",
+  "name": "riso-print · 孔版印刷",
+  "status": "ready",
+  "theme": "riso-print",
+  "look": "米纸 + 网点颗粒、粉色斜纹 / 黄色网点色带、粉蓝正片叠底圆、蓝字带粉色套印错位",
+  "fit": "轻松的工具介绍和盘点、三五个要点、A 对 B",
+  "avoid": "严肃评测、数据密集对比表",
+  "fonts": "Archivo Black + DM Mono",
+  "works": [],
+  "palette": [
+    {
+      "hex": "#ECE6D8",
+      "role": "纸"
+    },
+    {
+      "hex": "#1B72A8",
+      "role": "蓝墨"
+    },
+    {
+      "hex": "#F0508C",
+      "role": "粉"
+    },
+    {
+      "hex": "#F2D519",
+      "role": "黄"
+    },
+    {
+      "hex": "#1E5A3A",
+      "role": "绿 / 涨"
+    },
+    {
+      "hex": "#EE4B2B",
+      "role": "跌"
+    }
+  ],
+  "kit": "3-视频生成/effects/_shared/styles（STYLES.riso-print）",
+  "needsPhoto": false
+}

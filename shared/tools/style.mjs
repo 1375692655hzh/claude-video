@@ -1,7 +1,7 @@
 // 风格库工具：列出风格、看各账号用过哪些风格、登记本期风格、生成本地预览页。
 // 数据：shared/style-library/styles.json（索引）、<id>/style.json（每套详情）、usage.json（使用历史）
 // 用法：
-//   node shared/tools/style.mjs list [--all]                   可用风格（--all 含待做）
+//   node shared/tools/style.mjs list [--all]                   可用 + 待确认风格（--all 含待做）
 //   node shared/tools/style.mjs history [--account Andy]
 //   node shared/tools/style.mjs use <项目ID> <风格ID> [--account Andy] [--status 选定|试做|成片] [--note "…"]
 //   node shared/tools/style.mjs page                            重新生成 shared/style-library/预览.html（双击用浏览器打开）
@@ -23,9 +23,9 @@ const projDir = (id) => { const m = /^(\d{4})-(\d{2})-\d{2}-/.exec(id); const d 
 
 function list() {
   const u = usage();
-  for (const s of styles().filter((x) => f.all || x.status === "ready")) {
+  for (const s of styles().filter((x) => f.all || x.status === "ready" || x.status === "review")) {
     const who = [...new Set(u.records.filter((r) => r.style === s.id).map((r) => r.account))];
-    console.log(`${s.status === "ready" ? "●" : "○"} ${s.id.padEnd(12)} ${s.name}\n    适合：${s.fit}${s.avoid ? `；慎用：${s.avoid}` : ""}${who.length ? `\n    ★ 用过：${who.join("、")}` : ""}\n    展示卡：shared/style-library/${s.id}/preview.jpg`);
+    console.log(`${s.status === "ready" ? "●" : s.status === "review" ? "◐" : "○"} ${s.id.padEnd(14)} ${s.name}${s.status === "review" ? "（待确认）" : ""}\n    适合：${s.fit}${s.avoid ? `；慎用：${s.avoid}` : ""}${who.length ? `\n    ★ 用过：${who.join("、")}` : ""}\n    展示卡：shared/style-library/${s.id}/preview.jpg`);
   }
   console.log("\n预览页：shared/style-library/预览.html");
 }
@@ -41,6 +41,7 @@ function history() {
 function use() {
   const [project, id] = pos; if (!project || !id) fail("用法：use <项目ID> <风格ID>");
   const s = styles().find((x) => x.id === id) ?? fail(`风格库里没有 ${id}`);
+  if (s.status === "review") fail(`${id} 待确认：先给用户看展示卡 shared/style-library/${id}/preview.jpg，用户确认后把 _build/build_library.py 里它的 status 改成 ready 并重跑`);
   if (s.status !== "ready") fail(`${id} 还是待做风格，先按 README「新增一套风格」做完再用`);
   const d = projDir(project); const meta = d ? JSON.parse(fs.readFileSync(path.join(d, "project.json"), "utf8")) : null;
   const account = f.account ?? meta?.persona ?? fail("找不到账号：加 --account");
@@ -74,8 +75,8 @@ function r(){const acc=$("#acc").value,cand=$("#cand").checked;try{localStorage.
 const recs=D.usage.records.filter(x=>!acc||x.account===acc).sort((a,b)=>b.date.localeCompare(a.date));
 $("#hist").innerHTML=recs.length?"<b>"+(acc||"全部账号")+" 的风格记录：</b> "+recs.map(x=>x.date+" "+x.project+" → "+x.style+"（"+x.status+"）").join("；"):"";
 const used=new Set(recs.map(x=>x.style));
-let ss=D.styles.filter(s=>cand||s.status==="ready");ss.sort((a,b)=>(used.has(b.id)?1:0)-(used.has(a.id)?1:0)||(a.status==="ready"?0:1)-(b.status==="ready"?0:1));
-$("#list").innerHTML=ss.map(s=>'<div class="c'+(used.has(s.id)?' used':'')+(s.status!=="ready"?' cand':'')+'"><img src="'+s.id+'/preview.jpg" onclick="z(this.src)"><div class="b"><div class="n">'+s.name+'</div><div class="s">'+s.look+'</div><span class="tag">适合：'+s.fit+'</span>'+(s.avoid?'<span class="tag g">慎用：'+s.avoid+'</span>':'')+'<span class="tag g">字体：'+s.fonts+'</span>'+(s.status!=="ready"?'<span class="tag g">待做</span>':'')+[...new Set(recs.filter(x=>x.style===s.id).map(x=>x.project))].map(p=>'<span class="tag">★ '+p+'</span>').join("")+'</div>'+(s.status==="ready"?'<div class="th">'+[1,2,3,4].map(i=>'<img src="'+s.id+'/samples/0'+i+'.jpg" onclick="z(this.src)">').join("")+'</div>':'')+'</div>').join("")}
+let ss=D.styles.filter(s=>cand||s.status!=="candidate");ss.sort((a,b)=>(used.has(b.id)?1:0)-(used.has(a.id)?1:0)||(a.status==="ready"?0:1)-(b.status==="ready"?0:1));
+$("#list").innerHTML=ss.map(s=>'<div class="c'+(used.has(s.id)?' used':'')+(s.status==="candidate"?' cand':'')+'"><img src="'+s.id+'/preview.jpg" onclick="z(this.src)"><div class="b"><div class="n">'+s.name+'</div><div class="s">'+s.look+'</div><span class="tag">适合：'+s.fit+'</span>'+(s.avoid?'<span class="tag g">慎用：'+s.avoid+'</span>':'')+'<span class="tag g">字体：'+s.fonts+'</span>'+(s.status==="review"?'<span class="tag">待确认</span>':s.status!=="ready"?'<span class="tag g">待做</span>':'')+[...new Set(recs.filter(x=>x.style===s.id).map(x=>x.project))].map(p=>'<span class="tag">★ '+p+'</span>').join("")+'</div>'+(s.status!=="candidate"?'<div class="th">'+[1,2,3,4].map(i=>'<img src="'+s.id+'/samples/0'+i+'.jpg" onclick="z(this.src)">').join("")+'</div>':'')+'</div>').join("")}
 $("#acc").onchange=r;$("#cand").onchange=r;r();</script></body></html>`;
   fs.writeFileSync(path.join(LIB, "预览.html"), html);
   if (!quiet) console.log(`✓ 已生成 shared/style-library/预览.html（${ss.length} 套风格，${u.records.length} 条记录）`);

@@ -1,0 +1,43 @@
+{
+  "id": "color-cards",
+  "name": "color-cards · 彩卡拼贴",
+  "status": "ready",
+  "theme": "color-cards",
+  "look": "深色桌面上散着倾斜的饱和色卡（蓝 / 黄 / 粉），内容卡按好坏换色，橙色胶囊标签 + 米白主卡托大数",
+  "fit": "“它能做什么”式盘点、案例墙、功能枚举",
+  "avoid": "抽象论证、严肃数据",
+  "fonts": "Bricolage Grotesque + Archivo Black + Inter",
+  "works": [],
+  "palette": [
+    {
+      "hex": "#16140F",
+      "role": "桌面"
+    },
+    {
+      "hex": "#F3EFE4",
+      "role": "文字"
+    },
+    {
+      "hex": "#2F4BDB",
+      "role": "蓝"
+    },
+    {
+      "hex": "#EDD456",
+      "role": "黄"
+    },
+    {
+      "hex": "#1F6B4A",
+      "role": "绿"
+    },
+    {
+      "hex": "#D9603B",
+      "role": "橙"
+    },
+    {
+      "hex": "#F2B6A8",
+      "role": "粉"
+    }
+  ],
+  "kit": "3-视频生成/effects/_shared/styles（STYLES.color-cards）",
+  "needsPhoto": false
+}

@@ -1,0 +1,43 @@
+{
+  "id": "sticker-pop",
+  "name": "sticker-pop · 贴纸波普",
+  "status": "ready",
+  "theme": "sticker-pop",
+  "look": "白板点阵底、粗墨描边窗口贴纸 + 彩色标题栏 + 硬投影、胶囊标签，热闹的手作拼贴感",
+  "fit": "痛点 → 踩坑 → 方案、工具翻车、轻松向教程",
+  "avoid": "严肃数据结论、高级发布会感",
+  "fonts": "Archivo Black + Space Grotesk + Space Mono",
+  "works": [],
+  "palette": [
+    {
+      "hex": "#FCFEF3",
+      "role": "底"
+    },
+    {
+      "hex": "#1C1624",
+      "role": "墨"
+    },
+    {
+      "hex": "#F58AE8",
+      "role": "粉"
+    },
+    {
+      "hex": "#BDEBF5",
+      "role": "蓝"
+    },
+    {
+      "hex": "#A6EB9B",
+      "role": "绿"
+    },
+    {
+      "hex": "#F2CF63",
+      "role": "黄"
+    },
+    {
+      "hex": "#E5383B",
+      "role": "跌"
+    }
+  ],
+  "kit": "3-视频生成/effects/_shared/styles（STYLES.sticker-pop）",
+  "needsPhoto": false
+}

@@ -1,0 +1,39 @@
+{
+  "id": "paper-signal",
+  "name": "paper-signal · 纸白信号橙",
+  "status": "ready",
+  "theme": "paper-signal",
+  "look": "瑞士国际主义海报：暖灰纸底 + 12 栏细线网格、四角刻度、巨号几何数字配刻度尺，唯一的信号橙",
+  "fit": "产品发布、功能清单、步骤流程、数据结论、观点总结",
+  "avoid": "情绪化吐槽、需要可爱感的内容",
+  "fonts": "Inter Tight + Geist + Geist Mono",
+  "works": [],
+  "palette": [
+    {
+      "hex": "#ECEAE4",
+      "role": "纸"
+    },
+    {
+      "hex": "#12110E",
+      "role": "墨"
+    },
+    {
+      "hex": "#7A766F",
+      "role": "次文字"
+    },
+    {
+      "hex": "#F2561E",
+      "role": "信号橙"
+    },
+    {
+      "hex": "#1F8A4C",
+      "role": "涨"
+    },
+    {
+      "hex": "#C8361B",
+      "role": "跌"
+    }
+  ],
+  "kit": "3-视频生成/effects/_shared/styles（STYLES.paper-signal）",
+  "needsPhoto": false
+}
