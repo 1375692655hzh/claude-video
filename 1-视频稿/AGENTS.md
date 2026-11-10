@@ -44,7 +44,7 @@ _参考稿/                  用户认可的历史稿件，只学语气和节奏
 
 | 选择 | 规范 | 默认画幅 | 说明 |
 |---|---|---|---|
-| YouTube 长视频 | `platforms/youtube-long-en.md` + 通用 `youtube-long.md` | 16:9 | 主线；发布包装和复盘规范最完整 |
+| YouTube 长视频 | `platforms/youtube-long-en.md` + 通用 `youtube-long.md` | 16:9 | 主线；发布包装和复盘规范最完整。**最高优先级：`youtube-long.md`〇.5「前紧中稳后强」五段结构**（15–25 分钟、10 秒抓人、30 秒悬念、每 3–4 分钟换挡、数据反转、结尾强引导互动） |
 | YouTube Shorts | `platforms/youtube-shorts-en.md` | 9:16 | 可直接选题，也可从长视频改编 |
 | Instagram Reels | `platforms/instagram-reels-en.md` | 9:16 | 可直接选题，也可从长视频改编 |
 | TikTok | `platforms/tiktok-en.md` | 9:16 | 可直接选题，也可从长视频改编 |
